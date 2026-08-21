@@ -181,15 +181,15 @@ function processEmbed(embedData, dilAd, movieTitle) {
     else if (src.indexOf('filemoon') !== -1) pName = "FileMoon";
 
     // Kalite Bilgisi: Uydurma değil, sadece varsa yaz
-    var q = embedData.kalite || 'Auto'; 
+    var q = embedData.kalite || ''; 
 
     var streamPromise;
     if (src.indexOf('vidmoly') !== -1) {
       streamPromise = fetchVidMolyStream(src).then(function(s) {
         return s ? { 
           url: s.url, 
-          name: movieTitle, 
-          title: '⌜ WEBTEIZLE ⌟ | ' + pName + ' | ' + flag + dilAd, 
+          name: 'webteizle', 
+          title: pName + (dilAd ? ' | ' + dilAd : ''), 
           quality: q, 
           type: 'hls', 
           headers: { 'Referer': s.referer } 
@@ -202,8 +202,8 @@ function processEmbed(embedData, dilAd, movieTitle) {
           var m = html.match(/file\s*:\s*['"]?(https?:\/\/[^\s"'<>]+\.m3u8[^\s"'<>]*)/i);
           return m ? { 
             url: m[1], 
-            name: movieTitle, 
-            title: '⌜ WEBTEIZLE ⌟ | ' + pName + ' | ' + flag + dilAd, 
+            name: 'webteizle', 
+            title: pName + (dilAd ? ' | ' + dilAd : ''), 
             quality: q, 
             type: 'hls', 
             headers: { 'Referer': src } 
