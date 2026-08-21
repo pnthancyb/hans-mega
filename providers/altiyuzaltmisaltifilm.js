@@ -55,7 +55,7 @@ async function getStreams(tmdbId, mediaType) {
                     streams.push({
                         name: "Rapidplay (Sunucu)",
                         url: rapidUrl,
-                        quality: "Auto",
+                        quality: "",
                         isM3U8: true,
                         headers: { 'Referer': 'https://rapidplay.website/' },
                         provider: "666film"
