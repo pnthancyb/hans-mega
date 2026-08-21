@@ -90,7 +90,7 @@ function resolveUrl(url, baseUrl) {
 
 // Determine quality from resolution
 function getQualityFromResolution(resolution) {
-    if (!resolution) return 'Auto';
+    if (!resolution) return '';
     
     const [width, height] = resolution.split('x').map(Number);
     
@@ -117,11 +117,11 @@ function fetchAndParseM3U8(playlistUrl, mediaInfo) {
                 console.log('[Vidlink] No quality variants found, returning master playlist');
                 // Fallback: return the master playlist as Auto quality
                 return [{
-                    name: 'Vidlink - Auto',
+                    name: 'vidlink',
                     title: mediaInfo.title,
                     url: playlistUrl,
-                    quality: 'Auto',
-                    size: 'ALTYAZILI',    //'Unknown',
+                    quality: '',
+                    size: 'ALTYAZILI',    //'',
                     headers: VIDLINK_HEADERS,
                     provider: 'vidlink'
                 }];
@@ -133,11 +133,11 @@ function fetchAndParseM3U8(playlistUrl, mediaInfo) {
             const streams = parsedStreams.map(stream => {
                 const quality = getQualityFromResolution(stream.resolution);
                 return {
-                    name: `Vidlink - ${quality}`,
+                    name: 'vidlink',
                     title: mediaInfo.title,
                     url: stream.url,
                     quality: quality,
-                    size: 'ALTYAZILI',    //'Unknown',
+                    size: 'ALTYAZILI',    //'',
                     headers: VIDLINK_HEADERS,
                     provider: 'vidlink'
                 };
@@ -149,11 +149,11 @@ function fetchAndParseM3U8(playlistUrl, mediaInfo) {
             console.error(`[Vidlink] Error fetching/parsing M3U8: ${error.message}`);
             // Fallback: return the master playlist URL
             return [{
-                name: 'Vidlink - Auto',
+                name: 'vidlink',
                 title: mediaInfo.title,
                 url: playlistUrl,
-                quality: 'Auto',
-                size: 'ALTYAZILI',    //'Unknown',
+                quality: '',
+                size: 'ALTYAZILI',    //'',
                 headers: VIDLINK_HEADERS,
                 provider: 'vidlink'
             }];
@@ -207,7 +207,7 @@ function encryptTmdbId(tmdbId) {
 
 
 function extractQuality(streamData) {
-    if (!streamData) return 'Unknown';
+    if (!streamData) return '';
     const qualityFields = ['quality', 'resolution', 'label', 'name'];
     for (const field of qualityFields) {
         if (streamData[field]) {
@@ -228,7 +228,7 @@ function extractQuality(streamData) {
             }
         }
     }
-    return 'Unknown';
+    return '';
 }
 
 
@@ -253,7 +253,7 @@ function extractLanguage(data, url = "") {
 // Process Vidlink API response
 function processVidlinkResponse(data, mediaInfo) {
     const streams = [];
-    const safeMediaInfo = mediaInfo || { title: 'Unknown' };
+    const safeMediaInfo = mediaInfo || { title: '' };
     
     try {
         console.log(`[Vidlink] Processing response data`);
@@ -276,7 +276,7 @@ function processVidlinkResponse(data, mediaInfo) {
                         title: streamTitle,
                         url: qualityData.url,
                         quality: `${quality} [${lang}]`, // KALİTE + DİL
-                        size: 'ALTYAZILI',    //'Unknown',
+                        size: 'ALTYAZILI',    //'',
                         headers: VIDLINK_HEADERS,
                         provider: 'vidlink'
                     });
@@ -328,7 +328,7 @@ function processVidlinkResponse(data, mediaInfo) {
                 title: streamTitle,
                 url: data.url,
                 quality: `${quality} [${lang}]`,
-               size: 'ALTYAZILI',    //'Unknown',
+               size: 'ALTYAZILI',    //'',
                 headers: VIDLINK_HEADERS,
                 provider: 'vidlink'
             });
@@ -346,11 +346,11 @@ function processVidlinkResponse(data, mediaInfo) {
                             : safeMediaInfo.title;
                     
                     streams.push({
-                        name: `Vidlink Stream ${index + 1}`,
+                        name: 'vidlink',
                         title: streamTitle,
                         url: stream.url,
                         quality: `${quality} [${lang}]`,
-                        size: stream.size || 'ALTYAZILI',    //'Unknown',
+                        size: stream.size || 'ALTYAZILI',    //'',
                         headers: VIDLINK_HEADERS,
                         provider: 'vidlink'
                     });
@@ -400,12 +400,12 @@ function getStreams(tmdbId, mediaType = 'movie', seasonNum = null, episodeNum = 
                     return Promise.all(playlistPromises)
                         .then(parsedStreamArrays => {
                             const allStreams = directStreams.concat(...parsedStreamArrays);
-                            const qualityOrder = { '4K': 5, '1440p': 4, '1080p': 3, '720p': 2, '480p': 1, '360p': 0, '240p': -1, 'Auto': -2, 'Unknown': -3 };
+                            const qualityOrder = { '4K': 5, '1440p': 4, '1080p': 3, '720p': 2, '480p': 1, '360p': 0, '240p': -1, '': -2 };
                             allStreams.sort((a, b) => (qualityOrder[b.quality.split(' ')[0]] || -3) - (qualityOrder[a.quality.split(' ')[0]] || -3));
                             return allStreams;
                         });
                 } else {
-                    const qualityOrder = { '4K': 5, '1440p': 4, '1080p': 3, '720p': 2, '480p': 1, '360p': 0, '240p': -1, 'Auto': -2, 'Unknown': -3 };
+                    const qualityOrder = { '4K': 5, '1440p': 4, '1080p': 3, '720p': 2, '480p': 1, '360p': 0, '240p': -1, '': -2 };
                     directStreams.sort((a, b) => (qualityOrder[b.quality.split(' ')[0]] || -3) - (qualityOrder[a.quality.split(' ')[0]] || -3));
                     return directStreams;
                 }
