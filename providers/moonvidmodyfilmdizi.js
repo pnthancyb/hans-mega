@@ -40,9 +40,9 @@ async function getStreams(tmdbId, mediaType, season, episode) {
             if (checkRes.status === 200) {
                 return [{
                     url: targetUrl,
-                    name: `Vidmody`,
+                    name: "vidmody",
                     title: displayTitle,
-                    quality: "Auto",
+                    quality: "",
                     headers: {
                         'Referer': 'https://vidmody.com/',
                         'User-Agent': 'Mozilla/5.0'
