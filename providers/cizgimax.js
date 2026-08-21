@@ -235,7 +235,7 @@ function fetchEpisodeStreams(epUrl) {
               name:    'CizgiMax',
               title:   '⌜ CİZGİMAX ⌟ | ' + label,
               url:     streamUrl,
-              quality: 'Auto',
+              quality: '',
               headers: { 'Referer': epUrl, 'User-Agent': HEADERS['User-Agent'] }
             });
             return Promise.resolve();
