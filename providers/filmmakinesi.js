@@ -544,7 +544,7 @@ function extractRapid(url, referer) {
           if (streamMatch == null ? void 0 : streamMatch[1]) {
             return {
               url: streamMatch[1].trim(),
-              quality: "Auto",
+              quality: "",
               headers: {
                 "User-Agent": headers["User-Agent"],
                 "Referer": origin + "/",
@@ -559,7 +559,7 @@ function extractRapid(url, referer) {
       if (directMatch == null ? void 0 : directMatch[1]) {
         return {
           url: directMatch[1].trim(),
-          quality: "Auto",
+          quality: "",
           headers: {
             "User-Agent": headers["User-Agent"],
             "Referer": origin + "/",
@@ -575,7 +575,7 @@ function extractRapid(url, referer) {
           if (urlMatch == null ? void 0 : urlMatch[1]) {
             return {
               url: urlMatch[1].trim(),
-              quality: "Auto",
+              quality: "",
               headers: {
                 "User-Agent": headers["User-Agent"],
                 "Referer": origin + "/"
@@ -606,13 +606,13 @@ function inferLanguage(label = "") {
     return "TR";
   if (/\ben\b|english/.test(value))
     return "EN";
-  return "Bilinmiyor";
+  return "";
 }
 function buildMeta(player, label) {
   const lang = inferLanguage(label);
   return {
-    name: `PatronFilmMakinesi - ${player} - ${lang}`,
-    title: `${player} | ${lang} | ${label}`
+    name: "filmmakinesi",
+    title: [player, lang, label].filter(Boolean).join(" | ")
   };
 }
 function searchMovie(query) {
@@ -719,7 +719,7 @@ function extractFromMoviePage(movieUrl) {
               name: meta.name,
               title: meta.title,
               url: rapidRes.url,
-              quality: rapidRes.quality || "Auto",
+              quality: rapidRes.quality || "",
               headers: rapidRes.headers
             };
             if (rapidRes.url.includes(".m3u8"))
