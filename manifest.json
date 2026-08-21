@@ -1,7 +1,7 @@
 {
-  "name": "Han's Mega Nuvio",
+  "name": "hans-mega",
   "version": "1.0.0",
-  "description": "Unified Nuvio providers curated from Mooncrown, Wekmed, patr0n and compatible Turkish CloudStream sources.",
+  "description": "birlesik nuvio provider deposu",
   "repository": "https://github.com/pnthancyb/hans-mega",
   "scrapers": [
     {
