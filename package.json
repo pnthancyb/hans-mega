@@ -1,0 +1,8 @@
+{
+  "name": "hans-mega",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node validate.mjs"
+  }
+}
