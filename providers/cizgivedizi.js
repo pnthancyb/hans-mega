@@ -602,7 +602,7 @@ function getStreams(tmdbId, mediaType, season, episode) {
                 var srcName = srcNames[idx] || ('Kaynak ' + idx);
                 return {
                   name:    info.title,
-                  title:   '⌜ ÇİZGİVEDİZİ ⌟ | ' + srcName + ' | Auto',
+                  title:   'cizgivedizi' + (srcName ? ' | ' + srcName : ''),
                   url:     stream.url,
                   quality: '',
                   type:    stream.type,
