@@ -599,19 +599,19 @@ var import_cheerio_without_node_native = __toESM(require("cheerio-without-node-n
 function inferLanguage(label = "") {
   const value = (label || "").toLowerCase();
   if (value.includes("dublaj"))
-    return "Dublaj";
+    return "türkçe dublajlı";
   if (value.includes("altyazi") || value.includes("altyaz\u0131") || value.includes("sub"))
-    return "Altyazi";
+    return "türkçe altyazılı";
   if (/\btr\b|turkce|türkçe/.test(value))
-    return "TR";
+    return "türkçe";
   if (/\ben\b|english/.test(value))
-    return "EN";
+    return "orijinal";
   return "";
 }
 function buildMeta(player, label) {
   const lang = inferLanguage(label);
   return {
-    name: "filmmakinesi",
+    name: lang ? `han's film makinesi - ${lang}` : "han's film makinesi",
     title: [player, lang, label].filter(Boolean).join(" | ")
   };
 }
