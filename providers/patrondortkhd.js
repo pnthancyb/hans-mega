@@ -174,7 +174,7 @@ function getTmdbTitle(tmdbId, mediaType) {
 }
 
 // src/patrondortkhd/extractor.js
-var PROVIDER_NAME = "PatronDortKHD";
+var PROVIDER_NAME = "dortkhd";
 var REDIRECT_REGEX = /s\('o','([A-Za-z0-9+/=]+)'|ck\('_wp_http_\d+','([^']+)'/g;
 function dedupeStreams(streams) {
   const seen = /* @__PURE__ */ new Set();
@@ -216,7 +216,7 @@ function inferLanguageLabel(text = "") {
     return "Dual";
   if (v.includes("original"))
     return "Orijinal";
-  return "Bilinmiyor";
+  return "";
 }
 function inferSourceLabel(text = "", url = "") {
   const raw = (text || "").trim();
@@ -258,7 +258,7 @@ function parseQuality(text) {
     return "720p";
   if (/480p/.test(value))
     return "480p";
-  return "Auto";
+  return "";
 }
 function cleanFileDetails(title) {
   const normalized = (title || "").replace(/\.[a-z0-9]{2,4}$/i, "").replace(/WEB[-_. ]?DL/gi, "WEB-DL").replace(/WEB[-_. ]?RIP/gi, "WEBRIP").replace(/H[ .]?265/gi, "H265").replace(/H[ .]?264/gi, "H264").replace(/DDP[ .]?([0-9]\.[0-9])/gi, "DDP$1");
@@ -434,7 +434,7 @@ function collectEpisodeLinks($, pageUrl, season, episode) {
     return true;
   });
 }
-function buildStream(title, url, quality = "Auto", headers = {}) {
+function buildStream(title, url, quality = "", headers = {}) {
   let finalUrl = url;
   if (!/\.(m3u8|mp4|mkv)/i.test(finalUrl)) {
     finalUrl += finalUrl.includes("#") ? "" : "#.mkv";
@@ -458,7 +458,7 @@ function resolveHubcdnDirect(url, sourceTitle) {
     const decoded = decodeBase64(encoded).split("link=").pop();
     if (!decoded || decoded === encoded)
       return [];
-    return [buildStream(`${sourceTitle} - HUBCDN`, decoded, "Auto", { Referer: url })];
+    return [buildStream(`${sourceTitle} - HUBCDN`, decoded, "", { Referer: url })];
   });
 }
 function resolveHubdrive(url, sourceTitle) {
