@@ -1,0 +1,61 @@
+{
+  "selectedProviderCount": 33,
+  "sourceEntryCount": 48,
+  "skippedEntries": [
+    {
+      "source": "mooncrown04_nuviotr",
+      "id": "m3u.mooncrown.addon",
+      "reason": "manifest filename missing",
+      "filename": "eklentiler/M3U/ListM3u.js"
+    }
+  ],
+  "deduplicationKeys": [
+    "666-film",
+    "altiyuzaltmisaltifilm",
+    "asya-animeleri",
+    "cinemacity",
+    "cizgimax",
+    "cizgivedizi",
+    "crowndizim3u",
+    "crownfilmm3u",
+    "dizify",
+    "dizilife",
+    "dizipal",
+    "diziyo",
+    "diziyou",
+    "dort-khd",
+    "film-ekseni",
+    "filmekseni",
+    "filmmakinesi",
+    "filmmodu",
+    "fullhdfilmizlesene",
+    "hd-film-delisi",
+    "hdf-cehennemi",
+    "hdfilmcehennemi",
+    "jetfilmizle",
+    "m3u",
+    "m3u-provider",
+    "multi",
+    "netmirror",
+    "rec",
+    "setfilm",
+    "sezonlukdizi",
+    "sinemacx",
+    "sinewix",
+    "vidlink",
+    "vidmodyfilmdizi",
+    "webteizle"
+  ],
+  "deduplicatedProviders": [
+    {
+      "canonical": "filmekseni",
+      "removed": "patronFilmEkseni.js",
+      "kept": "providers/filmekseni.js"
+    },
+    {
+      "canonical": "hdfilmcehennemi",
+      "removed": "patronhdfcehennemi.js",
+      "kept": "providers/hdfilmcehennemi.js"
+    }
+  ]
+}
