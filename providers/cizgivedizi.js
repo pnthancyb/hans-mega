@@ -604,7 +604,7 @@ function getStreams(tmdbId, mediaType, season, episode) {
                   name:    info.title,
                   title:   '⌜ ÇİZGİVEDİZİ ⌟ | ' + srcName + ' | Auto',
                   url:     stream.url,
-                  quality: 'Auto',
+                  quality: '',
                   type:    stream.type,
                   headers: stream.headers || {}
                 };
