@@ -154,11 +154,11 @@ function fetchPixeldrainStream(pdUrl) {
       var quality = /2160p|4k/i.test(name) ? '4K'
                   : /1080p/i.test(name)    ? '1080p'
                   : /720p/i.test(name)     ? '720p'
-                  : /480p/i.test(name)     ? '480p' : 'Auto';
+                  : /480p/i.test(name)     ? '480p' : '';
       return {
         url:     'https://pixeldrain.com/api/file/' + fileId + '?download',
-        name:    'TR Dublaj',
-        title:   'Pixeldrain ' + quality + (size ? ' · ' + Math.round(size/1024/1024) + 'MB' : ''),
+        name:    'jetfilmizle',
+        title:   'jetfilmizle' + (quality ? ' | ' + quality : '') + (size ? ' · ' + Math.round(size/1024/1024) + 'MB' : ''),
         quality: quality,
         headers: { 'Referer': 'https://pixeldrain.com/' }
       };
@@ -166,7 +166,7 @@ function fetchPixeldrainStream(pdUrl) {
     .catch(function() {
       return {
         url:     'https://pixeldrain.com/api/file/' + fileId + '?download',
-        name:    'TR Dublaj', title: 'Pixeldrain', quality: '',
+        name:    'jetfilmizle', title: 'Pixeldrain', quality: '',
         headers: { 'Referer': 'https://pixeldrain.com/' }
       };
     });
@@ -184,8 +184,8 @@ function fetchJetvStream(iframeUrl) {
         var fileM  = srcMatch[0].match(/"file"\s*:\s*"([^"]+)"/);
         var labelM = srcMatch[0].match(/"label"\s*:\s*"([^"]+)"/);
         if (fileM) return {
-          url: fileM[1], name: 'TR Dublaj', title: 'Jetv',
-          quality: labelM ? labelM[1] : 'Auto', type: 'hls',
+          url: fileM[1], name: 'TR Dublaj', title: 'jetfilmizle',
+          quality: labelM ? labelM[1] : '', type: 'hls',
           headers: { 'Referer': fullUrl }
         };
       }
