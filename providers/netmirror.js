@@ -407,7 +407,7 @@ function findEpisodeId(episodes, season, episode) {
       epSeason = parseInt(ep.season_number);
       epNumber = parseInt(ep.episode_number);
     } else {
-      console.log(`[NetMirror] Unknown episode format:`, ep);
+      console.log(`[NetMirror]  episode format:`, ep);
       return false;
     }
     console.log(`[NetMirror] Checking episode S${epSeason}E${epNumber} against target S${season}E${episode}`);
