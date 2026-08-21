@@ -242,7 +242,7 @@ function buildDisplayMeta(sourceTitle = "", url = "") {
   const source = inferSourceLabel(sourceTitle, url);
   const lang = inferLanguageLabel(sourceTitle);
   return {
-    displayName: `${PROVIDER_NAME} - ${lang}`,
+    displayName: PROVIDER_NAME,
     displayTitle: `${source} | ${lang}`
   };
 }
