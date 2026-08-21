@@ -665,7 +665,7 @@ function resolveRapidrameSource(rplayerUrl, sourceName, pageReferer) {
             name:      'HDFilmCehennemi',
             title:     '⌜ HDFILMCEHENNEMI ⌟ | ' + sourceName + ' | Auto',
             url:       videoUrl,
-            quality:   'Auto',
+            quality:   '',
             type:      'hls',
             headers:   rapHeaders,
             subtitles: subtitles
@@ -678,7 +678,7 @@ function resolveRapidrameSource(rplayerUrl, sourceName, pageReferer) {
           name:      'HDFilmCehennemi',
           title:     '⌜ HDFILMCEHENNEMI ⌟ | ' + sourceName + ' | Auto',
           url:       videoUrl,
-          quality:   'Auto',
+          quality:   '',
           type:      'hls',
           headers:   rapHeaders,
           subtitles: subtitles
