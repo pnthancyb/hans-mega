@@ -37,7 +37,7 @@ function buildStreams(videos, sinewixName) {
             if (isMF) {
                 return resolveMediaFireLink(link).then(function(finalUrl) {
                     return {
-                        name: sinewixName, // SineWix'ten gelen isim
+                        name: "han's sinewix", // normalized provider name
                         title: displayTitle,
                         url: finalUrl,
                         quality: "",
