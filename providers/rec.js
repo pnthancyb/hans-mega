@@ -131,7 +131,7 @@ async function getStreams(tmdbId, mediaType, seasonNum, episodeNum) {
                                         name: trTitle, 
                                         title: `⌜ RECTV ⌟ | Kaynak ${idx + 1} | ${streamInfo.icon} ${streamInfo.text}`,
                                         url: src.url,
-                                        quality: "Auto",
+                                        quality: "",
                                         headers: { 'User-Agent': 'googleusercontent', 'Referer': 'https://twitter.com/', 'Accept-Encoding': 'identity' }
                                     });
                                 });
@@ -153,7 +153,7 @@ async function getStreams(tmdbId, mediaType, seasonNum, episodeNum) {
                         name: trTitle,
                         title: `⌜ RECTV ⌟ | Kaynak ${idx + 1} | ${streamInfo.icon} ${streamInfo.text}`,
                         url: src.url,
-                        quality: "Auto",
+                        quality: "",
                         headers: { 'User-Agent': 'googleusercontent', 'Referer': 'https://twitter.com/', 'Accept-Encoding': 'identity' }
                     });
                 });
