@@ -1,6 +1,6 @@
 {
   "name": "hans-mega",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "han's birleşik nuvio provider deposu",
   "repository": "https://github.com/pnthancyb/hans-mega",
   "scrapers": [
@@ -297,7 +297,7 @@
       ]
     },
     {
-      "id": "dortkhd",
+      "id": "hans4k",
       "name": "han's 4k",
       "description": "han's 4k provider",
       "version": "2.0.0",
@@ -644,29 +644,6 @@
       ]
     },
     {
-      "id": "sinemacx",
-      "name": "han's sinema cx",
-      "description": "han's sinema cx provider",
-      "version": "1.0.0",
-      "author": "han",
-      "supportedTypes": [
-        "movie",
-        "tv"
-      ],
-      "filename": "providers/sinemacx.js",
-      "enabled": true,
-      "formats": [
-        "mp4",
-        "mkv",
-        "hls",
-        "m3u8"
-      ],
-      "logo": "https://www.google.com/s2/favicons?domain=www.sinema.cx&sz=%size%",
-      "contentLanguage": [
-        "tr"
-      ]
-    },
-    {
       "id": "sinewix",
       "name": "han's sinewix",
       "description": "han's sinewix provider",
@@ -685,27 +662,6 @@
       "logo": "https://play-lh.googleusercontent.com/brwGNmr7IjA_MKk_TTPs0va10hdKE_bD_a1lnKoiMuCayW98EHpRv55edA6aEoJlmwfX=w240-h480",
       "contentLanguage": [
         "tr"
-      ]
-    },
-    {
-      "id": "vidlink",
-      "name": "han's vidlink",
-      "description": "han's vidlink provider",
-      "version": "1.0.0",
-      "author": "han",
-      "supportedTypes": [
-        "movie",
-        "tv"
-      ],
-      "filename": "providers/vidlink.js",
-      "enabled": true,
-      "formats": [
-        "mp4",
-        "m3u8"
-      ],
-      "logo": "https://vidlink.pro/favicon.ico",
-      "contentLanguage": [
-        "en"
       ]
     },
     {
