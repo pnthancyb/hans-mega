@@ -104,9 +104,9 @@ function parseFilmId(html) {
 
 function parseDilList(html, pageUrl) {
   var diller = [];
-  if (html.indexOf('/izle/dublaj/') !== -1 || pageUrl.indexOf('/izle/dublaj/') !== -1) diller.push({ dil: '0', ad: 'TR Dublaj' });
-  if (html.indexOf('/izle/altyazi/') !== -1 || pageUrl.indexOf('/izle/altyazi/') !== -1) diller.push({ dil: '1', ad: 'TR Altyazı' });
-  if (diller.length === 0) { diller.push({ dil: '0', ad: 'TR Dublaj' }); diller.push({ dil: '1', ad: 'TR Altyazı' }); }
+  if (html.indexOf('/izle/dublaj/') !== -1 || pageUrl.indexOf('/izle/dublaj/') !== -1) diller.push({ dil: '0', ad: 'türkçe dublajlı' });
+  if (html.indexOf('/izle/altyazi/') !== -1 || pageUrl.indexOf('/izle/altyazi/') !== -1) diller.push({ dil: '1', ad: 'türkçe altyazılı' });
+  if (diller.length === 0) { diller.push({ dil: '0', ad: 'türkçe dublajlı' }); diller.push({ dil: '1', ad: 'türkçe altyazılı' }); }
   return diller;
 }
 
@@ -188,7 +188,7 @@ function processEmbed(embedData, dilAd, movieTitle) {
       streamPromise = fetchVidMolyStream(src).then(function(s) {
         return s ? { 
           url: s.url, 
-          name: 'webteizle', 
+          name: 'webteizle - ' + (dilAd ? dilAd.toLowerCase() : 'türkçe altyazılı'), 
           title: pName + (dilAd ? ' | ' + dilAd : ''), 
           quality: q, 
           type: 'hls', 
