@@ -174,7 +174,7 @@ function getTmdbTitle(tmdbId, mediaType) {
 }
 
 // src/patrondortkhd/extractor.js
-var PROVIDER_NAME = "dortkhd";
+var PROVIDER_NAME = "han's 4k";
 var REDIRECT_REGEX = /s\('o','([A-Za-z0-9+/=]+)'|ck\('_wp_http_\d+','([^']+)'/g;
 function dedupeStreams(streams) {
   const seen = /* @__PURE__ */ new Set();
@@ -205,17 +205,17 @@ function normalizeTitle(value) {
 function inferLanguageLabel(text = "") {
   const v = text.toLowerCase();
   if (/\btr\b|turkce|türkçe/.test(v))
-    return "TR";
+    return "türkçe";
   if (/\ben\b|english/.test(v))
     return "EN";
   if (v.includes("dublaj") || v.includes("dubbed") || v.includes("hindi"))
-    return "Dublaj";
+    return "türkçe dublajlı";
   if (v.includes("altyazi") || v.includes("altyaz\u0131") || v.includes("sub"))
-    return "Altyazi";
+    return "türkçe altyazılı";
   if (v.includes("dual audio"))
-    return "Dual";
+    return "çift ses";
   if (v.includes("original"))
-    return "Orijinal";
+    return "orijinal";
   return "";
 }
 function inferSourceLabel(text = "", url = "") {
@@ -242,7 +242,7 @@ function buildDisplayMeta(sourceTitle = "", url = "") {
   const source = inferSourceLabel(sourceTitle, url);
   const lang = inferLanguageLabel(sourceTitle);
   return {
-    displayName: PROVIDER_NAME,
+    displayName: lang ? `${PROVIDER_NAME} - ${lang}` : PROVIDER_NAME,
     displayTitle: `${source} | ${lang}`
   };
 }
