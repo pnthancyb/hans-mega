@@ -1,15 +1,15 @@
 {
   "name": "hans-mega",
   "version": "1.0.0",
-  "description": "birlesik nuvio provider deposu",
+  "description": "han's birleşik nuvio provider deposu",
   "repository": "https://github.com/pnthancyb/hans-mega",
   "scrapers": [
     {
       "id": "666film",
-      "name": "666film",
-      "description": "666film provider",
+      "name": "han's 666film",
+      "description": "han's 666film provider",
       "version": "1.0.0",
-      "author": "patr0n",
+      "author": "han",
       "supportedTypes": [
         "movie"
       ],
@@ -29,10 +29,10 @@
     },
     {
       "id": "altmisalti",
-      "name": "altmisalti",
-      "description": "altmisalti provider",
+      "name": "han's altmisalti",
+      "description": "han's altmisalti provider",
       "version": "1",
-      "author": "mooncrown",
+      "author": "han",
       "supportedTypes": [
         "movie"
       ],
@@ -48,10 +48,10 @@
     },
     {
       "id": "asyanime",
-      "name": "asyanime",
-      "description": "asyanime provider",
+      "name": "han's asyanime",
+      "description": "han's asyanime provider",
       "version": "1.0.0",
-      "author": "patr0n",
+      "author": "han",
       "supportedTypes": [
         "tv",
         "movie"
@@ -72,10 +72,10 @@
     },
     {
       "id": "cinemacity",
-      "name": "cinemacity",
-      "description": "cinemacity provider",
+      "name": "han's cinemacity",
+      "description": "han's cinemacity provider",
       "version": "1.0.0",
-      "author": "nuvio team",
+      "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
@@ -93,10 +93,10 @@
     },
     {
       "id": "cizgimax",
-      "name": "cizgimax",
-      "description": "cizgimax provider",
+      "name": "han's cizgimax",
+      "description": "han's cizgimax provider",
       "version": "1.0.0",
-      "author": "port: @keyiflerolsun / nuvio: wekmed",
+      "author": "han",
       "supportedTypes": [
         "tv"
       ],
@@ -117,10 +117,10 @@
     },
     {
       "id": "cizgivedizi",
-      "name": "cizgivedizi",
-      "description": "cizgivedizi provider",
+      "name": "han's cizgivedizi",
+      "description": "han's cizgivedizi provider",
       "version": "1.1.0",
-      "author": "wekmed",
+      "author": "han",
       "supportedTypes": [
         "tv",
         "movie"
@@ -142,10 +142,10 @@
     },
     {
       "id": "m3udizi",
-      "name": "m3udizi",
-      "description": "m3udizi provider",
+      "name": "han's m3u dizi",
+      "description": "han's m3u dizi provider",
       "version": "1.0.0",
-      "author": "mooncrown",
+      "author": "han",
       "supportedTypes": [
         "tv"
       ],
@@ -164,10 +164,10 @@
     },
     {
       "id": "m3ufilm",
-      "name": "m3ufilm",
-      "description": "m3ufilm provider",
+      "name": "han's m3u film",
+      "description": "han's m3u film provider",
       "version": "1.0.0",
-      "author": "mooncrown",
+      "author": "han",
       "supportedTypes": [
         "movie"
       ],
@@ -186,10 +186,10 @@
     },
     {
       "id": "dizify",
-      "name": "dizify",
-      "description": "dizify provider",
+      "name": "han's dizify",
+      "description": "han's dizify provider",
       "version": "1.1.0",
-      "author": "patr0n",
+      "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
@@ -211,10 +211,10 @@
     },
     {
       "id": "dizilife",
-      "name": "dizilife",
-      "description": "dizilife provider",
+      "name": "han's dizilife",
+      "description": "han's dizilife provider",
       "version": "1.0.0",
-      "author": "wekmed",
+      "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
@@ -231,10 +231,10 @@
     },
     {
       "id": "dizipal",
-      "name": "dizipal",
-      "description": "dizipal provider",
+      "name": "han's dizipal",
+      "description": "han's dizipal provider",
       "version": "4.0.0",
-      "author": "patr0n",
+      "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
@@ -256,10 +256,10 @@
     },
     {
       "id": "diziyo",
-      "name": "diziyo",
-      "description": "diziyo provider",
+      "name": "han's diziyo",
+      "description": "han's diziyo provider",
       "version": "1.0.0",
-      "author": "nuvio: wekmed",
+      "author": "han",
       "supportedTypes": [
         "tv"
       ],
@@ -279,10 +279,10 @@
     },
     {
       "id": "diziyou",
-      "name": "diziyou",
-      "description": "diziyou provider",
+      "name": "han's diziyou",
+      "description": "han's diziyou provider",
       "version": "1.0.4",
-      "author": "mooncrown",
+      "author": "han",
       "supportedTypes": [
         "tv"
       ],
@@ -298,10 +298,10 @@
     },
     {
       "id": "dortkhd",
-      "name": "dortkhd",
-      "description": "dortkhd provider",
+      "name": "han's 4k",
+      "description": "han's 4k provider",
       "version": "2.0.0",
-      "author": "patr0n",
+      "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
@@ -323,10 +323,10 @@
     },
     {
       "id": "filmekseni",
-      "name": "filmekseni",
-      "description": "filmekseni provider",
+      "name": "han's film ekseni",
+      "description": "han's film ekseni provider",
       "version": "1.0.0",
-      "author": "wekmed_nuvio",
+      "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
@@ -344,10 +344,10 @@
     },
     {
       "id": "filmmakinesi",
-      "name": "filmmakinesi",
-      "description": "filmmakinesi provider",
+      "name": "han's film makinesi",
+      "description": "han's film makinesi provider",
       "version": "1.0.1",
-      "author": "patr0n",
+      "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
@@ -368,10 +368,10 @@
     },
     {
       "id": "filmmodu",
-      "name": "filmmodu",
-      "description": "filmmodu provider",
+      "name": "han's film modu",
+      "description": "han's film modu provider",
       "version": "1.0.0",
-      "author": "port: @keyiflerolsun / nuvio: sen",
+      "author": "han",
       "supportedTypes": [
         "movie"
       ],
@@ -392,10 +392,10 @@
     },
     {
       "id": "fullhdfilm",
-      "name": "fullhdfilm",
-      "description": "fullhdfilm provider",
+      "name": "han's full hd film",
+      "description": "han's full hd film provider",
       "version": "1.0.0",
-      "author": "mooncrown",
+      "author": "han",
       "supportedTypes": [
         "movie"
       ],
@@ -414,10 +414,10 @@
     },
     {
       "id": "hdfilmdelisi",
-      "name": "hdfilmdelisi",
-      "description": "hdfilmdelisi provider",
+      "name": "han's hd film delisi",
+      "description": "han's hd film delisi provider",
       "version": "0.1.0",
-      "author": "patr0n",
+      "author": "han",
       "supportedTypes": [
         "movie"
       ],
@@ -439,10 +439,10 @@
     },
     {
       "id": "hdfilmcehennemi",
-      "name": "hdfilmcehennemi",
-      "description": "hdfilmcehennemi provider",
+      "name": "han's hd film cehennemi",
+      "description": "han's hd film cehennemi provider",
       "version": "1.0.0",
-      "author": "wekmed",
+      "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
@@ -463,10 +463,10 @@
     },
     {
       "id": "jetfilmizle",
-      "name": "jetfilmizle",
-      "description": "jetfilmizle provider",
+      "name": "han's jet film izle",
+      "description": "han's jet film izle provider",
       "version": "1.0.0",
-      "author": "port: @keyiflerolsun / nuvio: wekmed",
+      "author": "han",
       "supportedTypes": [
         "movie"
       ],
@@ -485,10 +485,10 @@
     },
     {
       "id": "m3u",
-      "name": "m3u",
-      "description": "m3u provider",
+      "name": "han's m3u",
+      "description": "han's m3u provider",
       "version": "1.0.0",
-      "author": "mooncrown",
+      "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
@@ -508,10 +508,10 @@
     },
     {
       "id": "m3ubirlesik",
-      "name": "m3ubirlesik",
-      "description": "m3ubirlesik provider",
+      "name": "han's m3u birleşik",
+      "description": "han's m3u birleşik provider",
       "version": "1.0.0",
-      "author": "wekmed",
+      "author": "han",
       "supportedTypes": [
         "movie"
       ],
@@ -531,10 +531,10 @@
     },
     {
       "id": "multi",
-      "name": "multi",
-      "description": "multi provider",
+      "name": "han's multi",
+      "description": "han's multi provider",
       "version": "1.0.0",
-      "author": "patr0n",
+      "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
@@ -554,10 +554,10 @@
     },
     {
       "id": "netmirror",
-      "name": "netmirror",
-      "description": "netmirror provider",
+      "name": "han's netmirror",
+      "description": "han's netmirror provider",
       "version": "1.0.2",
-      "author": "nuvio team",
+      "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
@@ -581,10 +581,10 @@
     },
     {
       "id": "rec",
-      "name": "rec",
-      "description": "rec provider",
+      "name": "han's rec",
+      "description": "han's rec provider",
       "version": "1.0.4",
-      "author": "mooncrown",
+      "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
@@ -601,10 +601,10 @@
     },
     {
       "id": "setfilm",
-      "name": "setfilm",
-      "description": "setfilm provider",
+      "name": "han's set film",
+      "description": "han's set film provider",
       "version": "1.0.0",
-      "author": "patr0n",
+      "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
@@ -626,10 +626,10 @@
     },
     {
       "id": "sezonlukdizi",
-      "name": "sezonlukdizi",
-      "description": "sezonlukdizi provider",
+      "name": "han's sezonluk dizi",
+      "description": "han's sezonluk dizi provider",
       "version": "1.0.0",
-      "author": "port: @keyiflerolsun / nuvio: wekmed",
+      "author": "han",
       "supportedTypes": [
         "tv"
       ],
@@ -645,10 +645,10 @@
     },
     {
       "id": "sinemacx",
-      "name": "sinemacx",
-      "description": "sinemacx provider",
+      "name": "han's sinema cx",
+      "description": "han's sinema cx provider",
       "version": "1.0.0",
-      "author": "mooncrown",
+      "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
@@ -668,10 +668,10 @@
     },
     {
       "id": "sinewix",
-      "name": "sinewix",
-      "description": "sinewix provider",
+      "name": "han's sinewix",
+      "description": "han's sinewix provider",
       "version": "1.0.0",
-      "author": "kerimmkirac",
+      "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
@@ -689,10 +689,10 @@
     },
     {
       "id": "vidlink",
-      "name": "vidlink",
-      "description": "vidlink provider",
+      "name": "han's vidlink",
+      "description": "han's vidlink provider",
       "version": "1.0.0",
-      "author": "nuvio team",
+      "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
@@ -710,10 +710,10 @@
     },
     {
       "id": "vidmody",
-      "name": "vidmody",
-      "description": "vidmody provider",
+      "name": "han's vidmody",
+      "description": "han's vidmody provider",
       "version": "1.0.0",
-      "author": "mooncrown",
+      "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
@@ -733,10 +733,10 @@
     },
     {
       "id": "webteizle",
-      "name": "webteizle",
-      "description": "webteizle provider",
+      "name": "han's webte izle",
+      "description": "han's webte izle provider",
       "version": "1.0.0",
-      "author": "port: @kerimmkirac / nuvio: wekmed",
+      "author": "han",
       "supportedTypes": [
         "movie"
       ],
