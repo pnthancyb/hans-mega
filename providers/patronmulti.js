@@ -36,17 +36,17 @@ var VIDLINK_HEADERS = {
 function inferLanguageFromText(text) {
   var v = (text || "").toLowerCase();
   if (v.includes("dublaj") || v.includes("dubbed"))
-    return "TR Dublaj";
+    return "türkçe dublajlı";
   if (v.includes("altyazi") || v.includes("altyaz\u0131") || v.includes("sub"))
-    return "TR Altyazi";
+    return "türkçe altyazılı";
   return "TR Altyazi";
 }
 function buildLabel(sourceName, quality, baseTitle) {
   var lang = inferLanguageFromText(baseTitle);
   var q = quality || "";
   return {
-    name: `${sourceName} - ${lang}`,
-    title: `${baseTitle} | ${sourceName} | ${lang} | ${q}`
+    name: `${String(sourceName).toLowerCase()} - ${lang}`,
+    title: `${baseTitle} | ${String(sourceName).toLowerCase()} | ${lang} | ${q}`
   };
 }
 function getTmdbInfo(tmdbId, mediaType) {
