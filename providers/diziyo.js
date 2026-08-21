@@ -321,7 +321,7 @@ function getVersionsFromPage(url) {
       }
 
       // Hâlâ boşsa en azından ana URL'yi ekle
-      if (tabs.length === 0) tabs.push({ url: url, type: "unknown" });
+      if (tabs.length === 0) tabs.push({ url: url, type: "" });
 
       console.log("[DiziYo] Tabs bulundu: " + tabs.map(function(t){return t.type;}).join(", "));
 
@@ -473,7 +473,7 @@ function getStreams(tmdbId, mediaType, season, episode) {
               "trdub": "DiziYo - Turkce Dublaj",
               "trsub": "DiziYo - Turkce Altyazili",
               "ensub": "DiziYo - Ingilizce Altyazili",
-              "unknown": "DiziYo",
+              "": "DiziYo",
             };
             return {
               name:    "DiziYo",
