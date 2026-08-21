@@ -287,7 +287,7 @@ function entryToStream(entry) {
       url:     entry.url,
       name:    entry.group || 'M3U',
       title:   entry.title,
-      quality: 'Auto',
+      quality: '',
       type:    'hls',
       headers: {}
     }]);
