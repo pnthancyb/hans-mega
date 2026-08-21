@@ -304,7 +304,7 @@ function buildStreamsFromM3u8(m3u8Text, masterUrl, subtitles, sourceName) {
     var a = l.match(/#EXT-X-MEDIA:.*?NAME="([^"]+)"/i);
     if (a) hasAudio[a[1]] = true;
   });
-  var quality = 'Auto';
+  var quality = '';
   for (var i = 0; i < lines.length; i++) {
     if (!lines[i].startsWith('#EXT-X-STREAM-INF:')) continue;
     var r = lines[i].match(/RESOLUTION=(\d+x\d+)/i);
@@ -662,8 +662,8 @@ function resolveRapidrameSource(rplayerUrl, sourceName, pageReferer) {
       .then(function(m3u8) {
         if (!m3u8 || m3u8.indexOf('#EXTM3U') === -1) {
           return [{
-            name:      'HDFilmCehennemi',
-            title:     '⌜ HDFILMCEHENNEMI ⌟ | ' + sourceName + ' | Auto',
+            name:      'hdfilmcehennemi',
+            title:     'hdfilmcehennemi' + (sourceName ? ' | ' + sourceName : ''),
             url:       videoUrl,
             quality:   '',
             type:      'hls',
@@ -675,8 +675,8 @@ function resolveRapidrameSource(rplayerUrl, sourceName, pageReferer) {
       })
       .catch(function() {
         return [{
-          name:      'HDFilmCehennemi',
-          title:     '⌜ HDFILMCEHENNEMI ⌟ | ' + sourceName + ' | Auto',
+          name:      'hdfilmcehennemi',
+          title:     'hdfilmcehennemi' + (sourceName ? ' | ' + sourceName : ''),
           url:       videoUrl,
           quality:   '',
           type:      'hls',
