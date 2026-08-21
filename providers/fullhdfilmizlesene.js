@@ -55,10 +55,10 @@ async function getStreamsFromAPI(vidid, movieTitle) {
                 if (avMatch) {
                     let url = decodeRapidVid(avMatch[1]);
                     if (url) return { 
-                        name: movieTitle, 
+                        name: 'fullhdfilm', 
                         title: "⌜ FULLHDFILM ⌟ | Atom | 🇹🇷 Dublaj", 
                         url: url, 
-                        quality: "Auto", 
+                        quality: "", 
                         headers: WORKING_HEADERS 
                     };
                 }
@@ -77,10 +77,10 @@ async function getStreamsFromAPI(vidid, movieTitle) {
                 let playHtml = await playRes.text();
                 let m3u8 = playHtml.match(/file:\s*"(.*?\.m3u8.*?)"/i);
                 if (m3u8) return { 
-                    name: movieTitle, 
+                    name: 'fullhdfilm', 
                     title: "⌜ FULLHDFILM ⌟ | Turbo | 🇹🇷 Dublaj", 
                     url: m3u8[1], 
-                    quality: "Auto", 
+                    quality: "", 
                     headers: Object.assign({}, WORKING_HEADERS, { 'Referer': 'https://turbo.imgz.me/' }) 
                 };
             }
