@@ -166,7 +166,7 @@ function fetchPixeldrainStream(pdUrl) {
     .catch(function() {
       return {
         url:     'https://pixeldrain.com/api/file/' + fileId + '?download',
-        name:    'TR Dublaj', title: 'Pixeldrain', quality: 'Auto',
+        name:    'TR Dublaj', title: 'Pixeldrain', quality: '',
         headers: { 'Referer': 'https://pixeldrain.com/' }
       };
     });
