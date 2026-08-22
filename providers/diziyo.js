@@ -470,13 +470,13 @@ function getStreams(tmdbId, mediaType, season, episode) {
             if (!m3u8) return null;
             console.log("[DiziYo] m3u8[" + idx + "]=" + m3u8.substring(0, 60) + "...");
             var titleMap = {
-              "trdub": "DiziYo - Turkce Dublaj",
-              "trsub": "DiziYo - Turkce Altyazili",
-              "ensub": "DiziYo - Ingilizce Altyazili",
+              "trdub": "diziyo - türkçe dublajlı",
+              "trsub": "diziyo - türkçe altyazılı",
+              "ensub": "diziyo - orijinal altyazılı",
               "": "DiziYo",
             };
             return {
-              name:    "DiziYo",
+              name:    "han's diziyo",
               title:   titleMap[result.type] || "DiziYo",
               url:     m3u8,
               quality: "1080p",
