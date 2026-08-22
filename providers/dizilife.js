@@ -315,8 +315,8 @@ function getStreams(tmdbId,mediaType,season,episode){
       console.log("[DiziLife] CDN m3u8=" + m3u8);
 
       return [{
-        name:    "DiziLife",
-        title:   "DiziLife",
+        name:    "han's dizilife",
+        title:   "dizilife",
         url:     m3u8,
         quality: "1080p",
         headers: hdrs,
