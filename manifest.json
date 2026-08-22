@@ -1,214 +1,9 @@
 {
   "name": "hans-mega",
-  "version": "1.1.0",
+  "version": "1.3.0",
   "description": "han's birleşik nuvio provider deposu",
   "repository": "https://github.com/pnthancyb/hans-mega",
   "scrapers": [
-    {
-      "id": "666film",
-      "name": "han's 666film",
-      "description": "han's 666film provider",
-      "version": "1.0.0",
-      "author": "han",
-      "supportedTypes": [
-        "movie"
-      ],
-      "filename": "providers/patron666film.js",
-      "enabled": false,
-      "logo": "https://www.google.com/s2/favicons?domain=666filmizle.site&sz=%size%",
-      "contentLanguage": [
-        "tr"
-      ],
-      "formats": [
-        "mp4",
-        "m3u8"
-      ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "supportsExternalPlayer": true
-    },
-    {
-      "id": "altmisalti",
-      "name": "han's altmisalti",
-      "description": "han's altmisalti provider",
-      "version": "1",
-      "author": "han",
-      "supportedTypes": [
-        "movie"
-      ],
-      "filename": "providers/altiyuzaltmisaltifilm.js",
-      "enabled": true,
-      "formats": [
-        "m3u8"
-      ],
-      "logo": "https://www.google.com/s2/favicons?domain=666filmizle.site&sz=%size%",
-      "contentLanguage": [
-        "tr"
-      ]
-    },
-    {
-      "id": "asyanime",
-      "name": "han's asyanime",
-      "description": "han's asyanime provider",
-      "version": "1.0.0",
-      "author": "han",
-      "supportedTypes": [
-        "tv",
-        "movie"
-      ],
-      "filename": "providers/patronasyaanimeleri.js",
-      "enabled": true,
-      "logo": "https://www.google.com/s2/favicons?domain=asyaanimeleri.top&sz=%size%",
-      "contentLanguage": [
-        "tr"
-      ],
-      "formats": [
-        "mp4",
-        "m3u8"
-      ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "supportsExternalPlayer": true
-    },
-    {
-      "id": "cinemacity",
-      "name": "han's cinemacity",
-      "description": "han's cinemacity provider",
-      "version": "1.0.0",
-      "author": "han",
-      "supportedTypes": [
-        "movie",
-        "tv"
-      ],
-      "filename": "providers/cinemacity.js",
-      "enabled": true,
-      "formats": [
-        "mp4",
-        "m3u8"
-      ],
-      "logo": "https://i.postimg.cc/XYjKhS3b/cinemacity.png",
-      "contentLanguage": [
-        "tr"
-      ]
-    },
-    {
-      "id": "cizgimax",
-      "name": "han's cizgimax",
-      "description": "han's cizgimax provider",
-      "version": "1.0.0",
-      "author": "han",
-      "supportedTypes": [
-        "tv"
-      ],
-      "filename": "providers/cizgimax.js",
-      "enabled": true,
-      "logo": "https://www.google.com/s2/favicons?domain=cizgimax.online&sz=64",
-      "contentLanguage": [
-        "tr"
-      ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "formats": [
-        "mp4",
-        "mkv",
-        "hls",
-        "m3u8"
-      ]
-    },
-    {
-      "id": "cizgivedizi",
-      "name": "han's cizgivedizi",
-      "description": "han's cizgivedizi provider",
-      "version": "1.1.0",
-      "author": "han",
-      "supportedTypes": [
-        "tv",
-        "movie"
-      ],
-      "filename": "providers/cizgivedizi.js",
-      "enabled": true,
-      "logo": "https://www.google.com/s2/favicons?domain=cizgivedizi.com&sz=64",
-      "contentLanguage": [
-        "tr"
-      ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "formats": [
-        "mp4",
-        "mkv",
-        "hls",
-        "m3u8"
-      ]
-    },
-    {
-      "id": "m3udizi",
-      "name": "han's m3u dizi",
-      "description": "han's m3u dizi provider",
-      "version": "1.0.0",
-      "author": "han",
-      "supportedTypes": [
-        "tv"
-      ],
-      "filename": "providers/mooncrowndizim3u.js",
-      "enabled": true,
-      "formats": [
-        "mp4",
-        "mkv",
-        "hls",
-        "m3u8"
-      ],
-      "logo": "",
-      "contentLanguage": [
-        "tr"
-      ]
-    },
-    {
-      "id": "m3ufilm",
-      "name": "han's m3u film",
-      "description": "han's m3u film provider",
-      "version": "1.0.0",
-      "author": "han",
-      "supportedTypes": [
-        "movie"
-      ],
-      "filename": "providers/mooncrownfilmm3u.js",
-      "enabled": false,
-      "formats": [
-        "mp4",
-        "mkv",
-        "hls",
-        "m3u8"
-      ],
-      "logo": "",
-      "contentLanguage": [
-        "tr"
-      ]
-    },
-    {
-      "id": "dizify",
-      "name": "han's dizify",
-      "description": "han's dizify provider",
-      "version": "1.1.0",
-      "author": "han",
-      "supportedTypes": [
-        "movie",
-        "tv"
-      ],
-      "filename": "providers/patrondizify.js",
-      "enabled": true,
-      "logo": "https://www.google.com/s2/favicons?domain=dizify.org&sz=64",
-      "contentLanguage": [
-        "tr"
-      ],
-      "formats": [
-        "m3u8",
-        "mp4",
-        "mkv"
-      ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "supportsExternalPlayer": true
-    },
     {
       "id": "dizilife",
       "name": "han's dizilife",
@@ -322,27 +117,6 @@
       "supportsExternalPlayer": true
     },
     {
-      "id": "filmekseni",
-      "name": "han's film ekseni",
-      "description": "han's film ekseni provider",
-      "version": "1.0.0",
-      "author": "han",
-      "supportedTypes": [
-        "movie",
-        "tv"
-      ],
-      "filename": "providers/filmekseni.js",
-      "enabled": true,
-      "formats": [
-        "mp4",
-        "m3u8"
-      ],
-      "logo": "https://filmekseni.cc/favicon.ico",
-      "contentLanguage": [
-        "tr"
-      ]
-    },
-    {
       "id": "filmmakinesi",
       "name": "han's film makinesi",
       "description": "han's film makinesi provider",
@@ -413,31 +187,6 @@
       ]
     },
     {
-      "id": "hdfilmdelisi",
-      "name": "han's hd film delisi",
-      "description": "han's hd film delisi provider",
-      "version": "0.1.0",
-      "author": "han",
-      "supportedTypes": [
-        "movie"
-      ],
-      "filename": "providers/patronhdfilmdelisi.js",
-      "enabled": false,
-      "logo": "https://www.google.com/s2/favicons?domain=hdfilmdelisi.one&sz=%size%",
-      "contentLanguage": [
-        "tr"
-      ],
-      "formats": [
-        "mp4",
-        "m3u8",
-        "hls",
-        "mkv"
-      ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "supportsExternalPlayer": true
-    },
-    {
       "id": "hdfilmcehennemi",
       "name": "han's hd film cehennemi",
       "description": "han's hd film cehennemi provider",
@@ -448,74 +197,6 @@
         "tv"
       ],
       "filename": "providers/hdfilmcehennemi.js",
-      "enabled": true,
-      "contentLanguage": [
-        "tr"
-      ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "formats": [
-        "mp4",
-        "mkv",
-        "hls",
-        "m3u8"
-      ]
-    },
-    {
-      "id": "jetfilmizle",
-      "name": "han's jet film izle",
-      "description": "han's jet film izle provider",
-      "version": "1.0.0",
-      "author": "han",
-      "supportedTypes": [
-        "movie"
-      ],
-      "filename": "providers/jetfilmizle.js",
-      "enabled": true,
-      "logo": "https://jetfilmizle.net/public/icons/apple-touch-icon.png",
-      "contentLanguage": [
-        "tr"
-      ],
-      "formats": [
-        "mp4",
-        "mkv"
-      ],
-      "limited": true,
-      "disabledPlatforms": []
-    },
-    {
-      "id": "m3u",
-      "name": "han's m3u",
-      "description": "han's m3u provider",
-      "version": "1.0.0",
-      "author": "han",
-      "supportedTypes": [
-        "movie",
-        "tv"
-      ],
-      "filename": "providers/m3u.js",
-      "enabled": true,
-      "formats": [
-        "mp4",
-        "mkv",
-        "hls",
-        "m3u8"
-      ],
-      "logo": "",
-      "contentLanguage": [
-        "tr"
-      ]
-    },
-    {
-      "id": "m3ubirlesik",
-      "name": "han's m3u birleşik",
-      "description": "han's m3u birleşik provider",
-      "version": "1.0.0",
-      "author": "han",
-      "supportedTypes": [
-        "movie"
-      ],
-      "filename": "providers/m3u_provider.js",
       "enabled": true,
       "contentLanguage": [
         "tr"
@@ -553,33 +234,6 @@
       "supportsExternalPlayer": true
     },
     {
-      "id": "netmirror",
-      "name": "han's netmirror",
-      "description": "han's netmirror provider",
-      "version": "1.0.2",
-      "author": "han",
-      "supportedTypes": [
-        "movie",
-        "tv"
-      ],
-      "filename": "providers/netmirror.js",
-      "enabled": true,
-      "logo": "https://net22.cc/favicon.ico",
-      "contentLanguage": [
-        "en"
-      ],
-      "disabledPlatforms": [
-        "ios"
-      ],
-      "supportsExternalPlayer": false,
-      "formats": [
-        "mp4",
-        "mkv",
-        "hls",
-        "m3u8"
-      ]
-    },
-    {
       "id": "rec",
       "name": "han's rec",
       "description": "han's rec provider",
@@ -597,50 +251,6 @@
       "logo": "https://rectvapp.com.tr/wp-content/uploads/2024/08/cropped-cropped-Screenshot_2023-08-31_at_11.02.55_PM-removebg-preview-32x32.webp",
       "contentLanguage": [
         "tr"
-      ]
-    },
-    {
-      "id": "setfilm",
-      "name": "han's set film",
-      "description": "han's set film provider",
-      "version": "1.0.0",
-      "author": "han",
-      "supportedTypes": [
-        "movie",
-        "tv"
-      ],
-      "filename": "providers/setfilm.js",
-      "enabled": true,
-      "logo": "https://www.google.com/s2/favicons?domain=setfilmizle.uk&sz=64",
-      "contentLanguage": [
-        "tr"
-      ],
-      "formats": [
-        "m3u8",
-        "mp4",
-        "mkv"
-      ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "supportsExternalPlayer": true
-    },
-    {
-      "id": "sezonlukdizi",
-      "name": "han's sezonluk dizi",
-      "description": "han's sezonluk dizi provider",
-      "version": "1.0.0",
-      "author": "han",
-      "supportedTypes": [
-        "tv"
-      ],
-      "filename": "providers/sezonlukdizi.js",
-      "enabled": true,
-      "contentLanguage": [
-        "tr"
-      ],
-      "formats": [
-        "mp4",
-        "mkv"
       ]
     },
     {
@@ -665,51 +275,99 @@
       ]
     },
     {
-      "id": "vidmody",
-      "name": "han's vidmody",
-      "description": "han's vidmody provider",
-      "version": "1.0.0",
-      "author": "han",
+      "id": "animecix",
+      "name": "animecix",
+      "description": "türkçe anime kaynağı — animecix.tv",
+      "version": "1.3.3",
+      "author": "hans-mega",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/moonvidmodyfilmdizi.js",
+      "filename": "providers/turkish-animecix.js",
       "enabled": true,
-      "formats": [
-        "mp4",
-        "mkv",
-        "hls",
-        "m3u8"
-      ],
-      "logo": "",
+      "hasSettings": true,
+      "logo": "https://animecix.tv/favicon.ico",
       "contentLanguage": [
         "tr"
-      ]
+      ],
+      "formats": [
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     },
     {
-      "id": "webteizle",
-      "name": "han's webte izle",
-      "description": "han's webte izle provider",
-      "version": "1.0.0",
-      "author": "han",
+      "id": "fullhdfilm-turkish",
+      "name": "full hd film - türkçe dublajlı / altyazılı",
+      "description": "türkçe dublaj/altyazılı film kaynağı — fullhdfilmizlesene.mx",
+      "version": "1.4.0",
+      "author": "hans-mega",
       "supportedTypes": [
         "movie"
       ],
-      "filename": "providers/webteizle.js",
+      "filename": "providers/turkish-fullhdfilm.js",
       "enabled": true,
-      "logo": "https://webteizle3.xyz/images/logo.png",
+      "logo": "https://www.fullhdfilmizlesene.mx/favicon.ico",
       "contentLanguage": [
         "tr"
       ],
-      "limited": true,
-      "disabledPlatforms": [],
       "formats": [
-        "mp4",
-        "mkv",
-        "hls",
         "m3u8"
-      ]
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true,
+      "hasSettings": true
+    },
+    {
+      "id": "dizifilm",
+      "name": "dizifilm",
+      "description": "türkçe dublaj/altyazılı film ve dizi kaynağı — dizifilm.life",
+      "version": "1.7.1",
+      "author": "hans-mega",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/turkish-dizifilm.js",
+      "enabled": true,
+      "logo": "https://dizifilm.life/favicon.ico",
+      "contentLanguage": [
+        "tr"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true,
+      "hasSettings": true
+    },
+    {
+      "id": "dizibal",
+      "name": "dizibal",
+      "description": "türkçe dublaj/altyazılı film ve dizi kaynağı — dizibal.com",
+      "version": "1.3.1",
+      "author": "hans-mega",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/turkish-dizibal.js",
+      "enabled": true,
+      "hasSettings": true,
+      "logo": "https://dizibal.com/favicon.ico",
+      "contentLanguage": [
+        "tr"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     }
   ]
 }
