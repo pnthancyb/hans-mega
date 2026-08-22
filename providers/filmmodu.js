@@ -223,7 +223,7 @@ function fetchStreamsFromAlt(altLink, filmUrl) {
             var srcUrl = source.src;
             if (srcUrl.indexOf('.m3u8') === -1) srcUrl = srcUrl + '.m3u8';
             var streamObj = {
-              name:    'FilmModu',
+              name:    "han's film modu",
               title:   altLink.name + ' • ' + qualityLabel,
               url:     srcUrl,
               quality: qualityLabel,
