@@ -157,7 +157,7 @@ function fetchPixeldrainStream(pdUrl) {
                   : /480p/i.test(name)     ? '480p' : '';
       return {
         url:     'https://pixeldrain.com/api/file/' + fileId + '?download',
-        name:    'jetfilmizle',
+        name:    "han's jet film izle",
         title:   'jetfilmizle' + (quality ? ' | ' + quality : '') + (size ? ' · ' + Math.round(size/1024/1024) + 'MB' : ''),
         quality: quality,
         headers: { 'Referer': 'https://pixeldrain.com/' }
@@ -166,7 +166,7 @@ function fetchPixeldrainStream(pdUrl) {
     .catch(function() {
       return {
         url:     'https://pixeldrain.com/api/file/' + fileId + '?download',
-        name:    'jetfilmizle', title: 'Pixeldrain', quality: '',
+        name:    "han's jet film izle", title: 'Pixeldrain', quality: '',
         headers: { 'Referer': 'https://pixeldrain.com/' }
       };
     });
@@ -184,7 +184,7 @@ function fetchJetvStream(iframeUrl) {
         var fileM  = srcMatch[0].match(/"file"\s*:\s*"([^"]+)"/);
         var labelM = srcMatch[0].match(/"label"\s*:\s*"([^"]+)"/);
         if (fileM) return {
-          url: fileM[1], name: 'TR Dublaj', title: 'jetfilmizle',
+          url: fileM[1], name: 'türkçe dublajlı', title: 'jetfilmizle',
           quality: labelM ? labelM[1] : '', type: 'hls',
           headers: { 'Referer': fullUrl }
         };
