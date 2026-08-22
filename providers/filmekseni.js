@@ -5,7 +5,7 @@
  */
 
 const PROVIDER_ID = 'filmekseni';
-const PROVIDER_NAME = 'Film Ekseni';
+const PROVIDER_NAME = "han's film ekseni";
 const MAIN_URL = 'https://filmekseni.cc';
 const TMDB_API_KEY = '500330721680edb6d5f7f12ba7cd9023';
 const TMDB_BASE = 'https://api.themoviedb.org/3';
