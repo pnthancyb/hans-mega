@@ -47,7 +47,7 @@ function buildStreams(videos, sinewixName) {
                 });
             }
             return Promise.resolve({
-                name: sinewixName, // SineWix'ten gelen isim
+                name: "han's sinewix", // normalized provider name
                 title: displayTitle,
                 url: link,
                 headers: STREAM_HEADERS,
