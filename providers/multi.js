@@ -36,17 +36,17 @@ var VIDLINK_HEADERS = {
 function inferLanguageFromText(text) {
   var v = (text || "").toLowerCase();
   if (v.includes("dublaj") || v.includes("dubbed"))
-    return "türkçe dublajlı";
+    return "TR Dublaj";
   if (v.includes("altyazi") || v.includes("altyaz\u0131") || v.includes("sub"))
-    return "türkçe altyazılı";
-  return "türkçe altyazılı";
+    return "TR Altyazi";
+  return "TR Altyazi";
 }
 function buildLabel(sourceName, quality, baseTitle) {
   var lang = inferLanguageFromText(baseTitle);
   var q = quality || "";
   return {
-    name: `${String(sourceName).toLowerCase()} - ${lang}`,
-    title: `${baseTitle} | ${String(sourceName).toLowerCase()} | ${lang} | ${q}`
+    name: `${sourceName} - ${lang}`,
+    title: `${baseTitle} | ${sourceName} | ${lang} | ${q}`
   };
 }
 function getTmdbInfo(tmdbId, mediaType) {
@@ -318,3 +318,5 @@ function getStreams(tmdbId, mediaType, season, episode) {
   });
 }
 module.exports = { getStreams };
+
+module.exports = require("./stream-metadata").wrapGetStreams(module.exports, "han's multi");

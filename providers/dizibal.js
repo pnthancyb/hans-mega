@@ -696,13 +696,13 @@ function getStreams(tmdbId, mediaType = "movie", season = 1, episode = 1) {
       } catch (e) {
         masterText = null;
       }
-      const quality = detectHlsQuality(masterText || "") || "Auto";
+      const quality = detectHlsQuality(masterText || "") || undefined;
       const streamUrl = maybeEmbedSubsUrl(extracted.url, subtitles, masterText);
       if (streamUrl !== extracted.url) {
         console.log(`[Dizibal v1.2.5] masa\xFCst\xFC modu: stream d\xF6n\xFC\u015Ft\xFCr\xFCld\xFC (${subtitles.length} altyaz\u0131)`);
       }
       return [{
-        name: `Dizibal ${quality}`.trim(),
+        name: `han's dizibal${quality && quality !== "Auto" ? ` • ${quality}` : ""}`,
         title: resolved.mediaTitle,
         url: streamUrl,
         quality,
@@ -742,3 +742,5 @@ function getSubtitles(tmdbId, mediaType = "movie", season = 1, episode = 1) {
   });
 }
 module.exports = { getStreams, getSubtitles, onSettings };
+
+module.exports = require("./stream-metadata").wrapGetStreams(module.exports, "han's dizibal");

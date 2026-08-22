@@ -1499,3 +1499,5 @@ function onSettings() {
   });
 }
 module.exports = { getStreams, getSubtitles, onSettings };
+
+module.exports = require("./stream-metadata").wrapGetStreams(module.exports, "han's dizifilm");

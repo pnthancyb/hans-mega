@@ -37,7 +37,7 @@ function buildStreams(videos, sinewixName) {
             if (isMF) {
                 return resolveMediaFireLink(link).then(function(finalUrl) {
                     return {
-                        name: "han's sinewix", // normalized provider name
+                        name: sinewixName, // SineWix'ten gelen isim
                         title: displayTitle,
                         url: finalUrl,
                         quality: "",
@@ -47,7 +47,7 @@ function buildStreams(videos, sinewixName) {
                 });
             }
             return Promise.resolve({
-                name: "han's sinewix", // normalized provider name
+                name: sinewixName, // SineWix'ten gelen isim
                 title: displayTitle,
                 url: link,
                 headers: STREAM_HEADERS,
@@ -126,3 +126,5 @@ function getStreams(id, mediaType, seasonNum, episodeNum) {
 }
 
 module.exports = { getStreams };
+
+module.exports = require("./stream-metadata").wrapGetStreams(module.exports, "han's sinewix");

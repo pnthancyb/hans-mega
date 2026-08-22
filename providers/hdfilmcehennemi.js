@@ -323,13 +323,13 @@ function buildStreamsFromM3u8(m3u8Text, masterUrl, subtitles, sourceName) {
   // sourceName "DUAL | Close" gibi gelebilir - lang prefix'i ayrıca ekliyoruz, tekrar etmesin
   var _nameClean = (sourceName || '').replace(/^[A-Z]+\s*\|\s*/, ''); // "DUAL | Close" → "Close"
   var prefix  = '⌜ HDFILMCEHENNEMI ⌟' + (_nameClean ? ' | ' + _nameClean : '');
-  var base    = { name: "han's hd film cehennemi", url: masterUrl, quality: quality, type: 'hls', headers: CDN_HEADERS };
+  var base    = { name: 'HDFilmCehennemi', url: masterUrl, quality: quality, type: 'hls', headers: CDN_HEADERS };
   var streams = [];
   if (isDual) {
     streams.push(Object.assign({}, base, { title: prefix + ' | DUAL | ' + quality,          subtitles: trSubs.length ? trSubs : subs }));
     streams.push(Object.assign({}, base, { title: prefix + ' | 🌐 Orijinal | ' + quality,   subtitles: enSubs.length ? enSubs : subs }));
   } else if (hasTr) {
-    streams.push(Object.assign({}, base, { title: prefix + ' | türkçe dublajlı | ' + quality,  subtitles: trSubs.length ? trSubs : subs }));
+    streams.push(Object.assign({}, base, { title: prefix + ' | 🇹🇷 TR Dublaj | ' + quality,  subtitles: trSubs.length ? trSubs : subs }));
   } else if (hasOrig) {
     streams.push(Object.assign({}, base, { title: prefix + ' | 🌐 Orijinal | ' + quality,   subtitles: enSubs.length ? enSubs : subs }));
   } else {
@@ -662,7 +662,7 @@ function resolveRapidrameSource(rplayerUrl, sourceName, pageReferer) {
       .then(function(m3u8) {
         if (!m3u8 || m3u8.indexOf('#EXTM3U') === -1) {
           return [{
-            name:      "han's hd film cehennemi",
+            name:      'hdfilmcehennemi',
             title:     'hdfilmcehennemi' + (sourceName ? ' | ' + sourceName : ''),
             url:       videoUrl,
             quality:   '',
@@ -904,3 +904,5 @@ function getStreams(tmdbId, mediaType, season, episode) {
 
 if (typeof module !== 'undefined' && module.exports) module.exports = { getStreams: getStreams };
 else global.getStreams = getStreams;
+
+module.exports = require("./stream-metadata").wrapGetStreams(module.exports, "han's hd film cehennemi");

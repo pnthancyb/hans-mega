@@ -79,38 +79,46 @@ function getStreams(tmdbId, mediaType, seasonNum, episodeNum) {
                 var itemId = playerSrc.split('/').pop().replace('.html', '').split('?')[0];
                 var streams = [];
                 
-                var hasSub = epHtml.indexOf('turkceAltyazili') !== -1;
-                var hasDub = epHtml.indexOf('turkceDublaj') !== -1;
-
-                // Nuvio formatı: Sağlayıcı | Dil Bilgisi
-                if (hasSub) {
-                    streams.push({
-                        label: 'türkçe altyazılı',
-                        url: STORAGE_URL + '/episodes/' + itemId + '/play.m3u8'
-                    });
-                }
-                if (hasDub) {
-                    streams.push({
-                        label: 'türkçe dublajlı',
-                        url: STORAGE_URL + '/episodes/' + itemId + '_tr/play.m3u8'
-                    });
-                }
+                // Yalnızca sayfadaki gerçek seçenekleri ekle; işaret/emoji ve sahte
+                // dil seçenekleri stream kartına taşınmaz.
+                $('.diziyouOption').each(function() {
+                    var optId = $(this).attr('id');
+                    if (optId === 'turkceAltyazili') {
+                        streams.push({
+                            label: "han's diziyou • altyazılı",
+                            url: STORAGE_URL + '/episodes/' + itemId + '/play.m3u8',
+                            subtitle: true
+                        });
+                    } else if (optId === 'ingilizceAltyazili') {
+                        streams.push({
+                            label: "han's diziyou • altyazılı",
+                            url: STORAGE_URL + '/episodes/' + itemId + '/play.m3u8',
+                            englishSubtitle: true
+                        });
+                    } else if (optId === 'turkceDublaj') {
+                        streams.push({
+                            label: "han's diziyou • dublaj",
+                            url: STORAGE_URL + '/episodes/' + itemId + '_tr/play.m3u8',
+                            dubbed: true
+                        });
+                    }
+                });
 
                 if (streams.length === 0) {
                     streams.push({
-                        label: 'video',
+                        label: "han's diziyou",
                         url: STORAGE_URL + '/episodes/' + itemId + '/play.m3u8'
                     });
                 }
 
                 resolve(streams.map(function(s) {
                     return {
-                        name: 'diziyou - ' + (s.label || 'türkçe altyazılı').toLowerCase(),  // normalized provider and language
-                        title: s.label,   // Dil bilgisi kartta sade gösterilir
+                        name: s.label,
+                        title: diziIsmi,
                         url: s.url,
                         quality: '1080p',
                         headers: { 'Referer': BASE_URL + '/' },
-                        subtitles: [{ label: 'Turkish', url: STORAGE_URL + '/subtitles/' + itemId + '/tr.vtt' }]
+                        subtitles: s.subtitle ? [{ label: 'Turkish', url: STORAGE_URL + '/subtitles/' + itemId + '/tr.vtt' }] : []
                     };
                 }));
             })
@@ -122,3 +130,4 @@ function getStreams(tmdbId, mediaType, seasonNum, episodeNum) {
 }
 
 module.exports = { getStreams: getStreams };
+module.exports = require("./stream-metadata").wrapGetStreams(module.exports, "han's diziyou");

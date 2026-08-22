@@ -1,5 +1,5 @@
 {
-  "selectedProviderCount": 31,
+  "selectedProviderCount": 33,
   "sourceEntryCount": 48,
   "skippedEntries": [
     {
@@ -56,36 +56,6 @@
       "canonical": "hdfilmcehennemi",
       "removed": "patronhdfcehennemi.js",
       "kept": "providers/hdfilmcehennemi.js"
-    }
-  ],
-  "retiredProviders": [
-    "sinemacx",
-    "vidlink"
-  ],
-  "migrationSources": [
-    {
-      "repository": "https://github.com/nikyokki/nik-cloudstream",
-      "format": "Cloudstream Android/Kotlin",
-      "status": "needs-nuvio-port",
-      "note": "provider logic must be rewritten for Nuvio JavaScript/Hermes; do not copy Kotlin artifacts"
-    },
-    {
-      "repository": "https://github.com/feroxx/Kekik-cloudstream",
-      "format": "Cloudstream Android/Kotlin",
-      "status": "needs-nuvio-port",
-      "note": "provider logic must be rewritten for Nuvio JavaScript/Hermes; do not copy Kotlin artifacts"
-    },
-    {
-      "repository": "https://github.com/Kraptor123/Cs-Karma",
-      "format": "Cloudstream Android/Kotlin",
-      "status": "needs-nuvio-port",
-      "note": "provider logic must be rewritten for Nuvio JavaScript/Hermes; do not copy Kotlin artifacts"
-    },
-    {
-      "repository": "https://github.com/Mandolarian99/Makotogecici",
-      "format": "Cloudstream .cs3",
-      "status": "needs-nuvio-port",
-      "note": ".cs3 bundles are Cloudstream artifacts and are not Nuvio-compatible"
     }
   ]
 }

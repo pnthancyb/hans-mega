@@ -1112,7 +1112,7 @@ function getStreams(tmdbId, mediaType = "movie", season = 1, episode = 1) {
             name: `FullHDFilm ${entry.label} \u2022 ${s.host}`,
             title: mediaTitle,
             url: maybeEmbedSubsUrl(playUrl, subs),
-            quality: "Auto",
+            quality: undefined,
             headers: s.headers,
             provider: "fullhdfilm",
             type: s.type,
@@ -1164,3 +1164,5 @@ function onSettings() {
   });
 }
 module.exports = { getStreams, getSubtitles, onSettings };
+
+module.exports = require("./stream-metadata").wrapGetStreams(module.exports, "han's full hd film");

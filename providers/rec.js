@@ -32,7 +32,7 @@ async function getAuthToken() {
 function analyzeStream(url, index, itemLabel) {
     const lowUrl = url.toLowerCase();
     const lowLabel = (itemLabel || "").toLowerCase();
-    let info = { icon: "🌐", text: "türkçe altyazılı" };
+    let info = { icon: "🌐", text: "Altyazı" };
 
     const isTurkish = 
         lowLabel.includes("dublaj") || 
@@ -167,3 +167,5 @@ async function getStreams(tmdbId, mediaType, seasonNum, episodeNum) {
 }
 
 module.exports = { getStreams };
+
+module.exports = require("./stream-metadata").wrapGetStreams(module.exports, "han's rec");

@@ -376,10 +376,10 @@ function extractByEmbedId(embedId, animeTitle, episodeLabel, subName) {
     const sorted = [...urls].sort((a, b) => qualitySortKey(a.label) - qualitySortKey(b.label));
     const suffix = subName ? ` \u2022 ${String(subName).slice(0, 40)}` : "";
     return sorted.map((entry) => ({
-      name: `Animecix (${entry.label || "Auto"})${suffix}`,
+      name: `han's animecix${entry.label ? ` • ${entry.label}` : ""}${suffix}`,
       title: `${animeTitle} - ${episodeLabel}`,
       url: entry.url,
-      quality: entry.label || "Auto",
+      quality: entry.label || undefined,
       size: formatSize(entry.size),
       headers: STREAM_HEADERS,
       provider: "animecix",
@@ -407,10 +407,10 @@ function extractStreams(episodePath, animeTitle, episodeLabel) {
       return [];
     const sorted = [...urls].sort((a, b) => qualitySortKey(a.label) - qualitySortKey(b.label));
     return sorted.map((entry) => ({
-      name: `Animecix (${entry.label || "Auto"})`,
+      name: `han's animecix${entry.label ? ` • ${entry.label}` : ""}`,
       title: `${animeTitle} - ${episodeLabel}`,
       url: entry.url,
-      quality: entry.label || "Auto",
+      quality: entry.label || undefined,
       size: formatSize(entry.size),
       headers: STREAM_HEADERS,
       provider: "animecix",
@@ -631,3 +631,5 @@ function onSettings() {
   });
 }
 module.exports = { getStreams, onSettings };
+
+module.exports = require("./stream-metadata").wrapGetStreams(module.exports, "han's animecix");

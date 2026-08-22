@@ -573,3 +573,5 @@ function getEpisodeUrl(seriesUrl, season, episode, activeUrl) {
     }
   });
 }
+
+module.exports = require("./stream-metadata").wrapGetStreams(module.exports, "han's dizipal");

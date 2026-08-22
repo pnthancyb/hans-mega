@@ -223,7 +223,7 @@ function fetchStreamsFromAlt(altLink, filmUrl) {
             var srcUrl = source.src;
             if (srcUrl.indexOf('.m3u8') === -1) srcUrl = srcUrl + '.m3u8';
             var streamObj = {
-              name:    "han's film modu",
+              name:    'FilmModu',
               title:   altLink.name + ' • ' + qualityLabel,
               url:     srcUrl,
               quality: qualityLabel,
@@ -327,3 +327,5 @@ if (typeof module !== 'undefined' && module.exports) {
 } else {
   global.getStreams = getStreams;
                     }
+
+module.exports = require("./stream-metadata").wrapGetStreams(module.exports, "han's film modu");

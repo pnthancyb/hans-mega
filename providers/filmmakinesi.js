@@ -599,19 +599,19 @@ var import_cheerio_without_node_native = __toESM(require("cheerio-without-node-n
 function inferLanguage(label = "") {
   const value = (label || "").toLowerCase();
   if (value.includes("dublaj"))
-    return "türkçe dublajlı";
+    return "Dublaj";
   if (value.includes("altyazi") || value.includes("altyaz\u0131") || value.includes("sub"))
-    return "türkçe altyazılı";
+    return "Altyazi";
   if (/\btr\b|turkce|türkçe/.test(value))
-    return "türkçe";
+    return "TR";
   if (/\ben\b|english/.test(value))
-    return "orijinal";
+    return "EN";
   return "";
 }
 function buildMeta(player, label) {
   const lang = inferLanguage(label);
   return {
-    name: lang ? `han's film makinesi - ${lang}` : "han's film makinesi",
+    name: "filmmakinesi",
     title: [player, lang, label].filter(Boolean).join(" | ")
   };
 }
@@ -824,3 +824,5 @@ function getStreams(tmdbId, mediaType, season, episode) {
     }
   });
 }
+
+module.exports = require("./stream-metadata").wrapGetStreams(module.exports, "han's film makinesi");

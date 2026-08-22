@@ -1,6 +1,6 @@
 {
   "name": "hans-mega",
-  "version": "1.3.0",
+  "version": "1.1.0",
   "description": "han's birleşik nuvio provider deposu",
   "repository": "https://github.com/pnthancyb/hans-mega",
   "scrapers": [
@@ -34,7 +34,7 @@
         "movie",
         "tv"
       ],
-      "filename": "providers/patrondizipal.js",
+      "filename": "providers/dizipal.js",
       "enabled": true,
       "logo": "https://www.google.com/s2/favicons?domain=dizipal2063.com&sz=64",
       "contentLanguage": [
@@ -92,7 +92,7 @@
       ]
     },
     {
-      "id": "hans4k",
+      "id": "dortkhd",
       "name": "han's 4k",
       "description": "han's 4k provider",
       "version": "2.0.0",
@@ -101,11 +101,11 @@
         "movie",
         "tv"
       ],
-      "filename": "providers/patrondortkhd.js",
+      "filename": "providers/dortkhd.js",
       "enabled": true,
       "logo": "",
       "contentLanguage": [
-        "tr"
+        "en"
       ],
       "formats": [
         "mp4",
@@ -165,28 +165,6 @@
       ]
     },
     {
-      "id": "fullhdfilm",
-      "name": "han's full hd film",
-      "description": "han's full hd film provider",
-      "version": "1.0.0",
-      "author": "han",
-      "supportedTypes": [
-        "movie"
-      ],
-      "filename": "providers/fullhdfilmizlesene.js",
-      "enabled": true,
-      "formats": [
-        "mp4",
-        "mkv",
-        "hls",
-        "m3u8"
-      ],
-      "logo": "https://www.google.com/s2/favicons?domain=www.fullhdfilmizlesene.de&sz=%size%",
-      "contentLanguage": [
-        "tr"
-      ]
-    },
-    {
       "id": "hdfilmcehennemi",
       "name": "han's hd film cehennemi",
       "description": "han's hd film cehennemi provider",
@@ -220,7 +198,7 @@
         "movie",
         "tv"
       ],
-      "filename": "providers/patronmulti.js",
+      "filename": "providers/multi.js",
       "enabled": true,
       "logo": "",
       "contentLanguage": [
@@ -275,18 +253,38 @@
       ]
     },
     {
-      "id": "animecix",
-      "name": "animecix",
-      "description": "türkçe anime kaynağı — animecix.tv",
-      "version": "1.3.3",
-      "author": "hans-mega",
+      "id": "vidlink",
+      "name": "han's vidlink",
+      "description": "han's vidlink provider",
+      "version": "1.0.0",
+      "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/turkish-animecix.js",
+      "filename": "providers/vidlink.js",
       "enabled": true,
-      "hasSettings": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://vidlink.pro/favicon.ico",
+      "contentLanguage": [
+        "en"
+      ]
+    },
+    {
+      "id": "animecix",
+      "name": "han's animecix",
+      "description": "türkçe anime kaynağı — animecix.tv",
+      "version": "1.0.0",
+      "author": "han",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/animecix.js",
+      "enabled": true,
       "logo": "https://animecix.tv/favicon.ico",
       "contentLanguage": [
         "tr"
@@ -296,20 +294,22 @@
       ],
       "limited": false,
       "disabledPlatforms": [],
-      "supportsExternalPlayer": true
+      "supportsExternalPlayer": true,
+      "hasSettings": true
     },
     {
-      "id": "fullhdfilm-turkish",
-      "name": "full hd film - türkçe dublajlı / altyazılı",
-      "description": "türkçe dublaj/altyazılı film kaynağı — fullhdfilmizlesene.mx",
-      "version": "1.4.0",
-      "author": "hans-mega",
+      "id": "dizibal",
+      "name": "han's dizibal",
+      "description": "türkçe dublaj/altyazılı film ve dizi kaynağı — dizibal.com",
+      "version": "1.0.0",
+      "author": "han",
       "supportedTypes": [
-        "movie"
+        "movie",
+        "tv"
       ],
-      "filename": "providers/turkish-fullhdfilm.js",
+      "filename": "providers/dizibal.js",
       "enabled": true,
-      "logo": "https://www.fullhdfilmizlesene.mx/favicon.ico",
+      "logo": "https://dizibal.com/favicon.ico",
       "contentLanguage": [
         "tr"
       ],
@@ -323,15 +323,15 @@
     },
     {
       "id": "dizifilm",
-      "name": "dizifilm",
+      "name": "han's dizifilm",
       "description": "türkçe dublaj/altyazılı film ve dizi kaynağı — dizifilm.life",
-      "version": "1.7.1",
-      "author": "hans-mega",
+      "version": "1.0.0",
+      "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/turkish-dizifilm.js",
+      "filename": "providers/dizifilm.js",
       "enabled": true,
       "logo": "https://dizifilm.life/favicon.ico",
       "contentLanguage": [
@@ -346,19 +346,17 @@
       "hasSettings": true
     },
     {
-      "id": "dizibal",
-      "name": "dizibal",
-      "description": "türkçe dublaj/altyazılı film ve dizi kaynağı — dizibal.com",
-      "version": "1.3.1",
-      "author": "hans-mega",
+      "id": "fullhdfilm",
+      "name": "han's full hd film",
+      "description": "türkçe dublaj/altyazılı film kaynağı — fullhdfilmizlesene.mx",
+      "version": "1.0.0",
+      "author": "han",
       "supportedTypes": [
-        "movie",
-        "tv"
+        "movie"
       ],
-      "filename": "providers/turkish-dizibal.js",
+      "filename": "providers/fullhdfilm.js",
       "enabled": true,
-      "hasSettings": true,
-      "logo": "https://dizibal.com/favicon.ico",
+      "logo": "https://www.fullhdfilmizlesene.mx/favicon.ico",
       "contentLanguage": [
         "tr"
       ],
@@ -367,7 +365,8 @@
       ],
       "limited": false,
       "disabledPlatforms": [],
-      "supportsExternalPlayer": true
+      "supportsExternalPlayer": true,
+      "hasSettings": true
     }
   ]
 }
