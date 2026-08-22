@@ -199,8 +199,8 @@ function getStreams(tmdbId, mediaType, season, episode) {
                 fetchAlternatifler(bd.bid, '1', aspData, bd.cookies, epUrl)
             ]).then(function(lists) {
                 var prom = [];
-                lists[0].forEach(function(v) { prom.push(processVeri(v, '🇹🇷 TR Dublaj', aspData)); });
-                lists[1].forEach(function(v) { prom.push(processVeri(v, '🌐 TR Altyazı', aspData)); });
+                lists[0].forEach(function(v) { prom.push(processVeri(v, 'türkçe dublajlı', aspData)); });
+                lists[1].forEach(function(v) { prom.push(processVeri(v, 'türkçe altyazılı', aspData)); });
                 return Promise.all(prom).then(function(results) {
                     return results.filter(Boolean).map(function(s) {
                         return {
