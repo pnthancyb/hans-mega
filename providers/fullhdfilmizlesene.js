@@ -55,8 +55,8 @@ async function getStreamsFromAPI(vidid, movieTitle) {
                 if (avMatch) {
                     let url = decodeRapidVid(avMatch[1]);
                     if (url) return { 
-                        name: 'fullhdfilm', 
-                        title: "⌜ FULLHDFILM ⌟ | Atom | 🇹🇷 Dublaj", 
+                        name: "han's full hd film - türkçe dublajlı", 
+                        title: "⌜ FULLHDFILM ⌟ | Atom | türkçe dublajlı", 
                         url: url, 
                         quality: "", 
                         headers: WORKING_HEADERS 
