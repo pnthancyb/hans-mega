@@ -32,7 +32,7 @@ async function getAuthToken() {
 function analyzeStream(url, index, itemLabel) {
     const lowUrl = url.toLowerCase();
     const lowLabel = (itemLabel || "").toLowerCase();
-    let info = { icon: "🌐", text: "Altyazı" };
+    let info = { icon: "🌐", text: "türkçe altyazılı" };
 
     const isTurkish = 
         lowLabel.includes("dublaj") || 
