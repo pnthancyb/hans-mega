@@ -251,7 +251,7 @@ function fetchVidmodyStreams(vidmodyUrl) {
         var hdrs = { 'Referer': 'https://vidmody.com/' };
         streams.push({
           url:     streamUrl,
-          name:    'TR Dublaj',
+          name:    'vidmody - türkçe dublajlı',
           title:   'Vidmody ' + quality,
           quality: quality,
           type:    'hls',
@@ -260,7 +260,7 @@ function fetchVidmodyStreams(vidmodyUrl) {
         // TR Altyazı stream (aynı video, farklı ses)
         streams.push({
           url:     streamUrl,
-          name:    'TR Altyazı',
+          name:    'vidmody - türkçe altyazılı',
           title:   'Vidmody ' + quality,
           quality: quality,
           type:    'hls',
