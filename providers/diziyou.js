@@ -85,20 +85,20 @@ function getStreams(tmdbId, mediaType, seasonNum, episodeNum) {
                 // Nuvio formatı: Sağlayıcı | Dil Bilgisi
                 if (hasSub) {
                     streams.push({
-                        label: '⌜ DiziYou ⌟ | 🌐 Türkçe Altyazılı',
+                        label: 'türkçe altyazılı',
                         url: STORAGE_URL + '/episodes/' + itemId + '/play.m3u8'
                     });
                 }
                 if (hasDub) {
                     streams.push({
-                        label: '⌜ DiziYou ⌟ | 🇹🇷 Türkçe Dublaj',
+                        label: 'türkçe dublajlı',
                         url: STORAGE_URL + '/episodes/' + itemId + '_tr/play.m3u8'
                     });
                 }
 
                 if (streams.length === 0) {
                     streams.push({
-                        label: '⌜ DiziYou ⌟ | 🌐 Video',
+                        label: 'video',
                         url: STORAGE_URL + '/episodes/' + itemId + '/play.m3u8'
                     });
                 }
@@ -106,7 +106,7 @@ function getStreams(tmdbId, mediaType, seasonNum, episodeNum) {
                 resolve(streams.map(function(s) {
                     return {
                         name: 'diziyou - ' + (s.label || 'türkçe altyazılı').toLowerCase(),  // normalized provider and language
-                        title: s.label,   // ALTTA GÖRÜNEN: ⌜ DiziYou ⌟ | Dil Bilgisi
+                        title: s.label,   // Dil bilgisi kartta sade gösterilir
                         url: s.url,
                         quality: '1080p',
                         headers: { 'Referer': BASE_URL + '/' },
