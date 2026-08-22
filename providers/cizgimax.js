@@ -232,7 +232,7 @@ function fetchEpisodeStreams(epUrl) {
               : MAIN_URL + server.streamUrl;
             var label = server.label || 'Sibnet';
             results.push({
-              name:    'CizgiMax',
+              name:    "han's cizgimax",
               title:   '⌜ CİZGİMAX ⌟ | ' + label,
               url:     streamUrl,
               quality: '',
