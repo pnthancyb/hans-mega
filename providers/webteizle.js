@@ -202,7 +202,7 @@ function processEmbed(embedData, dilAd, movieTitle) {
           var m = html.match(/file\s*:\s*['"]?(https?:\/\/[^\s"'<>]+\.m3u8[^\s"'<>]*)/i);
           return m ? { 
             url: m[1], 
-            name: 'webteizle', 
+            name: 'webteizle - ' + (dilAd ? dilAd.toLowerCase() : 'türkçe altyazılı'), 
             title: pName + (dilAd ? ' | ' + dilAd : ''), 
             quality: q, 
             type: 'hls', 
