@@ -177,7 +177,7 @@ function getTmdbTitle(tmdbId, mediaType) {
 }
 
 // src/patronHDFilmDelisi/extractor.js
-var PROVIDER_NAME = "hdfilmdelisi";
+var PROVIDER_NAME = "han's hd film delisi";
 function normalize(value) {
   return (value || "").toLowerCase().replace(/[^a-z0-9çğıöşü]+/gi, " ").trim();
 }
@@ -388,7 +388,7 @@ function extractFromMoviePage(movieUrl) {
       const isPlayable = lower.includes(".m3u8") || lower.includes(".mp4");
       streams.push({
         name: PROVIDER_NAME,
-        title: isPlayable ? "HDFilmDelisi" : "HDFilmDelisi Embed",
+        title: isPlayable ? "han's hd film delisi" : "han's hd film delisi embed",
         url,
         quality: "",
         headers: {
