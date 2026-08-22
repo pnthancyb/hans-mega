@@ -187,18 +187,18 @@ var import_cheerio_without_node_native = __toESM(require("cheerio-without-node-n
 function inferLanguage(label = "") {
   const v = (label || "").toLowerCase();
   if (v.includes("dublaj"))
-    return "TR Dublaj";
+    return "türkçe dublajlı";
   if (v.includes("altyazi") || v.includes("altyaz\u0131") || v.includes("sub"))
-    return "TR Altyazi";
+    return "türkçe altyazılı";
   if (/\btr\b|turkce|türkçe/.test(v))
-    return "TR";
+    return "türkçe";
   return "";
 }
 function withMeta(player, label, quality) {
   const lang = inferLanguage(label);
   const q = quality || "";
   return {
-    name: "666film",
+    name: "han's 666film",
     title: [player, lang, q, label].filter(Boolean).join(" | ")
   };
 }
