@@ -234,9 +234,9 @@ function normalizeTitle(value) {
 function detectLang(partKey = "", rawText = "") {
   const v = `${partKey} ${rawText}`.toLowerCase();
   if (v.includes("dublaj"))
-    return "TR Dublaj";
+    return "türkçe dublajlı";
   if (v.includes("altyazi") || v.includes("altyaz\u0131"))
-    return "TR Altyaz\u0131";
+    return "türkçe altyazılı";
   if (v.includes("orijinal"))
     return "Orijinal";
   return "";
