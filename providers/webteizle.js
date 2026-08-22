@@ -174,7 +174,7 @@ function processEmbed(embedData, dilAd, movieTitle) {
     if (!src) return null;
     
     // Görsel Ayarlar
-    var flag = dilAd.includes('Dublaj') ? '🇹🇷 ' : '🌐 ';
+    var flag = dilAd.toLowerCase().includes('dublaj') ? '🇹🇷 ' : '🌐 ';
     var pName = (embedData.baslik || 'Kaynak');
     if (src.indexOf('vidmoly') !== -1) pName = "VidMoly";
     else if (src.indexOf('sibnet') !== -1) pName = "Sibnet";
