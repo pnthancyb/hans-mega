@@ -39,7 +39,7 @@ function inferLanguageFromText(text) {
     return "türkçe dublajlı";
   if (v.includes("altyazi") || v.includes("altyaz\u0131") || v.includes("sub"))
     return "türkçe altyazılı";
-  return "TR Altyazi";
+  return "türkçe altyazılı";
 }
 function buildLabel(sourceName, quality, baseTitle) {
   var lang = inferLanguageFromText(baseTitle);
