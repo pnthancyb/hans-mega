@@ -40,7 +40,7 @@ async function getStreams(tmdbId, mediaType, season, episode) {
             if (checkRes.status === 200) {
                 return [{
                     url: targetUrl,
-                    name: "vidmody",
+                    name: "vidmody - türkçe altyazılı",
                     title: displayTitle,
                     quality: "",
                     headers: {
