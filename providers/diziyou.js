@@ -105,7 +105,7 @@ function getStreams(tmdbId, mediaType, seasonNum, episodeNum) {
 
                 resolve(streams.map(function(s) {
                     return {
-                        name: diziIsmi,  // ÜSTTE GÖRÜNEN: Dizi İsmi
+                        name: 'diziyou - ' + (s.label || 'türkçe altyazılı').toLowerCase(),  // normalized provider and language
                         title: s.label,   // ALTTA GÖRÜNEN: ⌜ DiziYou ⌟ | Dil Bilgisi
                         url: s.url,
                         quality: '1080p',
