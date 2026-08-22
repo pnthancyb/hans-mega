@@ -477,7 +477,7 @@ function getStreams(tmdbId, mediaType, season, episode) {
             };
             return {
               name:    "han's diziyo",
-              title:   titleMap[result.type] || "DiziYo",
+              title:   titleMap[result.type] || "diziyo",
               url:     m3u8,
               quality: "1080p",
               headers: hdrs,
