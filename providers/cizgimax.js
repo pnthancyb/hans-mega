@@ -247,7 +247,7 @@ function fetchEpisodeStreams(epUrl) {
             return extractDzen(server.src, epUrl).then(function(dzen) {
               if (!dzen) return;
               results.push({
-                name:    'CizgiMax',
+                name:    "han's cizgimax",
                 title:   '⌜ CİZGİMAX ⌟ | ' + label,
                 url:     dzen.url,
                 quality: dzen.quality || 'Auto',
