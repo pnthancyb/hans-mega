@@ -1,29 +1,29 @@
 {
-  "name": "Han's Mega",
+  "name": "han's mega",
   "resources": [
     "stream",
     "subtitles"
   ],
   "scrapers": [
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-1.js",
       "id": "hans-1",
-      "name": "Han's 1",
+      "name": "han's 1",
       "supportedTypes": [
         "tv"
       ],
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-2.js",
       "id": "hans-2",
-      "name": "Han's 2",
+      "name": "han's 2",
       "supportedTypes": [
         "movie",
         "tv"
@@ -31,12 +31,12 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Anime",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-3.js",
       "id": "hans-3",
-      "name": "Han's 3",
+      "name": "han's 3",
       "supportedTypes": [
         "movie",
         "tv"
@@ -44,12 +44,12 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Anime",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-4.js",
       "id": "hans-4",
-      "name": "Han's 4",
+      "name": "han's 4",
       "supportedTypes": [
         "movie",
         "tv"
@@ -57,12 +57,12 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-5.js",
       "id": "hans-5",
-      "name": "Han's 5",
+      "name": "han's 5",
       "supportedTypes": [
         "movie",
         "tv"
@@ -70,24 +70,24 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-6.js",
       "id": "hans-6",
-      "name": "Han's 6",
+      "name": "han's 6",
       "supportedTypes": [
         "movie"
       ],
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-7.js",
       "id": "hans-7",
-      "name": "Han's 7",
+      "name": "han's 7",
       "supportedTypes": [
         "movie",
         "tv"
@@ -95,12 +95,12 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-8.js",
       "id": "hans-8",
-      "name": "Han's 8",
+      "name": "han's 8",
       "supportedTypes": [
         "movie",
         "tv"
@@ -108,12 +108,12 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-9.js",
       "id": "hans-9",
-      "name": "Han's 9",
+      "name": "han's 9",
       "supportedTypes": [
         "movie",
         "tv"
@@ -121,12 +121,12 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-10.js",
       "id": "hans-10",
-      "name": "Han's 10",
+      "name": "han's 10",
       "supportedTypes": [
         "movie",
         "tv"
@@ -134,12 +134,12 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-11.js",
       "id": "hans-11",
-      "name": "Han's 11",
+      "name": "han's 11",
       "supportedTypes": [
         "movie",
         "tv"
@@ -147,12 +147,12 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-12.js",
       "id": "hans-12",
-      "name": "Han's 12",
+      "name": "han's 12",
       "supportedTypes": [
         "movie",
         "tv"
@@ -160,12 +160,12 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-13.js",
       "id": "hans-13",
-      "name": "Han's 13",
+      "name": "han's 13",
       "supportedTypes": [
         "movie",
         "tv"
@@ -173,12 +173,12 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-14.js",
       "id": "hans-14",
-      "name": "Han's 14",
+      "name": "han's 14",
       "supportedTypes": [
         "movie",
         "tv"
@@ -186,12 +186,12 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-15.js",
       "id": "hans-15",
-      "name": "Han's 15",
+      "name": "han's 15",
       "supportedTypes": [
         "movie",
         "tv"
@@ -199,12 +199,12 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-16.js",
       "id": "hans-16",
-      "name": "Han's 16",
+      "name": "han's 16",
       "supportedTypes": [
         "movie",
         "tv"
@@ -212,12 +212,12 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-17.js",
       "id": "hans-17",
-      "name": "Han's 17",
+      "name": "han's 17",
       "supportedTypes": [
         "movie",
         "tv"
@@ -225,12 +225,12 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-18.js",
       "id": "hans-18",
-      "name": "Han's 18",
+      "name": "han's 18",
       "supportedTypes": [
         "movie",
         "tv"
@@ -238,24 +238,24 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-19.js",
       "id": "hans-19",
-      "name": "Han's 19",
+      "name": "han's 19",
       "supportedTypes": [
         "movie"
       ],
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-20.js",
       "id": "hans-20",
-      "name": "Han's 20",
+      "name": "han's 20",
       "supportedTypes": [
         "movie",
         "tv"
@@ -263,12 +263,12 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-21.js",
       "id": "hans-21",
-      "name": "Han's 21",
+      "name": "han's 21",
       "supportedTypes": [
         "movie",
         "tv"
@@ -276,12 +276,12 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-22.js",
       "id": "hans-22",
-      "name": "Han's 22",
+      "name": "han's 22",
       "supportedTypes": [
         "movie",
         "tv"
@@ -289,24 +289,24 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-23.js",
       "id": "hans-23",
-      "name": "Han's 23",
+      "name": "han's 23",
       "supportedTypes": [
         "movie"
       ],
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-24.js",
       "id": "hans-24",
-      "name": "Han's 24",
+      "name": "han's 24",
       "supportedTypes": [
         "movie",
         "tv"
@@ -314,12 +314,12 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-25.js",
       "id": "hans-25",
-      "name": "Han's 25",
+      "name": "han's 25",
       "supportedTypes": [
         "movie",
         "tv"
@@ -327,12 +327,12 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-26.js",
       "id": "hans-26",
-      "name": "Han's 26",
+      "name": "han's 26",
       "supportedTypes": [
         "movie",
         "tv"
@@ -340,12 +340,12 @@
       "version": "1.13.8"
     },
     {
-      "author": "Han's Mega",
+      "author": "han's mega",
       "description": "Film • Dizi",
       "enabled": true,
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-27.js",
       "id": "hans-27",
-      "name": "Han's 27",
+      "name": "han's 27",
       "supportedTypes": [
         "movie",
         "tv"
