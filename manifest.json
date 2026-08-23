@@ -1,372 +1,362 @@
 {
-  "name": "hans-mega",
-  "version": "1.1.0",
-  "description": "han's birleşik nuvio provider deposu",
-  "repository": "https://github.com/pnthancyb/hans-mega",
+  "name": "izlelan",
+  "resources": [
+    "stream",
+    "subtitles"
+  ],
   "scrapers": [
     {
-      "id": "dizilife",
-      "name": "han's dizilife",
-      "description": "han's dizilife provider",
-      "version": "1.0.0",
-      "author": "han",
+      "author": "izlelan",
+      "description": "Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/crocodile.js",
+      "id": "crocodile",
+      "name": "Crocodile",
+      "supportedTypes": [
+        "tv"
+      ],
+      "version": "1.13.8"
+    },
+    {
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/imu.js",
+      "id": "imu",
+      "name": "Imu",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/dizilife.js",
-      "enabled": true,
-      "formats": [
-        "m3u8"
-      ],
-      "logo": "https://www.google.com/s2/favicons?domain=dizi62.life&sz=128",
-      "contentLanguage": [
-        "tr"
-      ]
+      "version": "1.13.8"
     },
     {
-      "id": "dizipal",
-      "name": "han's dizipal",
-      "description": "han's dizipal provider",
-      "version": "4.0.0",
-      "author": "han",
+      "author": "izlelan",
+      "description": "Anime",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/fujitora.js",
+      "id": "fujitora",
+      "name": "Fujitora",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/dizipal.js",
-      "enabled": true,
-      "logo": "https://www.google.com/s2/favicons?domain=dizipal2063.com&sz=64",
-      "contentLanguage": [
-        "tr"
-      ],
-      "formats": [
-        "m3u8",
-        "mp4",
-        "mkv"
-      ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "supportsExternalPlayer": true
+      "version": "1.13.8"
     },
     {
-      "id": "diziyo",
-      "name": "han's diziyo",
-      "description": "han's diziyo provider",
-      "version": "1.0.0",
-      "author": "han",
-      "supportedTypes": [
-        "tv"
-      ],
-      "filename": "providers/diziyo.js",
+      "author": "izlelan",
+      "description": "Anime",
       "enabled": true,
-      "contentLanguage": [
-        "tr"
-      ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "formats": [
-        "mp4",
-        "mkv",
-        "hls",
-        "m3u8"
-      ]
-    },
-    {
-      "id": "diziyou",
-      "name": "han's diziyou",
-      "description": "han's diziyou provider",
-      "version": "1.0.4",
-      "author": "han",
-      "supportedTypes": [
-        "tv"
-      ],
-      "filename": "providers/diziyou.js",
-      "enabled": true,
-      "formats": [
-        "m3u8"
-      ],
-      "logo": "https://www.google.com/s2/favicons?domain=www.diziyou.co&sz=%size%",
-      "contentLanguage": [
-        "tr"
-      ]
-    },
-    {
-      "id": "dortkhd",
-      "name": "han's 4k",
-      "description": "han's 4k provider",
-      "version": "2.0.0",
-      "author": "han",
+      "filename": "https://nuvio.ayruki.workers.dev/providers/lili.js",
+      "id": "lili",
+      "name": "Lili",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/dortkhd.js",
-      "enabled": true,
-      "logo": "",
-      "contentLanguage": [
-        "en"
-      ],
-      "formats": [
-        "mp4",
-        "m3u8",
-        "mkv"
-      ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "supportsExternalPlayer": true
+      "version": "1.13.8"
     },
     {
-      "id": "filmmakinesi",
-      "name": "han's film makinesi",
-      "description": "han's film makinesi provider",
-      "version": "1.0.1",
-      "author": "han",
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/kidd.js",
+      "id": "kidd",
+      "name": "Kidd",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/filmmakinesi.js",
-      "enabled": true,
-      "logo": "https://www.google.com/s2/favicons?domain=filmmakinesi.film&sz=%size%",
-      "contentLanguage": [
-        "tr"
-      ],
-      "formats": [
-        "mp4",
-        "m3u8"
-      ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "supportsExternalPlayer": true
+      "version": "1.13.8"
     },
     {
-      "id": "filmmodu",
-      "name": "han's film modu",
-      "description": "han's film modu provider",
-      "version": "1.0.0",
-      "author": "han",
+      "author": "izlelan",
+      "description": "Film",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/garp.js",
+      "id": "garp",
+      "name": "Garp",
       "supportedTypes": [
         "movie"
       ],
-      "filename": "providers/filmmodu.js",
-      "enabled": true,
-      "logo": "https://filmmodu.rip/wp-content/uploads/2023/07/logo.png",
-      "contentLanguage": [
-        "tr"
-      ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "formats": [
-        "mp4",
-        "mkv",
-        "hls",
-        "m3u8"
-      ]
+      "version": "1.13.8"
     },
     {
-      "id": "hdfilmcehennemi",
-      "name": "han's hd film cehennemi",
-      "description": "han's hd film cehennemi provider",
-      "version": "1.0.0",
-      "author": "han",
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/sakazuki.js",
+      "id": "sakazuki",
+      "name": "Sakazuki",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/hdfilmcehennemi.js",
-      "enabled": true,
-      "contentLanguage": [
-        "tr"
-      ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "formats": [
-        "mp4",
-        "mkv",
-        "hls",
-        "m3u8"
-      ]
+      "version": "1.13.8"
     },
     {
-      "id": "multi",
-      "name": "han's multi",
-      "description": "han's multi provider",
-      "version": "1.0.0",
-      "author": "han",
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/smoker.js",
+      "id": "smoker",
+      "name": "Smoker",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/multi.js",
-      "enabled": true,
-      "logo": "",
-      "contentLanguage": [
-        "tr"
-      ],
-      "formats": [
-        "m3u8"
-      ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "supportsExternalPlayer": true
+      "version": "1.13.8"
     },
     {
-      "id": "rec",
-      "name": "han's rec",
-      "description": "han's rec provider",
-      "version": "1.0.4",
-      "author": "han",
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/enel.js",
+      "id": "enel",
+      "name": "Enel",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/rec.js",
-      "enabled": true,
-      "formats": [
-        "m3u8"
-      ],
-      "logo": "https://rectvapp.com.tr/wp-content/uploads/2024/08/cropped-cropped-Screenshot_2023-08-31_at_11.02.55_PM-removebg-preview-32x32.webp",
-      "contentLanguage": [
-        "tr"
-      ]
+      "version": "1.13.8"
     },
     {
-      "id": "sinewix",
-      "name": "han's sinewix",
-      "description": "han's sinewix provider",
-      "version": "1.0.0",
-      "author": "han",
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/rayleigh.js",
+      "id": "rayleigh",
+      "name": "Rayleigh",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/sinewix.js",
-      "enabled": true,
-      "formats": [
-        "mp4",
-        "mkv"
-      ],
-      "logo": "https://play-lh.googleusercontent.com/brwGNmr7IjA_MKk_TTPs0va10hdKE_bD_a1lnKoiMuCayW98EHpRv55edA6aEoJlmwfX=w240-h480",
-      "contentLanguage": [
-        "tr"
-      ]
+      "version": "1.13.8"
     },
     {
-      "id": "vidlink",
-      "name": "han's vidlink",
-      "description": "han's vidlink provider",
-      "version": "1.0.0",
-      "author": "han",
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/shanks.js",
+      "id": "shanks",
+      "name": "Shanks",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/vidlink.js",
-      "enabled": true,
-      "formats": [
-        "mp4",
-        "m3u8"
-      ],
-      "logo": "https://vidlink.pro/favicon.ico",
-      "contentLanguage": [
-        "en"
-      ]
+      "version": "1.13.8"
     },
     {
-      "id": "animecix",
-      "name": "han's animecix",
-      "description": "türkçe anime kaynağı — animecix.tv",
-      "version": "1.0.0",
-      "author": "han",
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/kizaru.js",
+      "id": "kizaru",
+      "name": "Kizaru",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/animecix.js",
-      "enabled": true,
-      "logo": "https://animecix.tv/favicon.ico",
-      "contentLanguage": [
-        "tr"
-      ],
-      "formats": [
-        "mp4"
-      ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "supportsExternalPlayer": true,
-      "hasSettings": true
+      "version": "1.13.8"
     },
     {
-      "id": "dizibal",
-      "name": "han's dizibal",
-      "description": "türkçe dublaj/altyazılı film ve dizi kaynağı — dizibal.com",
-      "version": "1.0.0",
-      "author": "han",
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/vegapunk.js",
+      "id": "vegapunk",
+      "name": "Vegapunk",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/dizibal.js",
-      "enabled": true,
-      "logo": "https://dizibal.com/favicon.ico",
-      "contentLanguage": [
-        "tr"
-      ],
-      "formats": [
-        "m3u8"
-      ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "supportsExternalPlayer": true,
-      "hasSettings": true
+      "version": "1.13.8"
     },
     {
-      "id": "dizifilm",
-      "name": "han's dizifilm",
-      "description": "türkçe dublaj/altyazılı film ve dizi kaynağı — dizifilm.life",
-      "version": "1.0.0",
-      "author": "han",
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/law.js",
+      "id": "law",
+      "name": "Law",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/dizifilm.js",
-      "enabled": true,
-      "logo": "https://dizifilm.life/favicon.ico",
-      "contentLanguage": [
-        "tr"
-      ],
-      "formats": [
-        "m3u8"
-      ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "supportsExternalPlayer": true,
-      "hasSettings": true
+      "version": "1.13.8"
     },
     {
-      "id": "fullhdfilm",
-      "name": "han's full hd film",
-      "description": "türkçe dublaj/altyazılı film kaynağı — fullhdfilmizlesene.mx",
-      "version": "1.0.0",
-      "author": "han",
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/mihawk.js",
+      "id": "mihawk",
+      "name": "Mihawk",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "version": "1.13.8"
+    },
+    {
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/noland.js",
+      "id": "noland",
+      "name": "Noland",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "version": "1.13.8"
+    },
+    {
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/kuma.js",
+      "id": "kuma",
+      "name": "Kuma",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "version": "1.13.8"
+    },
+    {
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/dragon.js",
+      "id": "dragon",
+      "name": "Dragon",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "version": "1.13.8"
+    },
+    {
+      "author": "izlelan",
+      "description": "Film",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/xebec.js",
+      "id": "xebec",
+      "name": "Xebec",
       "supportedTypes": [
         "movie"
       ],
-      "filename": "providers/fullhdfilm.js",
+      "version": "1.13.8"
+    },
+    {
+      "author": "izlelan",
+      "description": "Film • Dizi",
       "enabled": true,
-      "logo": "https://www.fullhdfilmizlesene.mx/favicon.ico",
-      "contentLanguage": [
-        "tr"
+      "filename": "https://nuvio.ayruki.workers.dev/providers/roger.js",
+      "id": "roger",
+      "name": "Roger",
+      "supportedTypes": [
+        "movie",
+        "tv"
       ],
-      "formats": [
-        "m3u8"
+      "version": "1.13.8"
+    },
+    {
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/doflamingo.js",
+      "id": "doflamingo",
+      "name": "Doflamingo",
+      "supportedTypes": [
+        "movie",
+        "tv"
       ],
-      "limited": false,
-      "disabledPlatforms": [],
-      "supportsExternalPlayer": true,
-      "hasSettings": true
+      "version": "1.13.8"
+    },
+    {
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/teach.js",
+      "id": "teach",
+      "name": "Teach",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "version": "1.13.8"
+    },
+    {
+      "author": "izlelan",
+      "description": "Film",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/kuzan.js",
+      "id": "kuzan",
+      "name": "Kuzan",
+      "supportedTypes": [
+        "movie"
+      ],
+      "version": "1.13.8"
+    },
+    {
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/joyboy.js",
+      "id": "joyboy",
+      "name": "JoyBoy",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "version": "1.13.8"
+    },
+    {
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/shamrock.js",
+      "id": "shamrock",
+      "name": "Shamrock",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "version": "1.13.8"
+    },
+    {
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/hiriluk.js",
+      "id": "hiriluk",
+      "name": "Hiriluk",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "version": "1.13.8"
+    },
+    {
+      "author": "izlelan",
+      "description": "Film • Dizi",
+      "enabled": true,
+      "filename": "https://nuvio.ayruki.workers.dev/providers/garling.js",
+      "id": "garling",
+      "name": "Garling",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "version": "1.13.8"
     }
-  ]
+  ],
+  "types": [
+    "movie",
+    "series",
+    "tv"
+  ],
+  "version": "1.13.8"
 }
