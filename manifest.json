@@ -9,7 +9,7 @@
       "author": "izlelan",
       "description": "Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/crocodile.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/crocodile.js",
       "id": "crocodile",
       "name": "Crocodile",
       "supportedTypes": [
@@ -21,7 +21,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/imu.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/imu.js",
       "id": "imu",
       "name": "Imu",
       "supportedTypes": [
@@ -34,7 +34,7 @@
       "author": "izlelan",
       "description": "Anime",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/fujitora.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/fujitora.js",
       "id": "fujitora",
       "name": "Fujitora",
       "supportedTypes": [
@@ -47,7 +47,7 @@
       "author": "izlelan",
       "description": "Anime",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/lili.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/lili.js",
       "id": "lili",
       "name": "Lili",
       "supportedTypes": [
@@ -60,7 +60,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/kidd.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/kidd.js",
       "id": "kidd",
       "name": "Kidd",
       "supportedTypes": [
@@ -73,7 +73,7 @@
       "author": "izlelan",
       "description": "Film",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/garp.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/garp.js",
       "id": "garp",
       "name": "Garp",
       "supportedTypes": [
@@ -85,7 +85,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/sakazuki.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/sakazuki.js",
       "id": "sakazuki",
       "name": "Sakazuki",
       "supportedTypes": [
@@ -98,7 +98,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/smoker.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/smoker.js",
       "id": "smoker",
       "name": "Smoker",
       "supportedTypes": [
@@ -111,7 +111,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/enel.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/enel.js",
       "id": "enel",
       "name": "Enel",
       "supportedTypes": [
@@ -124,7 +124,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/rayleigh.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/rayleigh.js",
       "id": "rayleigh",
       "name": "Rayleigh",
       "supportedTypes": [
@@ -137,7 +137,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/shanks.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/shanks.js",
       "id": "shanks",
       "name": "Shanks",
       "supportedTypes": [
@@ -150,7 +150,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/kizaru.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/kizaru.js",
       "id": "kizaru",
       "name": "Kizaru",
       "supportedTypes": [
@@ -163,7 +163,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/vegapunk.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/vegapunk.js",
       "id": "vegapunk",
       "name": "Vegapunk",
       "supportedTypes": [
@@ -176,7 +176,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/law.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/law.js",
       "id": "law",
       "name": "Law",
       "supportedTypes": [
@@ -189,7 +189,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/mihawk.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/mihawk.js",
       "id": "mihawk",
       "name": "Mihawk",
       "supportedTypes": [
@@ -202,7 +202,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/noland.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/noland.js",
       "id": "noland",
       "name": "Noland",
       "supportedTypes": [
@@ -215,7 +215,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/kuma.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/kuma.js",
       "id": "kuma",
       "name": "Kuma",
       "supportedTypes": [
@@ -228,7 +228,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/dragon.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/dragon.js",
       "id": "dragon",
       "name": "Dragon",
       "supportedTypes": [
@@ -241,7 +241,7 @@
       "author": "izlelan",
       "description": "Film",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/xebec.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/xebec.js",
       "id": "xebec",
       "name": "Xebec",
       "supportedTypes": [
@@ -253,7 +253,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/roger.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/roger.js",
       "id": "roger",
       "name": "Roger",
       "supportedTypes": [
@@ -266,7 +266,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/doflamingo.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/doflamingo.js",
       "id": "doflamingo",
       "name": "Doflamingo",
       "supportedTypes": [
@@ -279,7 +279,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/teach.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/teach.js",
       "id": "teach",
       "name": "Teach",
       "supportedTypes": [
@@ -292,7 +292,7 @@
       "author": "izlelan",
       "description": "Film",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/kuzan.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/kuzan.js",
       "id": "kuzan",
       "name": "Kuzan",
       "supportedTypes": [
@@ -304,7 +304,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/joyboy.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/joyboy.js",
       "id": "joyboy",
       "name": "JoyBoy",
       "supportedTypes": [
@@ -317,7 +317,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/shamrock.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/shamrock.js",
       "id": "shamrock",
       "name": "Shamrock",
       "supportedTypes": [
@@ -330,7 +330,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/hiriluk.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hiriluk.js",
       "id": "hiriluk",
       "name": "Hiriluk",
       "supportedTypes": [
@@ -343,7 +343,7 @@
       "author": "izlelan",
       "description": "Film • Dizi",
       "enabled": true,
-      "filename": "https://nuvio.ayruki.workers.dev/providers/garling.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/garling.js",
       "id": "garling",
       "name": "Garling",
       "supportedTypes": [
