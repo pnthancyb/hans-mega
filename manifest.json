@@ -15,7 +15,7 @@
       "supportedTypes": [
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -28,7 +28,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -41,7 +41,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -54,7 +54,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -67,7 +67,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -79,7 +79,7 @@
       "supportedTypes": [
         "movie"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -92,7 +92,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -105,7 +105,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -118,7 +118,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -131,7 +131,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -144,7 +144,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -157,7 +157,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -170,7 +170,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -183,7 +183,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -196,7 +196,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -209,7 +209,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -222,7 +222,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -235,7 +235,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -247,7 +247,7 @@
       "supportedTypes": [
         "movie"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -260,7 +260,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -273,7 +273,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -286,7 +286,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -298,7 +298,7 @@
       "supportedTypes": [
         "movie"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -311,7 +311,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -324,7 +324,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -337,7 +337,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     },
     {
       "author": "han's mega",
@@ -350,7 +350,7 @@
         "movie",
         "tv"
       ],
-      "version": "1.13.9"
+      "version": "1.14.0"
     }
   ],
   "types": [
@@ -358,5 +358,5 @@
     "series",
     "tv"
   ],
-  "version": "1.13.9"
+  "version": "1.14.0"
 }
