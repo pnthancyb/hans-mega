@@ -1,6 +1,6 @@
 {
   "name": "han's mega",
-  "version": "1.14.3",
+  "version": "1.14.4",
   "description": "han's 34 providerlı nuvio deposu",
   "repository": "https://github.com/pnthancyb/hans-mega",
   "resources": [
@@ -16,438 +16,438 @@
     {
       "id": "hans-1",
       "name": "han's 1",
-      "description": "han's 1 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 1 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/imu.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-1.js",
       "enabled": true
     },
     {
       "id": "hans-2",
       "name": "han's 2",
-      "description": "han's 2 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 2 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/joyboy.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-2.js",
       "enabled": true
     },
     {
       "id": "hans-3",
       "name": "han's 3",
-      "description": "han's 3 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 3 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/enel.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-3.js",
       "enabled": true
     },
     {
       "id": "hans-4",
       "name": "han's 4",
-      "description": "han's 4 • dizi",
-      "version": "1.14.3",
+      "description": "han's 4 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/crocodile.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-4.js",
       "enabled": true
     },
     {
       "id": "hans-5",
       "name": "han's 5",
-      "description": "han's 5 • film",
-      "version": "1.14.3",
+      "description": "han's 5 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/xebec.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-5.js",
       "enabled": true
     },
     {
       "id": "hans-6",
       "name": "han's 6",
-      "description": "han's 6 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 6 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/kidd.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-6.js",
       "enabled": true
     },
     {
       "id": "hans-7",
       "name": "han's 7",
-      "description": "han's 7 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 7 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/shiki.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-7.js",
       "enabled": true
     },
     {
       "id": "hans-8",
       "name": "han's 8",
-      "description": "han's 8 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 8 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/emeth.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-8.js",
       "enabled": true
     },
     {
       "id": "hans-9",
       "name": "han's 9",
-      "description": "han's 9 • film",
-      "version": "1.14.3",
+      "description": "han's 9 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/garp.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-9.js",
       "enabled": true
     },
     {
       "id": "hans-10",
       "name": "han's 10",
-      "description": "han's 10 • film",
-      "version": "1.14.3",
+      "description": "han's 10 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/ryuma.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-10.js",
       "enabled": true
     },
     {
       "id": "hans-11",
       "name": "han's 11",
-      "description": "han's 11 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 11 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/sakazuki.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-11.js",
       "enabled": true
     },
     {
       "id": "hans-12",
       "name": "han's 12",
-      "description": "han's 12 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 12 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/shanks.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-12.js",
       "enabled": true
     },
     {
       "id": "hans-13",
       "name": "han's 13",
-      "description": "han's 13 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 13 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/kizaru.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-13.js",
       "enabled": true
     },
     {
       "id": "hans-14",
       "name": "han's 14",
-      "description": "han's 14 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 14 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/smoker.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-14.js",
       "enabled": true
     },
     {
       "id": "hans-15",
       "name": "han's 15",
-      "description": "han's 15 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 15 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/zunesha.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-15.js",
       "enabled": true
     },
     {
       "id": "hans-16",
       "name": "han's 16",
-      "description": "han's 16 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 16 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/oden.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-16.js",
       "enabled": true
     },
     {
       "id": "hans-17",
       "name": "han's 17",
-      "description": "han's 17 • anime",
-      "version": "1.14.3",
+      "description": "han's 17 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/fujitora.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-17.js",
       "enabled": true
     },
     {
       "id": "hans-18",
       "name": "han's 18",
-      "description": "han's 18 • anime",
-      "version": "1.14.3",
+      "description": "han's 18 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/lili.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-18.js",
       "enabled": true
     },
     {
       "id": "hans-19",
       "name": "han's 19",
-      "description": "han's 19 • anime",
-      "version": "1.14.3",
+      "description": "han's 19 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/sabo.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-19.js",
       "enabled": true
     },
     {
       "id": "hans-20",
       "name": "han's 20",
-      "description": "han's 20 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 20 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/vegapunk.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-20.js",
       "enabled": true
     },
     {
       "id": "hans-21",
       "name": "han's 21",
-      "description": "han's 21 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 21 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/mihawk.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-21.js",
       "enabled": true
     },
     {
       "id": "hans-22",
       "name": "han's 22",
-      "description": "han's 22 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 22 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/noland.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-22.js",
       "enabled": true
     },
     {
       "id": "hans-23",
       "name": "han's 23",
-      "description": "han's 23 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 23 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/kuma.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-23.js",
       "enabled": true
     },
     {
       "id": "hans-24",
       "name": "han's 24",
-      "description": "han's 24 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 24 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/doflamingo.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-24.js",
       "enabled": true
     },
     {
       "id": "hans-25",
       "name": "han's 25",
-      "description": "han's 25 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 25 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/dragon.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-25.js",
       "enabled": true
     },
     {
       "id": "hans-26",
       "name": "han's 26",
-      "description": "han's 26 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 26 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/teach.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-26.js",
       "enabled": true
     },
     {
       "id": "hans-27",
       "name": "han's 27",
-      "description": "han's 27 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 27 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/roger.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-27.js",
       "enabled": true
     },
     {
       "id": "hans-28",
       "name": "han's 28",
-      "description": "han's 28 • film",
-      "version": "1.14.3",
+      "description": "han's 28 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/kuzan.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-28.js",
       "enabled": true
     },
     {
       "id": "hans-29",
       "name": "han's 29",
-      "description": "han's 29 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 29 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/garling.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-29.js",
       "enabled": true
     },
     {
       "id": "hans-30",
       "name": "han's 30",
-      "description": "han's 30 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 30 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/rayleigh.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-30.js",
       "enabled": true
     },
     {
       "id": "hans-31",
       "name": "han's 31",
-      "description": "han's 31 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 31 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/hiriluk.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-31.js",
       "enabled": true
     },
     {
       "id": "hans-32",
       "name": "han's 32",
-      "description": "han's 32 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 32 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/law.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-32.js",
       "enabled": true
     },
     {
       "id": "hans-33",
       "name": "han's 33",
-      "description": "han's 33 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 33 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/gaban.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-33.js",
       "enabled": true
     },
     {
       "id": "hans-34",
       "name": "han's 34",
-      "description": "han's 34 • film • dizi",
-      "version": "1.14.3",
+      "description": "han's 34 provider",
+      "version": "1.14.4",
       "author": "han",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "https://nuvio.ayruki.workers.dev/providers/ace.js",
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-34.js",
       "enabled": true
     }
   ]

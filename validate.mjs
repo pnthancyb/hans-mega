@@ -7,8 +7,8 @@ for (const item of manifest.scrapers) {
   for (const field of ["id", "name", "filename"]) if (typeof item[field] !== "string" || !item[field]) throw new Error(`Invalid ${field}`);
   if (ids.has(item.id)) throw new Error(`Duplicate provider id: ${item.id}`);
   ids.add(item.id);
-  if (!/^https:\/\/nuvio\.ayruki\.workers\.dev\/providers\/[a-z0-9-]+\.js$/.test(item.filename)) {
-    throw new Error(`Provider must use the izlealan URL: ${item.filename}`);
+  if (!/^https:\/\/(?:nuvio\.ayruki\.workers\.dev|raw\.githubusercontent\.com\/pnthancyb\/hans-mega\/main)\/providers\/[a-z0-9-]+\.js$/.test(item.filename)) {
+    throw new Error(`Provider must use an approved source URL: ${item.filename}`);
   }
   const expected = `han's ${item.id.replace(/^hans-/, '')}`;
   if (item.name !== expected) throw new Error(`Unexpected provider name for ${item.id}: ${item.name}`);
