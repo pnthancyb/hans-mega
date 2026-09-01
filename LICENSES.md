@@ -8,3 +8,4 @@ Bu depo, provider kodlarını kaynak repolarındaki lisans ve atıf koşulların
 - Kekik CloudStream: https://github.com/nthdocomo/Kekik-cloudstream
 
 Kaynak kodlarını kullanmadan önce upstream lisanslarını ve site sahiplerinin içerik/erişim koşullarını kontrol edin.
+- izlealan provider manifesti ve JS kaynakları: https://nuvio.ayruki.workers.dev/

@@ -1,6 +1,6 @@
 # hans-mega
 
-nuvi̇o için birleştirilmiş, tekilleştirilmiş türkçe provider deposu. provider kimlikleri, görünen adlar ve dosya yolları küçük harfle tutulur.
+Nuvio için 34 provider içeren Han markalı birleşik depo.
 
 ## manifest
 
@@ -8,4 +8,10 @@ nuvi̇o için birleştirilmiş, tekilleştirilmiş türkçe provider deposu. pro
 https://raw.githubusercontent.com/pnthancyb/hans-mega/main/manifest.json
 ```
 
-stream kartlarında yalnızca provider/site adı, gerçek kalite bilgisi ve varsa dublaj/altyazı bilgisi gösterilir. bilinmeyen ve otomatik kalite değerleri gösterilmez.
+Provider adları `han's 1` ile `han's 34` arasındadır. Çalışan JS kaynakları güncel izlealan manifestinden alınır; manifestteki her filename, Nuvio’nun provider’ı doğrudan alabilmesi için şu tabanı kullanır:
+
+```text
+https://nuvio.ayruki.workers.dev/{filename}
+```
+
+Yerel `providers/hans-N.js` dosyaları depodaki inceleme ve yedek kopyalardır.
