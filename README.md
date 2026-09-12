@@ -1,17 +1,19 @@
 # hans-mega
 
-Nuvio için 34 provider içeren Han markalı birleşik depo.
+Nuvio için 36 provider içeren Han markalı birleşik depo.
 
-## manifest
+## Manifest
 
 ```text
 https://raw.githubusercontent.com/pnthancyb/hans-mega/main/manifest.json
 ```
 
-Provider adları `han's 1` ile `han's 34` arasındadır. Çalışan JS kaynakları güncel izlealan manifestinden alınır; manifestteki her filename, Nuvio’nun provider’ı doğrudan alabilmesi için şu tabanı kullanır:
+Provider adları `han's 1` ile `han's 36` arasındadır. Provider JS dosyaları güncel izlealan manifestinden alınır, Han stream metadata wrapper'ı ile aynalanır ve GitHub raw üzerinden servis edilir.
 
-```text
-https://nuvio.ayruki.workers.dev/{filename}
-```
+Kaynak manifesti: https://nuvio.ayruki.workers.dev/ (son senkron sürümü: 1.14.561)
 
-Yerel `providers/hans-N.js` dosyaları depodaki inceleme ve yedek kopyalardır.
+## Otomatik güncelleme
+
+`sync-izlealan.mjs` kaynak manifestini ve tüm provider JS dosyalarını indirir. Kaynak ID'leri `sources/izlealan-provider-map.json` içinde kalıcı olarak `han's N` numaralarına bağlanır. Yeni bir kaynak provider mevcut en yüksek numaranın sonrasına eklenir; silinen provider numarası tekrar kullanılmaz.
+
+GitHub Actions, kaynağı günde dört kez ve manuel çalıştırma isteğiyle kontrol eder. Değişiklik olduğunda manifest, provider dosyaları, eşleme ve kaynak notu tek commit olarak güncellenir.
