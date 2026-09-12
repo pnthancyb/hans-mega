@@ -1,4 +1,4 @@
-import { readFile } from "node:fs/promises";
+import { access, constants, readFile } from "node:fs/promises";
 
 const manifest = JSON.parse(await readFile(new URL("./manifest.json", import.meta.url), "utf8"));
 if (!Array.isArray(manifest.scrapers) || !manifest.scrapers.length) throw new Error("manifest.scrapers must be a non-empty array");
@@ -13,5 +13,16 @@ for (const item of manifest.scrapers) {
   const expected = `han's ${item.id.replace(/^hans-/, '')}`;
   if (item.name !== expected) throw new Error(`Unexpected provider name for ${item.id}: ${item.name}`);
   if (item.author !== "han") throw new Error(`Unexpected author for ${item.id}`);
+  const providerNumber = item.id.replace(/^hans-/, "");
+  const providerPath = new URL(`./providers/hans-${providerNumber}.js`, import.meta.url);
+  try {
+    await access(providerPath, constants.F_OK);
+  } catch {
+    throw new Error(`Missing local provider file: ${providerPath.pathname}`);
+  }
+  const providerSource = await readFile(providerPath, "utf8");
+  if (!providerSource.includes(`const n="han's ${providerNumber}"`)) {
+    throw new Error(`Missing Han stream wrapper in ${providerPath.pathname}`);
+  }
 }
 console.log(`Validated ${manifest.scrapers.length} Han providers; ${ids.size} unique ids.`);
