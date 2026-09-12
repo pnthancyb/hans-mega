@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "validate": "node validate.mjs"
+    "validate": "node validate.mjs",
+    "sync": "node sync-izlealan.mjs"
   }
 }
