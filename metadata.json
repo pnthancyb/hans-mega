@@ -1,0 +1,8 @@
+{
+  "name": "Han's Mega Provider",
+  "description": "Nuvio provider repository and unified addon manager for Han's Mega scrapers",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
