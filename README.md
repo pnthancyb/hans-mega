@@ -10,7 +10,7 @@ https://raw.githubusercontent.com/pnthancyb/hans-mega/main/manifest.json
 
 Provider adları `han's 1` ile `han's 36` arasındadır. Provider JS dosyaları güncel izlealan manifestinden alınır, Han stream metadata wrapper'ı ile aynalanır ve GitHub raw üzerinden servis edilir.
 
-Kaynak manifesti: https://nuvio.ayruki.workers.dev/ (son senkron sürümü: 1.14.561)
+Kaynak manifesti: https://nuvio.ayruki.workers.dev/ (son senkron sürümü: 1.14.57)
 
 ## Otomatik güncelleme
 
