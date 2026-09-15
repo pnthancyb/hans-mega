@@ -1,7 +1,7 @@
 {
   "name": "han's mega",
   "version": "1.14.57",
-  "description": "han's 36 providerlı nuvio deposu",
+  "description": "han's 37 providerlı nuvio deposu",
   "repository": "https://github.com/pnthancyb/hans-mega",
   "resources": [
     "stream",
@@ -473,6 +473,19 @@
         "tv"
       ],
       "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-36.js",
+      "enabled": true
+    },
+    {
+      "id": "hans-37",
+      "name": "han's 37",
+      "description": "han's 37 provider",
+      "version": "1.14.57",
+      "author": "han",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "https://raw.githubusercontent.com/pnthancyb/hans-mega/main/providers/hans-37.js",
       "enabled": true
     }
   ]

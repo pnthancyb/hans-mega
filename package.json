@@ -3,6 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "node validate.mjs",
+    "lint": "node validate.mjs",
     "validate": "node validate.mjs",
     "sync": "node sync-izlealan.mjs"
   }

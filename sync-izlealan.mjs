@@ -79,7 +79,7 @@ function providerUrl(filename) {
 function streamWrapper(number) {
   const name = `han's ${number}`;
   return `
-;(()=>{const n=${JSON.stringify(name)},g=globalThis,m=typeof module!=="undefined"?module:null,f=g&&typeof g.getStreams==="function"?g.getStreams:m&&m.exports&&typeof m.exports.getStreams==="function"?m.exports.getStreams:null;if(!f)return;const c=new Map,w=async(...a)=>{let k;try{k=JSON.stringify(a)}catch{k=null}if(k&&c.has(k))return c.get(k);const p=(async()=>{const r=await f(...a);return Array.isArray(r)?r.map(x=>x&&typeof x==="object"?{...x,name:n,provider:n}:x):r})();if(k)c.set(k,p);try{return await p}finally{if(k&&c.get(k)===p)c.delete(k)}};if(g)g.getStreams=w;if(m&&m.exports){m.exports={...m.exports,getStreams:w};}})();
+;(()=>{const n=${JSON.stringify(name)},g=globalThis,m=typeof module!=="undefined"?module:null,f=g&&typeof g.getStreams==="function"?g.getStreams:m&&m.exports&&typeof m.exports.getStreams==="function"?m.exports.getStreams:null;if(!f)return;const c=new Map,w=async(...a)=>{let k;try{k=JSON.stringify(a)}catch{k=null}if(k&&c.has(k))return c.get(k);const p=(async()=>{const r=await f(...a);return Array.isArray(r)?r.map(x=>x&&typeof x==="object"?{...x,provider:n}:x):r})();if(k)c.set(k,p);try{return await p}finally{if(k&&c.get(k)===p)c.delete(k)}};if(g)g.getStreams=w;if(m&&m.exports){try{Object.defineProperty(m.exports,"getStreams",{value:w,configurable:true,enumerable:true,writable:true})}catch(e){m.exports.getStreams=w}}})();
 `;
 }
 
@@ -217,7 +217,23 @@ for (const { source, number } of assignments) {
   await writeFile(new URL(`./hans-${number}.js`, providersDirectory), output);
 }
 
-const activeNumbers = new Set(assignments.map((item) => item.number));
+const standaloneScrapers = [
+  {
+    number: 37,
+    source: {
+      id: "anizium",
+      name: "Anizium",
+      supportedTypes: ["movie", "tv"],
+      filename: "providers/hans-37.js",
+      enabled: true,
+    }
+  }
+];
+
+const activeNumbers = new Set([
+  ...assignments.map((item) => item.number),
+  ...standaloneScrapers.map((item) => item.number)
+]);
 for (const file of await readdir(providersDirectory)) {
   const match = /^hans-(\d+)\.js$/.exec(file);
   if (match && !activeNumbers.has(Number(match[1]))) {
@@ -225,15 +241,8 @@ for (const file of await readdir(providersDirectory)) {
   }
 }
 
-const sourceVersion = sourceManifest.version ?? "0.0.0";
-const manifest = {
-  name: "han's mega",
-  version: sourceVersion,
-  description: `han's ${assignments.length} providerlı nuvio deposu`,
-  repository: "https://github.com/pnthancyb/hans-mega",
-  resources: sourceManifest.resources ?? ["stream", "subtitles"],
-  types: sourceManifest.types ?? ["movie", "series", "tv"],
-  scrapers: assignments.map(({ source, number }) => {
+const allScrapersList = [
+  ...assignments.map(({ source, number }) => {
     const name = `han's ${number}`;
     return {
       id: `hans-${number}`,
@@ -246,6 +255,30 @@ const manifest = {
       enabled: source.enabled !== false,
     };
   }),
+  ...standaloneScrapers.map(({ source, number }) => {
+    const name = `han's ${number}`;
+    return {
+      id: `hans-${number}`,
+      name,
+      description: `${name} provider`,
+      version: sourceVersion,
+      author: "han",
+      supportedTypes: source.supportedTypes ?? ["movie", "tv"],
+      filename: `${RAW_BASE}/providers/hans-${number}.js`,
+      enabled: source.enabled !== false,
+    };
+  })
+].sort((a, b) => Number(a.id.replace("hans-", "")) - Number(b.id.replace("hans-", "")));
+
+const sourceVersion = sourceManifest.version ?? "0.0.0";
+const manifest = {
+  name: "han's mega",
+  version: sourceVersion,
+  description: `han's ${allScrapersList.length} providerlı nuvio deposu`,
+  repository: "https://github.com/pnthancyb/hans-mega",
+  resources: sourceManifest.resources ?? ["stream", "subtitles"],
+  types: sourceManifest.types ?? ["movie", "series", "tv"],
+  scrapers: allScrapersList,
 };
 
 const map = {

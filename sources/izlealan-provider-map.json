@@ -1,7 +1,7 @@
 {
   "sourceManifestUrl": "https://nuvio.ayruki.workers.dev/",
   "sourceManifestVersion": "1.14.57",
-  "nextNumber": 36,
+  "nextNumber": 37,
   "providers": {
     "imu": {
       "number": 1,
@@ -218,6 +218,12 @@
       "firstSeenVersion": "1.14.561",
       "lastSeenVersion": "1.14.57",
       "sourceFilename": "providers/gaban.js"
+    },
+    "anizium": {
+      "number": 37,
+      "firstSeenVersion": "1.14.57",
+      "lastSeenVersion": "1.14.57",
+      "sourceFilename": "providers/anizium.js"
     }
   }
 }
