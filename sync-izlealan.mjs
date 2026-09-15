@@ -217,23 +217,7 @@ for (const { source, number } of assignments) {
   await writeFile(new URL(`./hans-${number}.js`, providersDirectory), output);
 }
 
-const standaloneScrapers = [
-  {
-    number: 37,
-    source: {
-      id: "anizium",
-      name: "Anizium",
-      supportedTypes: ["movie", "tv"],
-      filename: "providers/hans-37.js",
-      enabled: true,
-    }
-  }
-];
-
-const activeNumbers = new Set([
-  ...assignments.map((item) => item.number),
-  ...standaloneScrapers.map((item) => item.number)
-]);
+const activeNumbers = new Set(assignments.map((item) => item.number));
 for (const file of await readdir(providersDirectory)) {
   const match = /^hans-(\d+)\.js$/.exec(file);
   if (match && !activeNumbers.has(Number(match[1]))) {
@@ -241,8 +225,15 @@ for (const file of await readdir(providersDirectory)) {
   }
 }
 
-const allScrapersList = [
-  ...assignments.map(({ source, number }) => {
+const sourceVersion = sourceManifest.version ?? "0.0.0";
+const manifest = {
+  name: "han's mega",
+  version: sourceVersion,
+  description: `han's ${assignments.length} providerlı nuvio deposu`,
+  repository: "https://github.com/pnthancyb/hans-mega",
+  resources: sourceManifest.resources ?? ["stream", "subtitles"],
+  types: sourceManifest.types ?? ["movie", "series", "tv"],
+  scrapers: assignments.map(({ source, number }) => {
     const name = `han's ${number}`;
     return {
       id: `hans-${number}`,
@@ -255,30 +246,6 @@ const allScrapersList = [
       enabled: source.enabled !== false,
     };
   }),
-  ...standaloneScrapers.map(({ source, number }) => {
-    const name = `han's ${number}`;
-    return {
-      id: `hans-${number}`,
-      name,
-      description: `${name} provider`,
-      version: sourceVersion,
-      author: "han",
-      supportedTypes: source.supportedTypes ?? ["movie", "tv"],
-      filename: `${RAW_BASE}/providers/hans-${number}.js`,
-      enabled: source.enabled !== false,
-    };
-  })
-].sort((a, b) => Number(a.id.replace("hans-", "")) - Number(b.id.replace("hans-", "")));
-
-const sourceVersion = sourceManifest.version ?? "0.0.0";
-const manifest = {
-  name: "han's mega",
-  version: sourceVersion,
-  description: `han's ${allScrapersList.length} providerlı nuvio deposu`,
-  repository: "https://github.com/pnthancyb/hans-mega",
-  resources: sourceManifest.resources ?? ["stream", "subtitles"],
-  types: sourceManifest.types ?? ["movie", "series", "tv"],
-  scrapers: allScrapersList,
 };
 
 const map = {
