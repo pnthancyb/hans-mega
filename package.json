@@ -1,5 +1,6 @@
 {
   "name": "hans-mega",
+  "version": "1.14.58",
   "private": true,
   "type": "module",
   "scripts": {
