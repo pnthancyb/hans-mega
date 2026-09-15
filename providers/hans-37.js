@@ -708,16 +708,15 @@ async function getStreamsHandler(tmdbId, type, season, episode) {
         let formatType = isHls ? "m3u8" : "mp4";
         let formatLabel = isHls ? "HLS" : "MP4";
 
-        // Prominent 4k / 1080p tags across all UI fields requested by user
-        let streamTitle = `${qualityTag} • ${audioLabel}`;
+        // Quality subtitle format matching other providers (e.g. 1080p • Altyazılı, 4K • Dublaj)
+        let qualityDisplay = `${qualityTag} • ${audioLabel}`;
         let streamDesc = `${audioLabel}\n${qualityTag} • ${formatLabel}`;
-        let providerTag = hasMultipleGroups ? `Anizium • ${audioLabel} [${qualityTag}]` : `Anizium [${qualityTag}]`;
 
         streams.push({
-          name: providerTag,
-          title: streamTitle,
+          name: "han's 37",
+          title: audioLabel,
           description: streamDesc,
-          quality: qualityTag,
+          quality: qualityDisplay,
           url: streamUrl,
           format: formatType,
           headers: {
@@ -746,4 +745,4 @@ if (typeof globalThis !== "undefined" && _gs) globalThis.getStreams = _gs;
 if (typeof global !== "undefined" && _gs) global.getStreams = _gs;
 if (typeof module !== "undefined" && module.exports && _gs) module.exports.getStreams = _gs;
 
-;(()=>{const n="han's 37",g=globalThis,m=typeof module!=="undefined"?module:null,f=g&&typeof g.getStreams==="function"?g.getStreams:m&&m.exports&&typeof m.exports.getStreams==="function"?m.exports.getStreams:null;if(!f)return;const c=new Map,w=async(...a)=>{let k;try{k=JSON.stringify(a)}catch{k=null}if(k&&c.has(k))return c.get(k);const p=(async()=>{const r=await f(...a);return Array.isArray(r)?r.map(x=>x&&typeof x==="object"?{...x,provider:n}:x):r})();if(k)c.set(k,p);try{return await p}finally{if(k&&c.get(k)===p)c.delete(k)}};if(g)g.getStreams=w;if(m&&m.exports){try{Object.defineProperty(m.exports,"getStreams",{value:w,configurable:true,enumerable:true,writable:true})}catch(e){m.exports.getStreams=w}}})();
+;(()=>{const n="han's 37",g=globalThis,m=typeof module!=="undefined"?module:null,f=g&&typeof g.getStreams==="function"?g.getStreams:m&&m.exports&&typeof m.exports.getStreams==="function"?m.exports.getStreams:null;if(!f)return;const c=new Map,w=async(...a)=>{let k;try{k=JSON.stringify(a)}catch{k=null}if(k&&c.has(k))return c.get(k);const p=(async()=>{const r=await f(...a);return Array.isArray(r)?r.map(x=>x&&typeof x==="object"?{...x,name:n,provider:n}:x):r})();if(k)c.set(k,p);try{return await p}finally{if(k&&c.get(k)===p)c.delete(k)}};if(g)g.getStreams=w;if(m&&m.exports){try{Object.defineProperty(m.exports,"getStreams",{value:w,configurable:true,enumerable:true,writable:true})}catch(e){m.exports.getStreams=w}}})();

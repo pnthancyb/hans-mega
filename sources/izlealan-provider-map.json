@@ -1,6 +1,6 @@
 {
   "sourceManifestUrl": "https://nuvio.ayruki.workers.dev/",
-  "sourceManifestVersion": "1.14.58",
+  "sourceManifestVersion": "1.14.59",
   "nextNumber": 37,
   "providers": {
     "imu": {
@@ -222,7 +222,7 @@
     "anizium": {
       "number": 37,
       "firstSeenVersion": "1.14.58",
-      "lastSeenVersion": "1.14.58",
+      "lastSeenVersion": "1.14.59",
       "sourceFilename": "providers/anizium.js"
     }
   }
