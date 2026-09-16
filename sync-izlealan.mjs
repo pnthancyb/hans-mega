@@ -81,7 +81,7 @@ const KNOWN_CHARACTER_NAMES_MAP = {
   9: "Saul", 10: "Garp", 11: "Ryuma", 12: "Rouge", 13: "Kalgara", 14: "Sakazuki", 15: "Shanks", 16: "Kizaru",
   17: "Smoker", 18: "Zunesha", 19: "Oden", 20: "Fujitora", 21: "Lili", 22: "Sabo", 23: "Vegapunk", 24: "Mihawk",
   25: "Noland", 26: "Doflamingo", 27: "Dragon", 28: "Teach", 29: "Roger", 30: "Kuzan", 31: "Rayleigh",
-  32: "Gorosei", 33: "Ace", 34: "Hiriluk", 35: "Urouge", 36: "Gaban"
+  32: "Gorosei", 33: "Ace", 34: "Hiriluk", 35: "Urouge", 36: "Gaban", 37: "Yamato"
 };
 
 function transformProviderSource(code, number) {

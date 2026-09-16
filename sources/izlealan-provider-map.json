@@ -1,7 +1,7 @@
 {
   "sourceManifestUrl": "https://nuvio.ayruki.workers.dev/",
   "sourceManifestVersion": "1.14.573",
-  "nextNumber": 37,
+  "nextNumber": 38,
   "providers": {
     "imu": {
       "number": 1,
