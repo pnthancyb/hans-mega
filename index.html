@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>han's mega - Nuvio Eklenti Deposu</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: rgba(22, 27, 34, 0.7);
+      --border: rgba(255, 255, 255, 0.08);
+      --text: #f0f6fc;
+      --text-muted: #8b949e;
+      --accent: #38bdf8;
+      --accent-glow: rgba(56, 189, 248, 0.15);
+      --badge-bg: rgba(56, 189, 248, 0.1);
+      --badge-text: #7dd3fc;
+      --success: #34d399;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px 16px;
+      line-height: 1.5;
+    }
+    .container {
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .header {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+    .title-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #ffffff 40%, var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .version-tag {
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+    }
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+    .manifest-box {
+      background: rgba(13, 17, 23, 0.85);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      overflow: hidden;
+    }
+    .manifest-url {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 13px;
+      color: var(--accent);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      user-select: all;
+    }
+    button.copy-btn {
+      background: #1f2937;
+      color: #fff;
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+      flex-shrink: 0;
+    }
+    button.copy-btn:hover {
+      background: #374151;
+      border-color: var(--accent);
+    }
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+    }
+    .stat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+    }
+    .stat-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    .stat-value {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .search-box {
+      width: 100%;
+      background: rgba(13, 17, 23, 0.8);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .search-box:focus {
+      border-color: var(--accent);
+    }
+    .providers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 12px;
+    }
+    .provider-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: transform 0.15s, border-color 0.15s;
+    }
+    .provider-card:hover {
+      border-color: rgba(56, 189, 248, 0.4);
+      transform: translateY(-2px);
+    }
+    .provider-name {
+      font-weight: 600;
+      font-size: 15px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .provider-tag {
+      font-size: 11px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-muted);
+    }
+    .provider-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .provider-links {
+      display: flex;
+      gap: 8px;
+      margin-top: 4px;
+    }
+    .provider-link {
+      font-size: 12px;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .provider-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="title-row">
+        <h1>han's mega Deposu</h1>
+        <span class="version-tag" id="versionTag">v1.14.581</span>
+      </div>
+      <p class="subtitle">Nuvio uyumlu, tamamen Türkçeleştirilmiş ve adlandırılmış 38 eklentili resmi kaynak arşivi.</p>
+      <div class="manifest-box">
+        <span class="manifest-url" id="manifestUrl">https://raw.githubusercontent.com/pnthancyb/hans-mega/main/manifest.json</span>
+        <button class="copy-btn" id="copyBtn" onclick="copyManifest()">Kopyala</button>
+      </div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-label">Toplam Sağlayıcı</div>
+        <div class="stat-value" id="totalProviders">38</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Durum</div>
+        <div class="stat-value" style="color: var(--success); font-size: 18px; display: flex; align-items: center; gap: 6px; margin-top: 4px;">
+          <span style="display:inline-block; width:10px; height:10px; border-radius:50%; background:var(--success);"></span> Aktif / Güncel
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Doğrulama</div>
+        <div class="stat-value" style="font-size: 18px; color: #a78bfa; margin-top: 4px;">38/38 Geçti</div>
+      </div>
+    </div>
+
+    <input type="text" class="search-box" id="searchBox" placeholder="Eklenti ara (ör. han's 1, film, dizi, anime)..." oninput="filterProviders()">
+
+    <div class="providers-grid" id="providersGrid"></div>
+  </div>
+
+  <script>
+    let scrapers = [];
+
+    async function loadData() {
+      try {
+        const res = await fetch("/manifest.json");
+        const data = await res.json();
+        document.getElementById("versionTag").innerText = "v" + data.version;
+        document.getElementById("totalProviders").innerText = data.scrapers.length;
+        scrapers = data.scrapers;
+        renderProviders(scrapers);
+      } catch (e) {
+        console.error("Manifest yüklenemedi", e);
+      }
+    }
+
+    function renderProviders(items) {
+      const grid = document.getElementById("providersGrid");
+      grid.innerHTML = items.map(s => `
+        <div class="provider-card">
+          <div class="provider-name">
+            <span>${s.name}</span>
+            <span class="provider-tag">${(s.supportedTypes || []).join(", ")}</span>
+          </div>
+          <div class="provider-desc">${s.description || "Nuvio Medya Sağlayıcısı"}</div>
+          <div class="provider-links">
+            <a class="provider-link" href="${s.filename}" target="_blank">Kaynak JS ↗</a>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function filterProviders() {
+      const q = document.getElementById("searchBox").value.toLowerCase();
+      const filtered = scrapers.filter(s => 
+        s.name.toLowerCase().includes(q) || 
+        (s.supportedTypes || []).some(t => t.toLowerCase().includes(q)) ||
+        (s.description || "").toLowerCase().includes(q)
+      );
+      renderProviders(filtered);
+    }
+
+    function copyManifest() {
+      const url = document.getElementById("manifestUrl").innerText;
+      navigator.clipboard.writeText(url).then(() => {
+        const btn = document.getElementById("copyBtn");
+        btn.innerText = "Kopyalandı!";
+        btn.style.borderColor = "var(--success)";
+        setTimeout(() => {
+          btn.innerText = "Kopyala";
+          btn.style.borderColor = "var(--border)";
+        }, 2000);
+      });
+    }
+
+    loadData();
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+name: Sync izlealan Upstream
+
+on:
+  schedule:
+    # Check for upstream updates every 2 hours
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Sync from izlealan
+        run: npm run sync
+
+      - name: Validate providers
+        run: npm run validate
+
+      - name: Commit and push if changes detected
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No upstream changes detected. Everything is up to date."
+          else
+            VERSION=$(node -e 'console.log(JSON.parse(require("fs").readFileSync("manifest.json")).version)')
+            git commit -m "chore: sync izlealan upstream ($VERSION)"
+            git push
+          fi

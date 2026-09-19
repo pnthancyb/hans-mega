@@ -4,6 +4,9 @@
   "type": "module",
   "scripts": {
     "validate": "node validate.mjs",
-    "sync": "node sync-izlealan.mjs"
+    "sync": "node sync-izlealan.mjs",
+    "build": "node validate.mjs",
+    "start": "node server.js",
+    "dev": "node server.js"
   }
 }

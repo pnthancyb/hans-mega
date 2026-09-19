@@ -1,9 +1,9 @@
 # izlealan kaynak eşlemesi
 
 - Kaynak manifest: https://nuvio.ayruki.workers.dev/
-- Kaynak sürüm: 1.14.573
-- Aktif kaynak sayısı: 37
-- Nuvio manifestindeki provider adları: `han's 1` – `han's 37`
+- Kaynak sürüm: 1.14.581
+- Aktif kaynak sayısı: 38
+- Nuvio manifestindeki provider adları: `han's 1` – `han's 39`
 
 Yerel provider dosyaları kaynak JS'lerinin Han markalı aynalarıdır. Kaynak provider isimleri kullanıcıya görünen manifest metadata'sına taşınmaz.
 
@@ -16,7 +16,6 @@ Yerel provider dosyaları kaynak JS'lerinin Han markalı aynalarıdır. Kaynak p
 | 5 | `xebec` | `providers/xebec.js` |
 | 6 | `kidd` | `providers/kidd.js` |
 | 7 | `shiki` | `providers/shiki.js` |
-| 8 | `emeth` | `providers/emeth.js` |
 | 9 | `saul` | `providers/saul.js` |
 | 10 | `garp` | `providers/garp.js` |
 | 11 | `ryuma` | `providers/ryuma.js` |
@@ -46,5 +45,7 @@ Yerel provider dosyaları kaynak JS'lerinin Han markalı aynalarıdır. Kaynak p
 | 35 | `urouge` | `providers/urouge.js` |
 | 36 | `gaban` | `providers/gaban.js` |
 | 37 | `yamato` | `providers/yamato.js` |
+| 38 | `bogard` | `providers/bogard.js` |
+| 39 | `clover` | `providers/clover.js` |
 
 Bu dosya `sync-izlealan.mjs` ve GitHub Actions tarafından otomatik güncellenir.

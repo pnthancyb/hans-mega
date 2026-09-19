@@ -81,19 +81,27 @@ const KNOWN_CHARACTER_NAMES_MAP = {
   9: "Saul", 10: "Garp", 11: "Ryuma", 12: "Rouge", 13: "Kalgara", 14: "Sakazuki", 15: "Shanks", 16: "Kizaru",
   17: "Smoker", 18: "Zunesha", 19: "Oden", 20: "Fujitora", 21: "Lili", 22: "Sabo", 23: "Vegapunk", 24: "Mihawk",
   25: "Noland", 26: "Doflamingo", 27: "Dragon", 28: "Teach", 29: "Roger", 30: "Kuzan", 31: "Rayleigh",
-  32: "Gorosei", 33: "Ace", 34: "Hiriluk", 35: "Urouge", 36: "Gaban", 37: "Yamato"
+  32: "Gorosei", 33: "Ace", 34: "Hiriluk", 35: "Urouge", 36: "Gaban", 37: "Yamato", 38: "Bogard", 39: "Clover"
 };
 
-function transformProviderSource(code, number) {
+function transformProviderSource(code, number, source) {
   const targetName = "han\x27s " + number;
-  const charName = KNOWN_CHARACTER_NAMES_MAP[number];
   let transformed = code;
   
-  if (charName) {
-    transformed = transformed.replaceAll("\"" + charName + "\"", "\"" + targetName + "\"");
-    transformed = transformed.replaceAll("`" + charName + "`", "`" + targetName + "`");
-    transformed = transformed.replaceAll("`" + charName + " ", "`" + targetName + " ");
-    transformed = transformed.replaceAll(charName + " [", targetName + " [");
+  const charNames = new Set();
+  if (KNOWN_CHARACTER_NAMES_MAP[number]) {
+    charNames.add(KNOWN_CHARACTER_NAMES_MAP[number]);
+  }
+  if (source?.name && typeof source.name === "string") {
+    charNames.add(source.name.trim());
+  }
+  if (source?.id && typeof source.id === "string") {
+    charNames.add(source.id.charAt(0).toUpperCase() + source.id.slice(1));
+  }
+
+  for (const charName of charNames) {
+    if (!charName) continue;
+    transformed = transformed.replaceAll(new RegExp(`\\b${charName}\\b`, "g"), targetName);
   }
 
   transformed = transformed.replace(/name:[a-z]\.name,title:/g, "name:\"" + targetName + "\",provider:\"" + targetName + "\",title:");
@@ -184,8 +192,8 @@ const usedNumbers = new Set(
 const legacyNumbers = (currentManifest?.scrapers ?? [])
   .map((item) => numberFromHansId(item.id))
   .filter((number) => number !== null);
-let nextNumber = Math.max(
-  Number(currentMap.nextNumber) || 0,
+let highestNumber = Math.max(
+  0,
   ...usedNumbers,
   ...legacyNumbers,
 );
@@ -204,23 +212,13 @@ for (const [index, source] of sourceManifest.scrapers.entries()) {
   }
 
   if (!mappings[source.id]) {
-    const legacyNumber = legacyNumbers[index];
-    if (legacyNumber && !usedNumbers.has(legacyNumber)) {
-      mappings[source.id] = {
-        number: legacyNumber,
-        firstSeenVersion: sourceManifest.version ?? null,
-      };
-      usedNumbers.add(legacyNumber);
-      nextNumber = Math.max(nextNumber, legacyNumber);
-    } else {
-      nextNumber += 1;
-      while (usedNumbers.has(nextNumber)) nextNumber += 1;
-      mappings[source.id] = {
-        number: nextNumber,
-        firstSeenVersion: sourceManifest.version ?? null,
-      };
-      usedNumbers.add(nextNumber);
-    }
+    highestNumber += 1;
+    while (usedNumbers.has(highestNumber)) highestNumber += 1;
+    mappings[source.id] = {
+      number: highestNumber,
+      firstSeenVersion: sourceManifest.version ?? null,
+    };
+    usedNumbers.add(highestNumber);
   }
 
   const number = Number(mappings[source.id].number);
@@ -243,7 +241,7 @@ await mkdir(providersDirectory, { recursive: true });
 for (const { source, number } of assignments) {
   const sourceUrl = providerUrl(source.filename);
   const providerSource = await fetchText(cacheBustedUrl(sourceUrl));
-  const output = `${transformProviderSource(providerSource, number).replace(/\s+$/, "")}\n${streamWrapper(number)}`;
+  const output = `${transformProviderSource(providerSource, number, source).replace(/\s+$/, "")}\n${streamWrapper(number)}`;
   await writeFile(new URL(`./hans-${number}.js`, providersDirectory), output);
 }
 
@@ -281,7 +279,7 @@ const manifest = {
 const map = {
   sourceManifestUrl: SOURCE_MANIFEST_URL,
   sourceManifestVersion: sourceVersion,
-  nextNumber,
+  nextNumber: Math.max(0, ...usedNumbers),
   providers: Object.fromEntries(
     Object.entries(mappings).sort(([, a], [, b]) => a.number - b.number),
   ),
