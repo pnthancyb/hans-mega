@@ -1,6 +1,6 @@
 # hans-mega
 
-Nuvio için 39 provider içeren Han markalı birleşik depo.
+Nuvio için 40 provider içeren Han markalı birleşik depo.
 
 ## Manifest
 
@@ -8,9 +8,9 @@ Nuvio için 39 provider içeren Han markalı birleşik depo.
 https://raw.githubusercontent.com/pnthancyb/hans-mega/main/manifest.json
 ```
 
-Provider adları `han's 1` ile `han's 41` arasındadır. Provider JS dosyaları güncel izlealan manifestinden alınır, Han stream metadata wrapper'ı ile aynalanır ve GitHub raw üzerinden servis edilir.
+Provider adları `han's 1` ile `han's 42` arasındadır. Provider JS dosyaları güncel izlealan manifestinden alınır, Han stream metadata wrapper'ı ile aynalanır ve GitHub raw üzerinden servis edilir.
 
-Kaynak manifesti: https://nuvio.ayruki.workers.dev/ (son senkron sürümü: 1.14.59)
+Kaynak manifesti: https://nuvio.ayruki.workers.dev/ (son senkron sürümü: 1.14.591)
 
 ## Otomatik güncelleme
 
