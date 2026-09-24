@@ -1,8 +1,8 @@
 # izlealan kaynak eşlemesi
 
 - Kaynak manifest: https://nuvio.ayruki.workers.dev/
-- Kaynak sürüm: 1.14.592
-- Aktif kaynak sayısı: 42
+- Kaynak sürüm: 1.14.593
+- Aktif kaynak sayısı: 37
 - Nuvio manifestindeki provider adları: `han's 1` – `han's 44`
 
 Yerel provider dosyaları kaynak JS'lerinin Han markalı aynalarıdır. Kaynak provider isimleri kullanıcıya görünen manifest metadata'sına taşınmaz.
@@ -31,11 +31,9 @@ Yerel provider dosyaları kaynak JS'lerinin Han markalı aynalarıdır. Kaynak p
 | 21 | `lili` | `providers/lili.js` |
 | 22 | `sabo` | `providers/sabo.js` |
 | 23 | `vegapunk` | `providers/vegapunk.js` |
-| 25 | `noland` | `providers/noland.js` |
 | 26 | `doflamingo` | `providers/doflamingo.js` |
 | 27 | `dragon` | `providers/dragon.js` |
 | 28 | `teach` | `providers/teach.js` |
-| 29 | `roger` | `providers/roger.js` |
 | 30 | `kuzan` | `providers/kuzan.js` |
 | 31 | `rayleigh` | `providers/rayleigh.js` |
 | 32 | `gorosei` | `providers/gorosei.js` |
@@ -44,12 +42,9 @@ Yerel provider dosyaları kaynak JS'lerinin Han markalı aynalarıdır. Kaynak p
 | 35 | `urouge` | `providers/urouge.js` |
 | 36 | `gaban` | `providers/gaban.js` |
 | 37 | `yamato` | `providers/yamato.js` |
-| 38 | `bogard` | `providers/bogard.js` |
 | 39 | `clover` | `providers/clover.js` |
 | 40 | `shamrock` | `providers/shamrock.js` |
 | 41 | `garling` | `providers/garling.js` |
-| 42 | `momonosuke` | `providers/momonosuke.js` |
-| 43 | `corazon` | `providers/corazon.js` |
 | 44 | `toki` | `providers/toki.js` |
 
 Bu dosya `sync-izlealan.mjs` ve GitHub Actions tarafından otomatik güncellenir.
