@@ -1,8 +1,8 @@
 # izlealan kaynak eşlemesi
 
 - Kaynak manifest: https://nuvio.ayruki.workers.dev/
-- Kaynak sürüm: 1.14.593
-- Aktif kaynak sayısı: 37
+- Kaynak sürüm: 1.14.595
+- Aktif kaynak sayısı: 36
 - Nuvio manifestindeki provider adları: `han's 1` – `han's 44`
 
 Yerel provider dosyaları kaynak JS'lerinin Han markalı aynalarıdır. Kaynak provider isimleri kullanıcıya görünen manifest metadata'sına taşınmaz.
@@ -19,7 +19,6 @@ Yerel provider dosyaları kaynak JS'lerinin Han markalı aynalarıdır. Kaynak p
 | 9 | `saul` | `providers/saul.js` |
 | 10 | `garp` | `providers/garp.js` |
 | 11 | `ryuma` | `providers/ryuma.js` |
-| 12 | `rouge` | `providers/rouge.js` |
 | 13 | `kalgara` | `providers/kalgara.js` |
 | 14 | `sakazuki` | `providers/sakazuki.js` |
 | 15 | `shanks` | `providers/shanks.js` |
@@ -41,7 +40,7 @@ Yerel provider dosyaları kaynak JS'lerinin Han markalı aynalarıdır. Kaynak p
 | 34 | `hiriluk` | `providers/hiriluk.js` |
 | 35 | `urouge` | `providers/urouge.js` |
 | 36 | `gaban` | `providers/gaban.js` |
-| 37 | `yamato` | `providers/yamato.js` |
+| 38 | `bogard` | `providers/bogard.js` |
 | 39 | `clover` | `providers/clover.js` |
 | 40 | `shamrock` | `providers/shamrock.js` |
 | 41 | `garling` | `providers/garling.js` |
