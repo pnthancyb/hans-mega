@@ -1,9 +1,9 @@
 # izlealan kaynak eşlemesi
 
 - Kaynak manifest: https://nuvio.ayruki.workers.dev/
-- Kaynak sürüm: 1.14.597
-- Aktif kaynak sayısı: 38
-- Nuvio manifestindeki provider adları: `han's 1` – `han's 45`
+- Kaynak sürüm: 1.14.601
+- Aktif kaynak sayısı: 40
+- Nuvio manifestindeki provider adları: `han's 1` – `han's 46`
 
 Yerel provider dosyaları kaynak JS'lerinin Han markalı aynalarıdır. Kaynak provider isimleri kullanıcıya görünen manifest metadata'sına taşınmaz.
 
@@ -19,6 +19,7 @@ Yerel provider dosyaları kaynak JS'lerinin Han markalı aynalarıdır. Kaynak p
 | 9 | `saul` | `providers/saul.js` |
 | 10 | `garp` | `providers/garp.js` |
 | 11 | `ryuma` | `providers/ryuma.js` |
+| 12 | `rouge` | `providers/rouge.js` |
 | 13 | `kalgara` | `providers/kalgara.js` |
 | 14 | `sakazuki` | `providers/sakazuki.js` |
 | 15 | `shanks` | `providers/shanks.js` |
@@ -47,5 +48,6 @@ Yerel provider dosyaları kaynak JS'lerinin Han markalı aynalarıdır. Kaynak p
 | 41 | `garling` | `providers/garling.js` |
 | 44 | `toki` | `providers/toki.js` |
 | 45 | `katakuri` | `providers/katakuri.js` |
+| 46 | `turkdizi` | `providers/turkdizi.js` |
 
 Bu dosya `sync-izlealan.mjs` ve GitHub Actions tarafından otomatik güncellenir.
