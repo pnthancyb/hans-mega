@@ -1,48 +1,48 @@
 {
   "sourceManifestUrl": "https://nuvio.ayruki.workers.dev/",
-  "sourceManifestVersion": "1.14.596",
+  "sourceManifestVersion": "1.14.597",
   "nextNumber": 45,
   "providers": {
     "imu": {
       "number": 1,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/imu.js"
     },
     "joyboy": {
       "number": 2,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/joyboy.js"
     },
     "enel": {
       "number": 3,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/enel.js"
     },
     "crocodile": {
       "number": 4,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/crocodile.js"
     },
     "xebec": {
       "number": 5,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/xebec.js"
     },
     "kidd": {
       "number": 6,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/kidd.js"
     },
     "shiki": {
       "number": 7,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/shiki.js"
     },
     "emeth": {
@@ -54,19 +54,19 @@
     "saul": {
       "number": 9,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/saul.js"
     },
     "garp": {
       "number": 10,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/garp.js"
     },
     "ryuma": {
       "number": 11,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/ryuma.js"
     },
     "rouge": {
@@ -78,73 +78,73 @@
     "kalgara": {
       "number": 13,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/kalgara.js"
     },
     "sakazuki": {
       "number": 14,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/sakazuki.js"
     },
     "shanks": {
       "number": 15,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/shanks.js"
     },
     "kizaru": {
       "number": 16,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/kizaru.js"
     },
     "smoker": {
       "number": 17,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/smoker.js"
     },
     "zunesha": {
       "number": 18,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/zunesha.js"
     },
     "oden": {
       "number": 19,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/oden.js"
     },
     "fujitora": {
       "number": 20,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/fujitora.js"
     },
     "lili": {
       "number": 21,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/lili.js"
     },
     "sabo": {
       "number": 22,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/sabo.js"
     },
     "vegapunk": {
       "number": 23,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/vegapunk.js"
     },
     "mihawk": {
       "number": 24,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/mihawk.js"
     },
     "noland": {
@@ -156,19 +156,19 @@
     "doflamingo": {
       "number": 26,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/doflamingo.js"
     },
     "dragon": {
       "number": 27,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/dragon.js"
     },
     "teach": {
       "number": 28,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/teach.js"
     },
     "roger": {
@@ -180,43 +180,43 @@
     "kuzan": {
       "number": 30,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/kuzan.js"
     },
     "rayleigh": {
       "number": 31,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/rayleigh.js"
     },
     "gorosei": {
       "number": 32,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/gorosei.js"
     },
     "ace": {
       "number": 33,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/ace.js"
     },
     "hiriluk": {
       "number": 34,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/hiriluk.js"
     },
     "urouge": {
       "number": 35,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/urouge.js"
     },
     "gaban": {
       "number": 36,
       "firstSeenVersion": "1.14.561",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/gaban.js"
     },
     "yamato": {
@@ -228,25 +228,25 @@
     "bogard": {
       "number": 38,
       "firstSeenVersion": "1.14.581",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/bogard.js"
     },
     "clover": {
       "number": 39,
       "firstSeenVersion": "1.14.581",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/clover.js"
     },
     "shamrock": {
       "number": 40,
       "firstSeenVersion": "1.14.582",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/shamrock.js"
     },
     "garling": {
       "number": 41,
       "firstSeenVersion": "1.14.59",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/garling.js"
     },
     "momonosuke": {
@@ -264,13 +264,13 @@
     "toki": {
       "number": 44,
       "firstSeenVersion": "1.14.592",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/toki.js"
     },
     "katakuri": {
       "number": 45,
       "firstSeenVersion": "1.14.596",
-      "lastSeenVersion": "1.14.596",
+      "lastSeenVersion": "1.14.597",
       "sourceFilename": "providers/katakuri.js"
     }
   }
