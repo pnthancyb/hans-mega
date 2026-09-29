@@ -1,7 +1,7 @@
 # izlealan kaynak eşlemesi
 
 - Kaynak manifest: https://nuvio.ayruki.workers.dev/
-- Kaynak sürüm: 1.14.601
+- Kaynak sürüm: 1.14.602
 - Aktif kaynak sayısı: 40
 - Nuvio manifestindeki provider adları: `han's 1` – `han's 46`
 
