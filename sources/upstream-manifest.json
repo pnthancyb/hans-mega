@@ -1,0 +1,543 @@
+{
+  "name": "izlelan",
+  "version": "1.14.606",
+  "resources": [
+    "stream",
+    "subtitles"
+  ],
+  "types": [
+    "movie",
+    "series",
+    "tv"
+  ],
+  "scrapers": [
+    {
+      "id": "imu",
+      "name": "Imu",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/imu.js",
+      "enabled": true
+    },
+    {
+      "id": "joyboy",
+      "name": "JoyBoy",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/joyboy.js",
+      "enabled": true
+    },
+    {
+      "id": "enel",
+      "name": "Enel",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/enel.js",
+      "enabled": true
+    },
+    {
+      "id": "crocodile",
+      "name": "Crocodile",
+      "description": "Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "tv"
+      ],
+      "filename": "providers/crocodile.js",
+      "enabled": true
+    },
+    {
+      "id": "xebec",
+      "name": "Xebec",
+      "description": "Film",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie"
+      ],
+      "filename": "providers/xebec.js",
+      "enabled": true
+    },
+    {
+      "id": "kidd",
+      "name": "Kidd",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/kidd.js",
+      "enabled": true
+    },
+    {
+      "id": "shiki",
+      "name": "Shiki",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/shiki.js",
+      "enabled": true
+    },
+    {
+      "id": "saul",
+      "name": "Saul",
+      "description": "Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "tv"
+      ],
+      "filename": "providers/saul.js",
+      "enabled": true
+    },
+    {
+      "id": "garp",
+      "name": "Garp",
+      "description": "Film",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie"
+      ],
+      "filename": "providers/garp.js",
+      "enabled": true
+    },
+    {
+      "id": "ryuma",
+      "name": "Ryuma",
+      "description": "Film",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie"
+      ],
+      "filename": "providers/ryuma.js",
+      "enabled": true
+    },
+    {
+      "id": "rouge",
+      "name": "Rouge",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "series",
+        "tv"
+      ],
+      "filename": "providers/rouge.js",
+      "enabled": true
+    },
+    {
+      "id": "turkdizi",
+      "name": "TurkDizi",
+      "description": "Test Aşamasında",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "series",
+        "tv"
+      ],
+      "filename": "providers/turkdizi.js",
+      "enabled": true
+    },
+    {
+      "id": "kalgara",
+      "name": "Kalgara",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/kalgara.js",
+      "enabled": true
+    },
+    {
+      "id": "sakazuki",
+      "name": "Sakazuki",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/sakazuki.js",
+      "enabled": true
+    },
+    {
+      "id": "shanks",
+      "name": "Shanks",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/shanks.js",
+      "enabled": true
+    },
+    {
+      "id": "bogard",
+      "name": "Bogard",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/bogard.js",
+      "enabled": true
+    },
+    {
+      "id": "katakuri",
+      "name": "Katakuri",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/katakuri.js",
+      "enabled": true
+    },
+    {
+      "id": "mihawk",
+      "name": "Mihawk",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/mihawk.js",
+      "enabled": true
+    },
+    {
+      "id": "kizaru",
+      "name": "Kizaru",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/kizaru.js",
+      "enabled": true
+    },
+    {
+      "id": "smoker",
+      "name": "Smoker",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/smoker.js",
+      "enabled": true
+    },
+    {
+      "id": "noland",
+      "name": "Noland",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/noland.js",
+      "enabled": true
+    },
+    {
+      "id": "zunesha",
+      "name": "Zunesha",
+      "description": "Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "tv"
+      ],
+      "filename": "providers/zunesha.js",
+      "enabled": true
+    },
+    {
+      "id": "oden",
+      "name": "Oden",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/oden.js",
+      "enabled": true
+    },
+    {
+      "id": "clover",
+      "name": "Clover",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/clover.js",
+      "enabled": true
+    },
+    {
+      "id": "doflamingo",
+      "name": "Doflamingo",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/doflamingo.js",
+      "enabled": true
+    },
+    {
+      "id": "teach",
+      "name": "Teach",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/teach.js",
+      "enabled": true
+    },
+    {
+      "id": "kuzan",
+      "name": "Kuzan",
+      "description": "Film",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie"
+      ],
+      "filename": "providers/kuzan.js",
+      "enabled": true
+    },
+    {
+      "id": "garling",
+      "name": "Garling",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/garling.js",
+      "enabled": true
+    },
+    {
+      "id": "dragon",
+      "name": "Dragon",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/dragon.js",
+      "enabled": true
+    },
+    {
+      "id": "vegapunk",
+      "name": "Vegapunk",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/vegapunk.js",
+      "enabled": true
+    },
+    {
+      "id": "toki",
+      "name": "Toki",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/toki.js",
+      "enabled": true
+    },
+    {
+      "id": "fujitora",
+      "name": "Fujitora",
+      "description": "Anime",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/fujitora.js",
+      "enabled": true
+    },
+    {
+      "id": "lili",
+      "name": "Lili",
+      "description": "Anime",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/lili.js",
+      "enabled": true
+    },
+    {
+      "id": "sabo",
+      "name": "Sabo",
+      "description": "Anime",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/sabo.js",
+      "enabled": true
+    },
+    {
+      "id": "shamrock",
+      "name": "Shamrock",
+      "description": "Anime",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/shamrock.js",
+      "enabled": true
+    },
+    {
+      "id": "rayleigh",
+      "name": "Rayleigh",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/rayleigh.js",
+      "enabled": true
+    },
+    {
+      "id": "gorosei",
+      "name": "Gorosei",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/gorosei.js",
+      "enabled": true
+    },
+    {
+      "id": "ace",
+      "name": "Ace",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/ace.js",
+      "enabled": true
+    },
+    {
+      "id": "hiriluk",
+      "name": "Hiriluk",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/hiriluk.js",
+      "enabled": true
+    },
+    {
+      "id": "urouge",
+      "name": "Urouge",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/urouge.js",
+      "enabled": true
+    },
+    {
+      "id": "gaban",
+      "name": "Gaban",
+      "description": "Film • Dizi",
+      "version": "1.14.606",
+      "author": "izlelan",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/gaban.js",
+      "enabled": true
+    }
+  ]
+}

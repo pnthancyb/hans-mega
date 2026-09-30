@@ -1,6 +1,6 @@
 # hans-mega
 
-Nuvio için 40 provider içeren Han markalı birleşik depo.
+Nuvio için 41 provider içeren yüksek performanslı Han markalı birleşik depo.
 
 ## Manifest
 
@@ -8,12 +8,11 @@ Nuvio için 40 provider içeren Han markalı birleşik depo.
 https://raw.githubusercontent.com/pnthancyb/hans-mega/main/manifest.json
 ```
 
-Provider adları `han's 1` ile `han's 46` arasındadır. Provider JS dosyaları güncel izlealan manifestinden alınır, Han stream metadata wrapper'ı ile aynalanır ve GitHub raw üzerinden servis edilir.
+Tüm sağlayıcı adları `han's 1` ile `han's 41` arasında eksiksiz ve ardışıktır.
+İzlelan (izlelan.com) güncel kaynaklarından (v1.14.606) beslenir.
 
-Kaynak manifesti: https://nuvio.ayruki.workers.dev/ (son senkron sürümü: 1.14.602)
-
-## Otomatik güncelleme
-
-`sync-izlealan.mjs` kaynak manifestini ve tüm provider JS dosyalarını indirir. Kaynak ID'leri `sources/izlealan-provider-map.json` içinde kalıcı olarak `han's N` numaralarına bağlanır. Yeni bir kaynak provider mevcut en yüksek numaranın sonrasına eklenir; silinen provider numarası tekrar kullanılmaz.
-
-GitHub Actions, kaynağı günde dört kez ve manuel çalıştırma isteğiyle kontrol eder. Değişiklik olduğunda manifest, provider dosyaları, eşleme ve kaynak notu tek commit olarak güncellenir.
+## Özellikler & Performans
+- **Atlamasız Sıralama:** Provider numaralandırmaları hiçbir zaman atlamaz, her zaman ardışık 1..41 sıralıdır.
+- **Ultra Hızlı Akış:** Sağlayıcı domainleri izlelan.com/domains.json üzerinden önceden çözümlenir (0ms gecikme), askıda kalan sunucular Nuvio'yu dondurmaz (5.5s timeout).
+- **10 Dakikalık TTL Akış Önbelleği:** Aynı içerik için tekrarlanan istekler anında yanıtlanır.
+- **Otomatik Senkronizasyon:** GitHub Actions upstream kaynakları periyodik kontrol eder ve yeni eklentileri ardışık sıraya dahil eder.

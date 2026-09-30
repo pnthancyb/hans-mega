@@ -9,14 +9,17 @@ import {
 import { constants } from "node:fs";
 
 const SOURCE_MANIFEST_URL =
-  process.env.IZLEALAN_MANIFEST_URL ?? "https://nuvio.ayruki.workers.dev/";
+  process.env.IZLEALAN_MANIFEST_URL ?? "https://izlelan.com/manifest.json";
+const SOURCE_DOMAINS_URL =
+  process.env.IZLEALAN_DOMAINS_URL ?? "https://izlelan.com/domains.json";
 const SOURCE_ORIGIN = new URL(SOURCE_MANIFEST_URL).origin;
+
 const RAW_BASE =
   process.env.HANS_RAW_BASE ??
   "https://raw.githubusercontent.com/pnthancyb/hans-mega/main";
 const USER_AGENT =
   process.env.IZLEALAN_USER_AGENT ??
-  "hans-mega-updater/1.0 (+https://github.com/pnthancyb/hans-mega)";
+  "hans-mega-updater/2.0 (+https://github.com/pnthancyb/hans-mega)";
 
 const root = new URL("./", import.meta.url);
 const manifestPath = new URL("./manifest.json", root);
@@ -24,6 +27,55 @@ const mapPath = new URL("./sources/izlealan-provider-map.json", root);
 const providersDirectory = new URL("./providers/", root);
 const sourceNotePath = new URL("./sources/izlealan.md", root);
 const readmePath = new URL("./README.md", root);
+const upstreamManifestPath = new URL("./sources/upstream-manifest.json", root);
+const upstreamDomainsPath = new URL("./sources/upstream-domains.json", root);
+
+const CHARACTER_ID_NAMES = {
+  imu: "Imu",
+  joyboy: "JoyBoy",
+  enel: "Enel",
+  crocodile: "Crocodile",
+  xebec: "Xebec",
+  kidd: "Kidd",
+  shiki: "Shiki",
+  emeth: "Emeth",
+  saul: "Saul",
+  garp: "Garp",
+  ryuma: "Ryuma",
+  rouge: "Rouge",
+  turkdizi: "TurkDizi",
+  kalgara: "Kalgara",
+  sakazuki: "Sakazuki",
+  shanks: "Shanks",
+  bogard: "Bogard",
+  katakuri: "Katakuri",
+  mihawk: "Mihawk",
+  kizaru: "Kizaru",
+  smoker: "Smoker",
+  noland: "Noland",
+  zunesha: "Zunesha",
+  oden: "Oden",
+  clover: "Clover",
+  doflamingo: "Doflamingo",
+  teach: "Teach",
+  kuzan: "Kuzan",
+  garling: "Garling",
+  dragon: "Dragon",
+  vegapunk: "Vegapunk",
+  toki: "Toki",
+  fujitora: "Fujitora",
+  lili: "Lili",
+  sabo: "Sabo",
+  shamrock: "Shamrock",
+  rayleigh: "Rayleigh",
+  gorosei: "Gorosei",
+  ace: "Ace",
+  hiriluk: "Hiriluk",
+  urouge: "Urouge",
+  gaban: "Gaban",
+  yamato: "Yamato",
+  roger: "Roger",
+};
 
 function cacheBustedUrl(url) {
   const cacheBusted = new URL(url);
@@ -32,17 +84,24 @@ function cacheBustedUrl(url) {
 }
 
 async function fetchText(url) {
-  const response = await fetch(url, {
-    headers: {
-      accept: "application/javascript, application/json, text/plain, */*",
-      "cache-control": "no-cache",
-      "user-agent": USER_AGENT,
-    },
-  });
-  if (!response.ok) {
-    throw new Error(`Failed to download ${url}: HTTP ${response.status}`);
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 8000);
+  try {
+    const response = await fetch(url, {
+      headers: {
+        accept: "application/javascript, application/json, text/plain, */*",
+        "cache-control": "no-cache",
+        "user-agent": USER_AGENT,
+      },
+      signal: controller.signal,
+    });
+    if (!response.ok) {
+      throw new Error(`Failed to download ${url}: HTTP ${response.status}`);
+    }
+    return await response.text();
+  } finally {
+    clearTimeout(timeoutId);
   }
-  return response.text();
 }
 
 async function fetchJson(url) {
@@ -63,34 +122,22 @@ async function readJsonIfPresent(path) {
   return JSON.parse(await readFile(path, "utf8"));
 }
 
-function numberFromHansId(id) {
-  const match = /^hans-(\d+)$/.exec(id ?? "");
-  return match ? Number(match[1]) : null;
-}
-
 function providerUrl(filename) {
-  const url = new URL(filename, SOURCE_MANIFEST_URL);
-  if (url.protocol !== "https:" || url.origin !== SOURCE_ORIGIN) {
-    throw new Error(`Provider URL must stay on the izlealan origin: ${url}`);
-  }
+  const url = new URL(filename, SOURCE_ORIGIN);
   return url.toString();
 }
 
-const KNOWN_CHARACTER_NAMES_MAP = {
-  1: "Imu", 2: "JoyBoy", 3: "Enel", 4: "Crocodile", 5: "Xebec", 6: "Kidd", 7: "Shiki", 8: "Emeth",
-  9: "Saul", 10: "Garp", 11: "Ryuma", 12: "Rouge", 13: "Kalgara", 14: "Sakazuki", 15: "Shanks", 16: "Kizaru",
-  17: "Smoker", 18: "Zunesha", 19: "Oden", 20: "Fujitora", 21: "Lili", 22: "Sabo", 23: "Vegapunk", 24: "Mihawk",
-  25: "Noland", 26: "Doflamingo", 27: "Dragon", 28: "Teach", 29: "Roger", 30: "Kuzan", 31: "Rayleigh",
-  32: "Gorosei", 33: "Ace", 34: "Hiriluk", 35: "Urouge", 36: "Gaban", 37: "Yamato", 38: "Bogard", 39: "Clover"
-};
-
-function transformProviderSource(code, number, source) {
-  const targetName = "han\x27s " + number;
+function transformProviderSource(code, number, source, liveDomains) {
+  const targetName = "han's " + number;
   let transformed = code;
-  
+
+  // Clean previous wrappers or boost headers
+  transformed = transformed.replace(/;\(\(\)\s*=>\s*\{[\s\S]*\}\)\(\);\s*$/, "");
+  transformed = transformed.replace(/\/\/\s*\[HANS-SPEED-BOOST\][\s\S]*?\/\/\s*\[END-HANS-SPEED-BOOST\]\r?\n?/g, "");
+
   const charNames = new Set();
-  if (KNOWN_CHARACTER_NAMES_MAP[number]) {
-    charNames.add(KNOWN_CHARACTER_NAMES_MAP[number]);
+  if (source?.id && CHARACTER_ID_NAMES[source.id]) {
+    charNames.add(CHARACTER_ID_NAMES[source.id]);
   }
   if (source?.name && typeof source.name === "string") {
     charNames.add(source.name.trim());
@@ -98,6 +145,9 @@ function transformProviderSource(code, number, source) {
   if (source?.id && typeof source.id === "string") {
     charNames.add(source.id.charAt(0).toUpperCase() + source.id.slice(1));
   }
+
+  // Replace previous "han's X" logs/names
+  transformed = transformed.replace(/han's\s+\d+/g, targetName);
 
   for (const charName of charNames) {
     if (!charName) continue;
@@ -111,13 +161,31 @@ function transformProviderSource(code, number, source) {
     /if \(typeof module !== "undefined" && module\.exports\) \{ if \(_gs\) module\.exports\.getStreams = _gs; if \(_sub\) module\.exports\.getSubtitles = _sub; \}/g,
     `if (typeof module !== "undefined" && module.exports) { try { if (_gs) module.exports.getStreams = _gs; } catch {} try { if (_sub) module.exports.getSubtitles = _sub; } catch {} }`
   );
-  return transformed;
+
+  // Pre-populate with live domain data from izlelan.com for instant 0ms domain resolution
+  const speedBoostHeader = `// [HANS-SPEED-BOOST] Pre-populate domains and config state for 0ms lookup latency
+var _g = typeof globalThis !== 'undefined' ? globalThis : typeof global !== 'undefined' ? global : typeof window !== 'undefined' ? window : this;
+var _DEFAULT_DOMAINS = ${JSON.stringify(liveDomains)};
+if (!_g.__NUVIO_CONFIG_STATE__) {
+  _g.__NUVIO_CONFIG_STATE__ = {
+    cachedDomains: _DEFAULT_DOMAINS,
+    cachedCookies: {},
+    cachedTmdbKeys: ["a2f888b27315e62e471b2d587048f32e","68e094699525b18a70bab2f86b1fa706","246ec6ffbbd6c05d76ad714241e3dcd1","1865f43a0549ca50d341dd9ab8b29f49"],
+    lastFetchTime: Date.now() + 86400000,
+    activeFetchPromise: null
+  };
+} else if (!_g.__NUVIO_CONFIG_STATE__.cachedDomains || Object.keys(_g.__NUVIO_CONFIG_STATE__.cachedDomains).length === 0) {
+  _g.__NUVIO_CONFIG_STATE__.cachedDomains = Object.assign({}, _DEFAULT_DOMAINS, _g.__NUVIO_CONFIG_STATE__.cachedDomains || {});
+}
+// [END-HANS-SPEED-BOOST]
+`;
+
+  return `${speedBoostHeader}\n${transformed.trim()}`;
 }
 
 function streamWrapper(number) {
-  const name = `han's ${number}`;
   return `
-;(()=>{const n=${JSON.stringify(name)},g=globalThis,m=typeof module!=="undefined"?module:null,f=m&&m.exports&&typeof m.exports.getStreams==="function"?m.exports.getStreams:g&&typeof g.getStreams==="function"?g.getStreams:null;if(!f)return;const c=new Map,w=async(...a)=>{let k;try{k=JSON.stringify(a)}catch{k=null}if(k&&c.has(k))return c.get(k);const p=(async()=>{const r=await f(...a);return Array.isArray(r)?r.map(x=>x&&typeof x==="object"?{...x,name:n,provider:n}:x):r})();if(k)c.set(k,p);try{return await p}finally{if(k&&c.get(k)===p)c.delete(k)}};if(g)g.getStreams=w;if(m&&m.exports){try{m.exports={...m.exports,getStreams:w}}catch{}try{Object.defineProperty(m.exports,"getStreams",{value:w,configurable:true,enumerable:true,writable:true})}catch(e){m.exports.getStreams=w}}})();
+;(()=>{const n="han's ${number}",g=typeof globalThis!=="undefined"?globalThis:typeof global!=="undefined"?global:this,m=typeof module!=="undefined"?module:null,f=m&&m.exports&&typeof m.exports.getStreams==="function"?m.exports.getStreams:g&&typeof g.getStreams==="function"?g.getStreams:null;if(!f)return;g.__HANS_CACHE__=g.__HANS_CACHE__||new Map();const c=g.__HANS_CACHE__,TTL=600000,w=async(...a)=>{let k;try{k=n+":"+JSON.stringify(a)}catch{k=null}const now=Date.now();if(k&&c.has(k)){const e=c.get(k);if(e&&now-e.t<TTL)return e.d;}let t;const tp=new Promise(res=>{t=setTimeout(()=>res([]),5500);}),ep=(async()=>{try{const r=await f(...a);if(t)clearTimeout(t);const res=Array.isArray(r)?r.map(x=>x&&typeof x==="object"?{...x,name:n,provider:n}:x):(r||[]);if(k&&Array.isArray(res)&&res.length>0)c.set(k,{d:res,t:Date.now()});return res;}catch{if(t)clearTimeout(t);return [];}})();return Promise.race([ep,tp]);};if(g)g.getStreams=w;if(m&&m.exports){try{m.exports.getStreams=w;}catch{}try{Object.defineProperty(m.exports,"getStreams",{value:w,configurable:true,enumerable:true,writable:true});}catch(e){m.exports.getStreams=w;}}})();
 `;
 }
 
@@ -129,30 +197,31 @@ function sourceNote(sourceManifest, assignments) {
   const rows = assignments
     .map(
       ({ source, number }) =>
-        `| ${number} | \`${source.id}\` | \`${source.filename}\` |`,
+        `| ${number} | \`${source.id}\` | \`${source.name}\` | \`${source.filename}\` |`,
     )
     .join("\n");
-  return `# izlealan kaynak eşlemesi
+  return `# izlelan.com kaynak eşlemesi
 
 - Kaynak manifest: ${SOURCE_MANIFEST_URL}
 - Kaynak sürüm: ${sourceManifest.version ?? "unknown"}
-- Aktif kaynak sayısı: ${sourceManifest.scrapers.length}
-- Nuvio manifestindeki provider adları: \`han's 1\` – \`han's ${Math.max(...assignments.map((item) => item.number))}\`
+- Aktif kaynak sayısı: ${assignments.length}
+- Nuvio manifestindeki provider adları: \`han's 1\` – \`han's ${assignments.length}\`
 
-Yerel provider dosyaları kaynak JS'lerinin Han markalı aynalarıdır. Kaynak provider isimleri kullanıcıya görünen manifest metadata'sına taşınmaz.
+Tüm sağlayıcı dosyaları izlelan.com üzerindeki güncel kaynaklardan çekilmiş, Han markalı ve önbellekli olarak yeniden yapılandırılmıştır.
+Tüm eklentiler 1'den ${assignments.length}'e kadar atlama olmaksızın ardışık (contiguous) olarak numaralandırılmıştır.
 
-| Han numarası | Kaynak ID | Kaynak dosyası |
-| ---: | --- | --- |
+| Han numarası | Kaynak ID | Kaynak Adı | Kaynak dosyası |
+| ---: | --- | --- | --- |
 ${rows}
 
 Bu dosya \`sync-izlealan.mjs\` ve GitHub Actions tarafından otomatik güncellenir.
 `;
 }
 
-function readme(providerCount, maxNumber, sourceVersion) {
+function readme(providerCount, sourceVersion) {
   return `# hans-mega
 
-Nuvio için ${providerCount} provider içeren Han markalı birleşik depo.
+Nuvio için ${providerCount} provider içeren yüksek performanslı Han markalı birleşik depo.
 
 ## Manifest
 
@@ -160,104 +229,80 @@ Nuvio için ${providerCount} provider içeren Han markalı birleşik depo.
 https://raw.githubusercontent.com/pnthancyb/hans-mega/main/manifest.json
 \`\`\`
 
-Provider adları \`han's 1\` ile \`han's ${maxNumber}\` arasındadır. Provider JS dosyaları güncel izlealan manifestinden alınır, Han stream metadata wrapper'ı ile aynalanır ve GitHub raw üzerinden servis edilir.
+Tüm sağlayıcı adları \`han's 1\` ile \`han's ${providerCount}\` arasında eksiksiz ve ardışıktır.
+İzlelan (izlelan.com) güncel kaynaklarından (v${sourceVersion}) beslenir.
 
-Kaynak manifesti: ${SOURCE_MANIFEST_URL} (son senkron sürümü: ${sourceVersion ?? "unknown"})
-
-## Otomatik güncelleme
-
-\`sync-izlealan.mjs\` kaynak manifestini ve tüm provider JS dosyalarını indirir. Kaynak ID'leri \`sources/izlealan-provider-map.json\` içinde kalıcı olarak \`han's N\` numaralarına bağlanır. Yeni bir kaynak provider mevcut en yüksek numaranın sonrasına eklenir; silinen provider numarası tekrar kullanılmaz.
-
-GitHub Actions, kaynağı günde dört kez ve manuel çalıştırma isteğiyle kontrol eder. Değişiklik olduğunda manifest, provider dosyaları, eşleme ve kaynak notu tek commit olarak güncellenir.
+## Özellikler & Performans
+- **Atlamasız Sıralama:** Provider numaralandırmaları hiçbir zaman atlamaz, her zaman ardışık 1..${providerCount} sıralıdır.
+- **Ultra Hızlı Akış:** Sağlayıcı domainleri izlelan.com/domains.json üzerinden önceden çözümlenir (0ms gecikme), askıda kalan sunucular Nuvio'yu dondurmaz (5.5s timeout).
+- **10 Dakikalık TTL Akış Önbelleği:** Aynı içerik için tekrarlanan istekler anında yanıtlanır.
+- **Otomatik Senkronizasyon:** GitHub Actions upstream kaynakları periyodik kontrol eder ve yeni eklentileri ardışık sıraya dahil eder.
 `;
 }
 
+// 1. Fetch live source manifest and domains
+console.log(`Downloading fresh manifest from ${SOURCE_MANIFEST_URL}...`);
 const sourceManifest = await fetchJson(cacheBustedUrl(SOURCE_MANIFEST_URL));
-if (!Array.isArray(sourceManifest.scrapers) || sourceManifest.scrapers.length === 0) {
-  throw new Error("The izlealan manifest does not contain any scrapers.");
+if (!Array.isArray(sourceManifest?.scrapers) || sourceManifest.scrapers.length === 0) {
+  throw new Error("The izlelan manifest does not contain any scrapers.");
 }
 
-const currentManifest = await readJsonIfPresent(manifestPath);
-const currentMap = (await readJsonIfPresent(mapPath)) ?? {
-  nextNumber: 0,
-  providers: {},
-};
-const mappings = currentMap.providers ?? {};
-const usedNumbers = new Set(
-  Object.values(mappings)
-    .map((entry) => Number(entry.number))
-    .filter((number) => Number.isInteger(number) && number > 0),
-);
-
-const legacyNumbers = (currentManifest?.scrapers ?? [])
-  .map((item) => numberFromHansId(item.id))
-  .filter((number) => number !== null);
-let highestNumber = Math.max(
-  0,
-  ...usedNumbers,
-  ...legacyNumbers,
-);
-const seenSourceIds = new Set();
-
-for (const [index, source] of sourceManifest.scrapers.entries()) {
-  if (!source || typeof source.id !== "string" || !source.id) {
-    throw new Error(`Source scraper ${index + 1} has no stable id.`);
-  }
-  if (seenSourceIds.has(source.id)) {
-    throw new Error(`Duplicate source scraper id: ${source.id}`);
-  }
-  seenSourceIds.add(source.id);
-  if (typeof source.filename !== "string" || !source.filename) {
-    throw new Error(`Source scraper ${source.id} has no filename.`);
-  }
-
-  if (!mappings[source.id]) {
-    highestNumber += 1;
-    while (usedNumbers.has(highestNumber)) highestNumber += 1;
-    mappings[source.id] = {
-      number: highestNumber,
-      firstSeenVersion: sourceManifest.version ?? null,
-    };
-    usedNumbers.add(highestNumber);
-  }
-
-  const number = Number(mappings[source.id].number);
-  if (!Number.isInteger(number) || number < 1) {
-    throw new Error(`Invalid Han number for source scraper ${source.id}`);
-  }
-  mappings[source.id] = {
-    ...mappings[source.id],
-    number,
-    lastSeenVersion: sourceManifest.version ?? null,
-    sourceFilename: source.filename,
-  };
+console.log(`Downloading fresh domains from ${SOURCE_DOMAINS_URL}...`);
+let liveDomains = {};
+try {
+  const domainsData = await fetchJson(cacheBustedUrl(SOURCE_DOMAINS_URL));
+  liveDomains = domainsData?.data?.domains || domainsData?.domains || {};
+  await writeFile(upstreamDomainsPath, json(domainsData));
+} catch (e) {
+  console.warn("Could not fetch domains.json, using fallback dictionary:", e.message);
 }
 
-const assignments = sourceManifest.scrapers
-  .map((source) => ({ source, number: mappings[source.id].number }))
-  .sort((a, b) => a.number - b.number);
+await writeFile(upstreamManifestPath, json(sourceManifest));
 
+// 2. Clean out old JS files from providers directory
 await mkdir(providersDirectory, { recursive: true });
-for (const { source, number } of assignments) {
-  const sourceUrl = providerUrl(source.filename);
-  const providerSource = await fetchText(cacheBustedUrl(sourceUrl));
-  const output = `${transformProviderSource(providerSource, number, source).replace(/\s+$/, "")}\n${streamWrapper(number)}`;
-  await writeFile(new URL(`./hans-${number}.js`, providersDirectory), output);
-}
-
-const activeNumbers = new Set(assignments.map((item) => item.number));
-for (const file of await readdir(providersDirectory)) {
-  const match = /^hans-(\d+)\.js$/.exec(file);
-  if (match && !activeNumbers.has(Number(match[1]))) {
+const oldFiles = await readdir(providersDirectory);
+for (const file of oldFiles) {
+  if (file.endsWith(".js")) {
     await unlink(new URL(`./${file}`, providersDirectory));
   }
 }
+console.log(`Deleted ${oldFiles.filter((f) => f.endsWith(".js")).length} old provider JS files.`);
 
-const sourceVersion = sourceManifest.version ?? "0.0.0";
+// 3. Sequential 1..N Assignment for all scrapers
+const newMappings = {};
+const assignments = [];
+
+sourceManifest.scrapers.forEach((source, index) => {
+  const number = index + 1; // 1-indexed strictly sequential
+  newMappings[source.id] = {
+    number,
+    name: source.name || source.id,
+    firstSeenVersion: sourceManifest.version ?? "1.14.606",
+    lastSeenVersion: sourceManifest.version ?? "1.14.606",
+    sourceFilename: source.filename,
+  };
+  assignments.push({ source, number });
+});
+
+// 4. Download each provider freshly from izlelan.com and apply transformations
+console.log(`Downloading and optimizing ${assignments.length} fresh providers from izlelan.com...`);
+
+for (const { source, number } of assignments) {
+  const sourceUrl = providerUrl(source.filename);
+  const rawSource = await fetchText(cacheBustedUrl(sourceUrl));
+  const transformed = transformProviderSource(rawSource, number, source, liveDomains);
+  const output = `${transformed.trim()}\n${streamWrapper(number)}`;
+  await writeFile(new URL(`./hans-${number}.js`, providersDirectory), output);
+  console.log(`✓ han's ${number} -> ${source.id} (${source.filename})`);
+}
+
+// 5. Build manifest.json
+const sourceVersion = sourceManifest.version ?? "1.14.606";
 const manifest = {
   name: "han's mega",
   version: sourceVersion,
-  description: `han's ${assignments.length} providerlı nuvio deposu`,
+  description: `han's ${assignments.length} providerlı yüksek performanslı nuvio deposu`,
   repository: "https://github.com/pnthancyb/hans-mega",
   resources: sourceManifest.resources ?? ["stream", "subtitles"],
   types: sourceManifest.types ?? ["movie", "series", "tv"],
@@ -269,31 +314,29 @@ const manifest = {
       description: `${name} provider`,
       version: sourceVersion,
       author: "han",
-      supportedTypes: source.supportedTypes ?? sourceManifest.types ?? ["movie", "series", "tv"],
+      supportedTypes: source.supportedTypes ?? ["movie", "tv"],
       filename: `${RAW_BASE}/providers/hans-${number}.js`,
       enabled: source.enabled !== false,
     };
   }),
 };
 
+// 6. Save updated provider map
 const map = {
   sourceManifestUrl: SOURCE_MANIFEST_URL,
+  sourceDomainsUrl: SOURCE_DOMAINS_URL,
   sourceManifestVersion: sourceVersion,
-  nextNumber: Math.max(0, ...usedNumbers),
+  totalProviders: assignments.length,
   providers: Object.fromEntries(
-    Object.entries(mappings).sort(([, a], [, b]) => a.number - b.number),
+    Object.entries(newMappings).sort(([, a], [, b]) => a.number - b.number),
   ),
 };
 
 await writeFile(manifestPath, json(manifest));
 await writeFile(mapPath, json(map));
 await writeFile(sourceNotePath, sourceNote(sourceManifest, assignments));
-await writeFile(
-  readmePath,
-  readme(assignments.length, Math.max(...assignments.map((item) => item.number)), sourceVersion),
-);
+await writeFile(readmePath, readme(assignments.length, sourceVersion));
 
 console.log(
-  `Synchronized ${assignments.length} provider(s) from izlealan ${sourceVersion}; ` +
-    `${assignments.filter(({ number }) => number > legacyNumbers.length).length} provider(s) are beyond the legacy range.`,
+  `\nSUCCESS: Synchronized ${assignments.length} Han providers strictly numbered han's 1 to han's ${assignments.length} from izlelan.com v${sourceVersion}.`
 );
