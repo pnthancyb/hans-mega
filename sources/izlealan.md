@@ -1,12 +1,12 @@
 # izlelan.com kaynak eşlemesi
 
 - Kaynak manifest: https://izlelan.com/manifest.json
-- Kaynak sürüm: 1.14.607
-- Aktif kaynak sayısı: 41
-- Nuvio manifestindeki provider adları: `han's 1` – `han's 41`
+- Kaynak sürüm: 1.14.613
+- Aktif kaynak sayısı: 42
+- Nuvio manifestindeki provider adları: `han's 1` – `han's 42`
 
 Tüm sağlayıcı dosyaları izlelan.com üzerindeki güncel kaynaklardan çekilmiş, Han markalı ve önbellekli olarak yeniden yapılandırılmıştır.
-Tüm eklentiler 1'den 41'e kadar atlama olmaksızın ardışık (contiguous) olarak numaralandırılmıştır.
+Tüm eklentiler 1'den 42'e kadar atlama olmaksızın ardışık (contiguous) olarak numaralandırılmıştır.
 
 | Han numarası | Kaynak ID | Kaynak Adı | Kaynak dosyası |
 | ---: | --- | --- | --- |
@@ -35,21 +35,22 @@ Tüm eklentiler 1'den 41'e kadar atlama olmaksızın ardışık (contiguous) ola
 | 23 | `oden` | `Oden` | `providers/oden.js` |
 | 24 | `clover` | `Clover` | `providers/clover.js` |
 | 25 | `doflamingo` | `Doflamingo` | `providers/doflamingo.js` |
-| 26 | `teach` | `Teach` | `providers/teach.js` |
-| 27 | `kuzan` | `Kuzan` | `providers/kuzan.js` |
-| 28 | `garling` | `Garling` | `providers/garling.js` |
-| 29 | `dragon` | `Dragon` | `providers/dragon.js` |
-| 30 | `vegapunk` | `Vegapunk` | `providers/vegapunk.js` |
-| 31 | `toki` | `Toki` | `providers/toki.js` |
-| 32 | `fujitora` | `Fujitora` | `providers/fujitora.js` |
-| 33 | `lili` | `Lili` | `providers/lili.js` |
-| 34 | `sabo` | `Sabo` | `providers/sabo.js` |
-| 35 | `shamrock` | `Shamrock` | `providers/shamrock.js` |
-| 36 | `rayleigh` | `Rayleigh` | `providers/rayleigh.js` |
-| 37 | `gorosei` | `Gorosei` | `providers/gorosei.js` |
-| 38 | `ace` | `Ace` | `providers/ace.js` |
-| 39 | `hiriluk` | `Hiriluk` | `providers/hiriluk.js` |
-| 40 | `urouge` | `Urouge` | `providers/urouge.js` |
-| 41 | `gaban` | `Gaban` | `providers/gaban.js` |
+| 26 | `roger` | `Roger` | `providers/roger.js` |
+| 27 | `teach` | `Teach` | `providers/teach.js` |
+| 28 | `kuzan` | `Kuzan` | `providers/kuzan.js` |
+| 29 | `garling` | `Garling` | `providers/garling.js` |
+| 30 | `dragon` | `Dragon` | `providers/dragon.js` |
+| 31 | `vegapunk` | `Vegapunk` | `providers/vegapunk.js` |
+| 32 | `toki` | `Toki` | `providers/toki.js` |
+| 33 | `fujitora` | `Fujitora` | `providers/fujitora.js` |
+| 34 | `lili` | `Lili` | `providers/lili.js` |
+| 35 | `sabo` | `Sabo` | `providers/sabo.js` |
+| 36 | `shamrock` | `Shamrock` | `providers/shamrock.js` |
+| 37 | `rayleigh` | `Rayleigh` | `providers/rayleigh.js` |
+| 38 | `gorosei` | `Gorosei` | `providers/gorosei.js` |
+| 39 | `ace` | `Ace` | `providers/ace.js` |
+| 40 | `hiriluk` | `Hiriluk` | `providers/hiriluk.js` |
+| 41 | `urouge` | `Urouge` | `providers/urouge.js` |
+| 42 | `gaban` | `Gaban` | `providers/gaban.js` |
 
 Bu dosya `sync-izlealan.mjs` ve GitHub Actions tarafından otomatik güncellenir.

@@ -9,12 +9,11 @@
       "xebec": "https://www.fullhdfilmizlesene.now",
       "kidd": "https://filmmakinesi.to",
       "shiki": "https://www.hdfilmcehennemi2.biz",
-      "emeth": "https://jetfilmizle.top",
       "garp": "https://siyahfilmizle.vip",
       "ryuma": "https://lovefilmizle.net",
-      "rouge": "https://www.dizimom.help",
+      "rouge": "https://www.dizimom.wiki",
       "kalgara": "https://dizibal.org",
-      "sakazuki": "https://dizipal2134.com",
+      "sakazuki": "https://dizipal2135.com",
       "shanks": "https://filmekseni.vip",
       "kizaru": "https://www.hdfilmcehennemi.nl",
       "smoker": "https://dizipal1584.com",
@@ -23,7 +22,6 @@
       "fujitora": "https://animecix.tv",
       "lili": "https://openani.me",
       "sabo": "https://api.anizium.co",
-      "yamato": "https://deokwave.com",
       "shamrock": "https://animezer.com",
       "bogard": "https://streamcorecdn.com",
       "katakuri": "https://dizipod.com",
@@ -31,7 +29,6 @@
       "vegapunk": "https://ydfvfdizipanel.ru",
       "clover": "https://japierdolevid.com",
       "noland": "https://dizi75.life",
-      "kuma": "https://dizipal.bid",
       "doflamingo": "https://asyawatch.com",
       "dragon": "https://dizisol.com",
       "teach": "https://ddizibox.com",
@@ -41,31 +38,25 @@
       "rayleigh": "https://vixsrc.to",
       "hiriluk": "https://www.showbox.media",
       "urouge": "https://lmscript.xyz",
-      "law": "https://cinemacity.cc",
       "gaban": "https://streamdata.vaplayer.ru",
       "ace": "https://arc018.stream",
       "gorosei": "https://api.speedracelight.com",
-      "makino": "https://net77.cc",
       "saul": "https://dizilab.to",
-      "momonosuke": "https://mapple.fun",
-      "corazon": "https://dizifilmnow.com",
-      "toki": "https://diziroom.com",
-      "kaido": "https://vidlink.pro"
+      "toki": "https://diziroom.com"
     },
     "cookies": {},
-    "disabled": [
-      "kuma",
-      "law",
-      "makino",
-      "emeth",
-      "corazon",
-      "momonosuke",
-      "kaido",
-      "roger",
-      "yamato"
-    ]
+    "disabled": {
+      "emeth": "https://jetfilmizle.top",
+      "yamato": "https://deokwave.com",
+      "kuma": "https://dizipal.bid",
+      "law": "https://cinemacity.cc",
+      "makino": "https://net77.cc",
+      "momonosuke": "https://mapple.fun",
+      "corazon": "https://dizifilmnow.com",
+      "kaido": "https://vidlink.pro"
+    }
   },
   "meta": {
-    "timestamp": "2026-09-29T14:56:10.354Z"
+    "timestamp": "2026-10-01T10:30:13.533Z"
   }
 }
