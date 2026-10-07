@@ -1,12 +1,12 @@
 # izlelan.com kaynak eşlemesi
 
 - Kaynak manifest: https://izlelan.com/manifest.json
-- Kaynak sürüm: 1.14.613
-- Aktif kaynak sayısı: 42
-- Nuvio manifestindeki provider adları: `han's 1` – `han's 42`
+- Kaynak sürüm: 1.14.615
+- Aktif kaynak sayısı: 43
+- Nuvio manifestindeki provider adları: `han's 1` – `han's 43`
 
 Tüm sağlayıcı dosyaları izlelan.com üzerindeki güncel kaynaklardan çekilmiş, Han markalı ve önbellekli olarak yeniden yapılandırılmıştır.
-Tüm eklentiler 1'den 42'e kadar atlama olmaksızın ardışık (contiguous) olarak numaralandırılmıştır.
+Tüm eklentiler 1'den 43'e kadar atlama olmaksızın ardışık (contiguous) olarak numaralandırılmıştır.
 
 | Han numarası | Kaynak ID | Kaynak Adı | Kaynak dosyası |
 | ---: | --- | --- | --- |
@@ -52,5 +52,6 @@ Tüm eklentiler 1'den 42'e kadar atlama olmaksızın ardışık (contiguous) ola
 | 40 | `hiriluk` | `Hiriluk` | `providers/hiriluk.js` |
 | 41 | `urouge` | `Urouge` | `providers/urouge.js` |
 | 42 | `gaban` | `Gaban` | `providers/gaban.js` |
+| 43 | `jinbe` | `Jinbe` | `providers/jinbe.js` |
 
 Bu dosya `sync-izlealan.mjs` ve GitHub Actions tarafından otomatik güncellenir.
