@@ -1,6 +1,6 @@
 # hans-mega
 
-Nuvio için 43 provider içeren yüksek performanslı Han markalı birleşik depo.
+Nuvio için 45 provider içeren yüksek performanslı Han markalı birleşik depo.
 
 ## Manifest
 
@@ -8,11 +8,11 @@ Nuvio için 43 provider içeren yüksek performanslı Han markalı birleşik dep
 https://raw.githubusercontent.com/pnthancyb/hans-mega/main/manifest.json
 ```
 
-Tüm sağlayıcı adları `han's 1` ile `han's 43` arasında eksiksiz ve ardışıktır.
-İzlelan (izlelan.com) güncel kaynaklarından (v1.14.616) beslenir.
+Tüm sağlayıcı adları `han's 1` ile `han's 45` arasında eksiksiz ve ardışıktır.
+İzlelan (izlelan.com) güncel kaynaklarından (v1.14.617) beslenir.
 
 ## Özellikler & Performans
-- **Atlamasız Sıralama:** Provider numaralandırmaları hiçbir zaman atlamaz, her zaman ardışık 1..43 sıralıdır.
+- **Atlamasız Sıralama:** Provider numaralandırmaları hiçbir zaman atlamaz, her zaman ardışık 1..45 sıralıdır.
 - **Ultra Hızlı Akış:** Sağlayıcı domainleri izlelan.com/domains.json üzerinden önceden çözümlenir (0ms gecikme), askıda kalan sunucular Nuvio'yu dondurmaz (5.5s timeout).
 - **10 Dakikalık TTL Akış Önbelleği:** Aynı içerik için tekrarlanan istekler anında yanıtlanır.
 - **Otomatik Senkronizasyon:** GitHub Actions upstream kaynakları periyodik kontrol eder ve yeni eklentileri ardışık sıraya dahil eder.
