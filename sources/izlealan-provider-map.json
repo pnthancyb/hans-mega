@@ -1,308 +1,315 @@
 {
   "sourceManifestUrl": "https://izlelan.com/manifest.json",
   "sourceDomainsUrl": "https://izlelan.com/domains.json",
-  "sourceManifestVersion": "1.14.618",
-  "totalProviders": 43,
+  "sourceManifestVersion": "1.14.619",
+  "totalProviders": 44,
   "providers": {
     "imu": {
       "number": 1,
       "name": "Imu",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/imu.js"
     },
     "joyboy": {
       "number": 2,
       "name": "JoyBoy",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/joyboy.js"
     },
     "enel": {
       "number": 3,
       "name": "Enel",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/enel.js"
     },
     "crocodile": {
       "number": 4,
       "name": "Crocodile",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/crocodile.js"
     },
     "xebec": {
       "number": 5,
       "name": "Xebec",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/xebec.js"
     },
     "kidd": {
       "number": 6,
       "name": "Kidd",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/kidd.js"
     },
     "shiki": {
       "number": 7,
       "name": "Shiki",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/shiki.js"
     },
     "garp": {
       "number": 8,
       "name": "Garp",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/garp.js"
     },
     "ryuma": {
       "number": 9,
       "name": "Ryuma",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/ryuma.js"
     },
     "rouge": {
       "number": 10,
       "name": "Rouge",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/rouge.js"
     },
     "turkdizi": {
       "number": 11,
       "name": "TurkDizi",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/turkdizi.js"
     },
     "kalgara": {
       "number": 12,
       "name": "Kalgara",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/kalgara.js"
     },
     "sakazuki": {
       "number": 13,
       "name": "Sakazuki",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/sakazuki.js"
     },
     "shanks": {
       "number": 14,
       "name": "Shanks",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/shanks.js"
     },
     "bogard": {
       "number": 15,
       "name": "Bogard",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/bogard.js"
     },
-    "katakuri": {
+    "sengoku": {
       "number": 16,
+      "name": "Sengoku",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
+      "sourceFilename": "providers/sengoku.js"
+    },
+    "katakuri": {
+      "number": 17,
       "name": "Katakuri",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/katakuri.js"
     },
     "mihawk": {
-      "number": 17,
+      "number": 18,
       "name": "Mihawk",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/mihawk.js"
     },
     "kizaru": {
-      "number": 18,
+      "number": 19,
       "name": "Kizaru",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/kizaru.js"
     },
     "smoker": {
-      "number": 19,
+      "number": 20,
       "name": "Smoker",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/smoker.js"
     },
     "noland": {
-      "number": 20,
+      "number": 21,
       "name": "Noland",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/noland.js"
     },
     "zunesha": {
-      "number": 21,
+      "number": 22,
       "name": "Zunesha",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/zunesha.js"
     },
     "oden": {
-      "number": 22,
+      "number": 23,
       "name": "Oden",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/oden.js"
     },
     "clover": {
-      "number": 23,
+      "number": 24,
       "name": "Clover",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/clover.js"
     },
     "doflamingo": {
-      "number": 24,
+      "number": 25,
       "name": "Doflamingo",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/doflamingo.js"
     },
     "roger": {
-      "number": 25,
+      "number": 26,
       "name": "Roger",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/roger.js"
     },
     "teach": {
-      "number": 26,
+      "number": 27,
       "name": "Teach",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/teach.js"
     },
     "kuzan": {
-      "number": 27,
+      "number": 28,
       "name": "Kuzan",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/kuzan.js"
     },
     "garling": {
-      "number": 28,
+      "number": 29,
       "name": "Garling",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/garling.js"
     },
     "dragon": {
-      "number": 29,
+      "number": 30,
       "name": "Dragon",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/dragon.js"
     },
     "vegapunk": {
-      "number": 30,
+      "number": 31,
       "name": "Vegapunk",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/vegapunk.js"
     },
     "toki": {
-      "number": 31,
+      "number": 32,
       "name": "Toki",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/toki.js"
     },
     "fujitora": {
-      "number": 32,
+      "number": 33,
       "name": "Fujitora",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/fujitora.js"
     },
     "lili": {
-      "number": 33,
+      "number": 34,
       "name": "Lili",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/lili.js"
     },
     "sabo": {
-      "number": 34,
+      "number": 35,
       "name": "Sabo",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/sabo.js"
     },
     "shamrock": {
-      "number": 35,
+      "number": 36,
       "name": "Shamrock",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/shamrock.js"
     },
     "beckman": {
-      "number": 36,
+      "number": 37,
       "name": "Beckman",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/beckman.js"
     },
     "rayleigh": {
-      "number": 37,
+      "number": 38,
       "name": "Rayleigh",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/rayleigh.js"
     },
     "gorosei": {
-      "number": 38,
+      "number": 39,
       "name": "Gorosei",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/gorosei.js"
     },
     "ace": {
-      "number": 39,
+      "number": 40,
       "name": "Ace",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/ace.js"
     },
     "hiriluk": {
-      "number": 40,
+      "number": 41,
       "name": "Hiriluk",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/hiriluk.js"
     },
     "urouge": {
-      "number": 41,
+      "number": 42,
       "name": "Urouge",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/urouge.js"
     },
     "gaban": {
-      "number": 42,
+      "number": 43,
       "name": "Gaban",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/gaban.js"
     },
     "jinbe": {
-      "number": 43,
+      "number": 44,
       "name": "Jinbe",
-      "firstSeenVersion": "1.14.618",
-      "lastSeenVersion": "1.14.618",
+      "firstSeenVersion": "1.14.619",
+      "lastSeenVersion": "1.14.619",
       "sourceFilename": "providers/jinbe.js"
     }
   }
