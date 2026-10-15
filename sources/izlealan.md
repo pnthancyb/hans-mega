@@ -1,12 +1,12 @@
 # izlelan.com kaynak eşlemesi
 
 - Kaynak manifest: https://izlelan.com/manifest.json
-- Kaynak sürüm: 1.14.619
-- Aktif kaynak sayısı: 44
-- Nuvio manifestindeki provider adları: `han's 1` – `han's 44`
+- Kaynak sürüm: 1.14.620
+- Aktif kaynak sayısı: 43
+- Nuvio manifestindeki provider adları: `han's 1` – `han's 43`
 
 Tüm sağlayıcı dosyaları izlelan.com üzerindeki güncel kaynaklardan çekilmiş, Han markalı ve önbellekli olarak yeniden yapılandırılmıştır.
-Tüm eklentiler 1'den 44'e kadar atlama olmaksızın ardışık (contiguous) olarak numaralandırılmıştır.
+Tüm eklentiler 1'den 43'e kadar atlama olmaksızın ardışık (contiguous) olarak numaralandırılmıştır.
 
 | Han numarası | Kaynak ID | Kaynak Adı | Kaynak dosyası |
 | ---: | --- | --- | --- |
@@ -40,19 +40,18 @@ Tüm eklentiler 1'den 44'e kadar atlama olmaksızın ardışık (contiguous) ola
 | 28 | `kuzan` | `Kuzan` | `providers/kuzan.js` |
 | 29 | `garling` | `Garling` | `providers/garling.js` |
 | 30 | `dragon` | `Dragon` | `providers/dragon.js` |
-| 31 | `vegapunk` | `Vegapunk` | `providers/vegapunk.js` |
-| 32 | `toki` | `Toki` | `providers/toki.js` |
-| 33 | `fujitora` | `Fujitora` | `providers/fujitora.js` |
-| 34 | `lili` | `Lili` | `providers/lili.js` |
-| 35 | `sabo` | `Sabo` | `providers/sabo.js` |
-| 36 | `shamrock` | `Shamrock` | `providers/shamrock.js` |
-| 37 | `beckman` | `Beckman` | `providers/beckman.js` |
-| 38 | `rayleigh` | `Rayleigh` | `providers/rayleigh.js` |
-| 39 | `gorosei` | `Gorosei` | `providers/gorosei.js` |
-| 40 | `ace` | `Ace` | `providers/ace.js` |
-| 41 | `hiriluk` | `Hiriluk` | `providers/hiriluk.js` |
-| 42 | `urouge` | `Urouge` | `providers/urouge.js` |
-| 43 | `gaban` | `Gaban` | `providers/gaban.js` |
-| 44 | `jinbe` | `Jinbe` | `providers/jinbe.js` |
+| 31 | `toki` | `Toki` | `providers/toki.js` |
+| 32 | `fujitora` | `Fujitora` | `providers/fujitora.js` |
+| 33 | `lili` | `Lili` | `providers/lili.js` |
+| 34 | `sabo` | `Sabo` | `providers/sabo.js` |
+| 35 | `shamrock` | `Shamrock` | `providers/shamrock.js` |
+| 36 | `beckman` | `Beckman` | `providers/beckman.js` |
+| 37 | `rayleigh` | `Rayleigh` | `providers/rayleigh.js` |
+| 38 | `gorosei` | `Gorosei` | `providers/gorosei.js` |
+| 39 | `ace` | `Ace` | `providers/ace.js` |
+| 40 | `hiriluk` | `Hiriluk` | `providers/hiriluk.js` |
+| 41 | `urouge` | `Urouge` | `providers/urouge.js` |
+| 42 | `gaban` | `Gaban` | `providers/gaban.js` |
+| 43 | `jinbe` | `Jinbe` | `providers/jinbe.js` |
 
 Bu dosya `sync-izlealan.mjs` ve GitHub Actions tarafından otomatik güncellenir.
