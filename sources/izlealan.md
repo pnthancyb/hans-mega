@@ -1,7 +1,7 @@
 # izlelan.com kaynak eşlemesi
 
 - Kaynak manifest: https://izlelan.com/manifest.json
-- Kaynak sürüm: 1.14.622
+- Kaynak sürüm: 1.14.623
 - Aktif kaynak sayısı: 43
 - Nuvio manifestindeki provider adları: `han's 1` – `han's 43`
 
