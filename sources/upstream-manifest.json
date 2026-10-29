@@ -1,6 +1,6 @@
 {
   "name": "izlelan",
-  "version": "1.14.626",
+  "version": "1.14.631",
   "resources": [
     "stream",
     "subtitles"
@@ -15,7 +15,7 @@
       "id": "imu",
       "name": "Imu",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -28,7 +28,7 @@
       "id": "joyboy",
       "name": "JoyBoy",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -41,7 +41,7 @@
       "id": "enel",
       "name": "Enel",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -54,7 +54,7 @@
       "id": "xebec",
       "name": "Xebec",
       "description": "Film",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie"
@@ -66,7 +66,7 @@
       "id": "kidd",
       "name": "Kidd",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -79,7 +79,7 @@
       "id": "shiki",
       "name": "Shiki",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -92,7 +92,7 @@
       "id": "garp",
       "name": "Garp",
       "description": "Film",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie"
@@ -104,7 +104,7 @@
       "id": "ryuma",
       "name": "Ryuma",
       "description": "Film",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie"
@@ -116,7 +116,7 @@
       "id": "rouge",
       "name": "Rouge",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -130,7 +130,7 @@
       "id": "turkdizi",
       "name": "TurkDizi",
       "description": "Test Aşamasında",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -144,7 +144,7 @@
       "id": "kalgara",
       "name": "Kalgara",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -157,7 +157,7 @@
       "id": "sakazuki",
       "name": "Sakazuki",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -170,7 +170,7 @@
       "id": "shanks",
       "name": "Shanks",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -183,7 +183,7 @@
       "id": "sengoku",
       "name": "Sengoku",
       "description": "Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "tv"
@@ -195,7 +195,7 @@
       "id": "katakuri",
       "name": "Katakuri",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -208,7 +208,7 @@
       "id": "mihawk",
       "name": "Mihawk",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -221,7 +221,7 @@
       "id": "kizaru",
       "name": "Kizaru",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -234,7 +234,7 @@
       "id": "smoker",
       "name": "Smoker",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -244,10 +244,22 @@
       "enabled": true
     },
     {
+      "id": "saul",
+      "name": "Saul",
+      "description": "Dizi",
+      "version": "1.14.631",
+      "author": "izlelan",
+      "supportedTypes": [
+        "tv"
+      ],
+      "filename": "providers/saul.js",
+      "enabled": true
+    },
+    {
       "id": "noland",
       "name": "Noland",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -257,22 +269,10 @@
       "enabled": true
     },
     {
-      "id": "zunesha",
-      "name": "Zunesha",
-      "description": "Dizi",
-      "version": "1.14.626",
-      "author": "izlelan",
-      "supportedTypes": [
-        "tv"
-      ],
-      "filename": "providers/zunesha.js",
-      "enabled": true
-    },
-    {
       "id": "oden",
       "name": "Oden",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -285,7 +285,7 @@
       "id": "clover",
       "name": "Clover",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -298,7 +298,7 @@
       "id": "doflamingo",
       "name": "Doflamingo",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -311,7 +311,7 @@
       "id": "roger",
       "name": "Roger",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -324,7 +324,7 @@
       "id": "teach",
       "name": "Teach",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -337,7 +337,7 @@
       "id": "kuzan",
       "name": "Kuzan",
       "description": "Film",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie"
@@ -349,7 +349,7 @@
       "id": "dragon",
       "name": "Dragon",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -362,7 +362,7 @@
       "id": "toki",
       "name": "Toki",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -375,7 +375,7 @@
       "id": "fujitora",
       "name": "Fujitora",
       "description": "Anime",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -388,7 +388,7 @@
       "id": "lili",
       "name": "Lili",
       "description": "Anime",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -401,7 +401,7 @@
       "id": "sabo",
       "name": "Sabo",
       "description": "Anime",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -414,7 +414,7 @@
       "id": "beckman",
       "name": "Beckman",
       "description": "Anime",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -427,7 +427,7 @@
       "id": "rayleigh",
       "name": "Rayleigh",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -440,7 +440,7 @@
       "id": "gorosei",
       "name": "Gorosei",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -453,7 +453,7 @@
       "id": "ace",
       "name": "Ace",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -466,7 +466,7 @@
       "id": "hiriluk",
       "name": "Hiriluk",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -479,7 +479,7 @@
       "id": "urouge",
       "name": "Urouge",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -492,7 +492,7 @@
       "id": "gaban",
       "name": "Gaban",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",
@@ -505,7 +505,7 @@
       "id": "jinbe",
       "name": "Jinbe",
       "description": "Film • Dizi",
-      "version": "1.14.626",
+      "version": "1.14.631",
       "author": "izlelan",
       "supportedTypes": [
         "movie",

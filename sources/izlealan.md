@@ -1,7 +1,7 @@
 # izlelan.com kaynak eşlemesi
 
 - Kaynak manifest: https://izlelan.com/manifest.json
-- Kaynak sürüm: 1.14.626
+- Kaynak sürüm: 1.14.631
 - Aktif kaynak sayısı: 39
 - Nuvio manifestindeki provider adları: `han's 1` – `han's 39`
 
@@ -28,8 +28,8 @@ Tüm eklentiler 1'den 39'e kadar atlama olmaksızın ardışık (contiguous) ola
 | 16 | `mihawk` | `Mihawk` | `providers/mihawk.js` |
 | 17 | `kizaru` | `Kizaru` | `providers/kizaru.js` |
 | 18 | `smoker` | `Smoker` | `providers/smoker.js` |
-| 19 | `noland` | `Noland` | `providers/noland.js` |
-| 20 | `zunesha` | `Zunesha` | `providers/zunesha.js` |
+| 19 | `saul` | `Saul` | `providers/saul.js` |
+| 20 | `noland` | `Noland` | `providers/noland.js` |
 | 21 | `oden` | `Oden` | `providers/oden.js` |
 | 22 | `clover` | `Clover` | `providers/clover.js` |
 | 23 | `doflamingo` | `Doflamingo` | `providers/doflamingo.js` |
