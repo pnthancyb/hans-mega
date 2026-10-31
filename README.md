@@ -9,7 +9,7 @@ https://raw.githubusercontent.com/pnthancyb/hans-mega/main/manifest.json
 ```
 
 Tüm sağlayıcı adları `han's 1` ile `han's 38` arasında eksiksiz ve ardışıktır.
-İzlelan (izlelan.com) güncel kaynaklarından (v1.14.634) beslenir.
+İzlelan (izlelan.com) güncel kaynaklarından (v1.14.635) beslenir.
 
 ## Özellikler & Performans
 - **Atlamasız Sıralama:** Provider numaralandırmaları hiçbir zaman atlamaz, her zaman ardışık 1..38 sıralıdır.
