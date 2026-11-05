@@ -1,12 +1,12 @@
 # izlelan.com kaynak eşlemesi
 
 - Kaynak manifest: https://izlelan.com/manifest.json
-- Kaynak sürüm: 1.14.636
-- Aktif kaynak sayısı: 39
-- Nuvio manifestindeki provider adları: `han's 1` – `han's 39`
+- Kaynak sürüm: 1.14.637
+- Aktif kaynak sayısı: 40
+- Nuvio manifestindeki provider adları: `han's 1` – `han's 40`
 
 Tüm sağlayıcı dosyaları izlelan.com üzerindeki güncel kaynaklardan çekilmiş, Han markalı ve önbellekli olarak yeniden yapılandırılmıştır.
-Tüm eklentiler 1'den 39'e kadar atlama olmaksızın ardışık (contiguous) olarak numaralandırılmıştır.
+Tüm eklentiler 1'den 40'e kadar atlama olmaksızın ardışık (contiguous) olarak numaralandırılmıştır.
 
 | Han numarası | Kaynak ID | Kaynak Adı | Kaynak dosyası |
 | ---: | --- | --- | --- |
@@ -41,13 +41,14 @@ Tüm eklentiler 1'den 39'e kadar atlama olmaksızın ardışık (contiguous) ola
 | 29 | `fujitora` | `Fujitora` | `providers/fujitora.js` |
 | 30 | `lili` | `Lili` | `providers/lili.js` |
 | 31 | `sabo` | `Sabo` | `providers/sabo.js` |
-| 32 | `beckman` | `Beckman` | `providers/beckman.js` |
-| 33 | `rayleigh` | `Rayleigh` | `providers/rayleigh.js` |
-| 34 | `gorosei` | `Gorosei` | `providers/gorosei.js` |
-| 35 | `ace` | `Ace` | `providers/ace.js` |
-| 36 | `hiriluk` | `Hiriluk` | `providers/hiriluk.js` |
-| 37 | `urouge` | `Urouge` | `providers/urouge.js` |
-| 38 | `gaban` | `Gaban` | `providers/gaban.js` |
-| 39 | `jinbe` | `Jinbe` | `providers/jinbe.js` |
+| 32 | `kuma` | `Kuma` | `providers/kuma.js` |
+| 33 | `beckman` | `Beckman` | `providers/beckman.js` |
+| 34 | `rayleigh` | `Rayleigh` | `providers/rayleigh.js` |
+| 35 | `gorosei` | `Gorosei` | `providers/gorosei.js` |
+| 36 | `ace` | `Ace` | `providers/ace.js` |
+| 37 | `hiriluk` | `Hiriluk` | `providers/hiriluk.js` |
+| 38 | `urouge` | `Urouge` | `providers/urouge.js` |
+| 39 | `gaban` | `Gaban` | `providers/gaban.js` |
+| 40 | `jinbe` | `Jinbe` | `providers/jinbe.js` |
 
 Bu dosya `sync-izlealan.mjs` ve GitHub Actions tarafından otomatik güncellenir.
